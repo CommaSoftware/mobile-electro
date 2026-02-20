@@ -1,0 +1,99 @@
+:root {
+  --font-name: "Ubuntu", sans-serif;
+  --font-name-heading: "Raleway", sans-serif;
+  --font-letter-spacing: -0.0025em;
+  --font-size-span-xs: 14px;
+  --font-size-span-s: 15px;
+  --font-size-span-m: 16px;
+  --font-size-span-ml: 17px;
+  --font-size-h6: 14px;
+  --font-size-h5: 16px;
+  --font-size-h4: 18px;
+  --font-size-h3: 22px;
+  --font-size-h2: 28px;
+  --font-size-h1: 32px;
+
+  --border-radius-s: 2px;
+  --border-radius-m: 4px;
+  --border-radius-l: 8px;
+  --border-radius-e: 99999px;
+
+  --header-height: 0px;
+  --spacing-block: 32px;
+  --spacing-section: 64px;
+
+  /* Colors */
+
+  --color-elem-primary: #002029;
+  --color-elem-primary-alt: var(--color-bg-primary);
+  --color-elem-primary-highlight: #3f8e9f;
+  --color-elem-secondary: #7a8e8f;
+  --color-elem-secondary-highlight: #4d7983;
+  --color-elem-accent-primary: #ff1818;
+  --color-elem-accent-secondary: #ff5526;
+  --color-elem-accent-primary-alt: #0060dd;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f3f3f3;
+  --color-bg-tertiary: #f0f0f0;
+  --color-bg-secondary-highlight: #ecf6f6;
+  --color-bg-tertiary-highlight: #ecf0f0;
+  --color-bg-accent: #ffe9e1;
+  --color-bg-accent-alt: #e1e9f3;
+  --color-border-primary: #e4f1f2;
+  --color-border-secondary: #d1e7e8;
+  --color-border-tertiary: #d1dcdc;
+
+  --gradient-accent: radial-gradient(
+    at left top,
+    var(--color-elem-accent-secondary),
+    var(--color-elem-accent-primary)
+  );
+  --gradient-background-secondary-tertiary: linear-gradient(
+    to bottom,
+    var(--color-bg-secondary),
+    var(--color-bg-tertiary)
+  );
+  --gradient-blog-cover: linear-gradient(
+    to right bottom,
+    var(--color-bg-secondary-highlight),
+    var(--color-border-secondary)
+  );
+
+  /* Shadows */
+  --shadow-button: 0px 1px 2px -1px rgb(0, 39, 41, 50);
+  --shadow-button-inset: inset 0px 1px 2px -1px rgb(0, 39, 41, 24);
+  --shadow-card-s: 0px 2px 4px -2px rgb(0, 39, 41, 24);
+
+  /* Transition times */
+  --transition-m: 150ms cubic-bezier(0, 0.55, 0.45, 1);
+  --transition-l: 500ms cubic-bezier(0, 0.55, 0.45, 1);
+
+  /* Column System */
+
+  --max-width-content-area: 1432px;
+  --padding-content-area: 16px;
+  --space-column-gap: 12px;
+
+  --column-count: 12;
+
+  --space-column-plus-gap: calc(
+    (var(--max-width-content-area) + var(--space-column-gap)) /
+      var(--column-count)
+  );
+  --space-column: calc(var(--space-column-plus-gap) - var(--space-column-gap));
+  --space-column-2: calc(
+    (var(--space-column-plus-gap)) * 2 - var(--space-column-gap)
+  );
+  --space-column-3: calc(
+    (var(--space-column-plus-gap)) * 3 - var(--space-column-gap)
+  );
+  --space-column-4: calc(
+    (var(--space-column-plus-gap)) * 4 - var(--space-column-gap)
+  );
+  --space-column-6: calc(
+    (var(--space-column-plus-gap)) * 6 - var(--space-column-gap)
+  );
+  --space-column-8: calc(
+    (var(--space-column-plus-gap)) * 8 - var(--space-column-gap)
+  );
+}

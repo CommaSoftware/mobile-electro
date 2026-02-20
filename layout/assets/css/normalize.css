@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: var(--font-name);
+}
+
+body {
+  min-height: 100vh;
+}

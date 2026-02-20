@@ -1,0 +1,222 @@
+.button {
+  --button-color-preset-primary: var(--color-elem-primary);
+  --button-padding-side: 8px;
+  --button-height: 40px;
+  --button-color-text: var(--button-color-preset-primary);
+  --button-color-hovered: var(--color-elem-accent-primary-alt);
+  --button-bg: var(--color-bg-tertiary);
+  --button-color-border: var(--button-bg);
+  --button-font-size: var(--font-size-span-ml);
+  --button-border-radius: var(--border-radius-s);
+
+  display: inline-flex;
+  height: var(--button-height);
+  padding: 0 calc(var(--button-padding-side) + 4px);
+  gap: 4px;
+  color: var(--button-color-text);
+  background: var(--button-bg);
+  border-radius: var(--button-border-radius);
+  font-size: var(--button-font-size);
+  text-decoration: none;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid var(--button-color-border);
+  transition: var(--transition-m);
+}
+
+/* Colors n styles for buttons */
+
+.button.is-style-primary {
+  --button-color-text: var(--color-elem-primary-alt);
+  --button-bg: var(--button-color-preset-primary);
+}
+
+.button.is-style-secondary {
+  --button-color-text: var(--button-color-preset-primary);
+  --button-bg: var(--color-bg-tertiary);
+}
+.button.is-style-accent {
+  position: relative;
+  --button-color-text: var(--color-elem-primary-alt);
+  --button-bg: var(--gradient-accent) var(--color-bg-accent);
+  overflow: hidden;
+}
+
+.button.is-style-transparent {
+  --button-color-text: var(--button-color-preset-primary);
+  --button-bg: transparent;
+}
+
+.button.is-style-bordered {
+  --button-bg: transparent;
+  --button-color-border: var(--button-color-preset-primary);
+  --button-color-text: var(--button-color-preset-primary);
+}
+
+.button.is-hilight {
+  --button-color-preset-primary: var(--color-elem-secondary-highlight);
+  --button-color-hovered: var(--color-elem-primary-highlight);
+}
+
+/* Sizes for buttons */
+
+.button.is-rounded {
+  --button-border-radius: var(--border-radius-e);
+}
+
+.button.is-size-l {
+  --button-padding-side: 8px;
+  --button-height: 40px;
+  --button-font-size: var(--font-size-span-ml);
+}
+.button.is-wide,
+.button.is-size-l.is-wide {
+  --button-padding-side: 24px;
+}
+
+.button.is-size-m {
+  --button-padding-side: 8px;
+  --button-height: 28px;
+  --button-font-size: var(--font-size-span-m);
+}
+.button.is-size-m.is-wide {
+  --button-padding-side: 20px;
+}
+
+.button.is-size-s {
+  --button-padding-side: 4px;
+  --button-height: 24px;
+  --button-font-size: var(--font-size-span-xs);
+  font-weight: 500;
+}
+.button.is-size-s.is-wide {
+  --button-padding-side: 12px;
+}
+
+/* Icons for buttons */
+
+.button .icon {
+  --icon-size: 20px;
+  transition: var(--transition-m);
+}
+
+.button.is-size-m .icon {
+  --icon-size: 16px;
+}
+
+.button.is-size-s .icon {
+  --icon-size: 14px;
+}
+
+.button.button.is-style-secondary .icon,
+.button.is-style-bordered .icon {
+  filter: var(--icon-filter-clear);
+}
+
+.button.is-hilight .icon,
+.button.is-hilight.is-style-secondary .icon,
+.button.is-hilight.is-style-transparent .icon {
+  filter: var(--icon-filter-hilight);
+}
+
+.button.is-style-primary .icon,
+.button.is-style-accent .icon {
+  filter: var(--icon-filter-white);
+}
+
+/* Effects for buttons */
+
+.button:hover,
+.button:active,
+.button.is-style-secondary:hover,
+.button.is-style-secondary:active {
+  --button-bg: var(--color-bg-tertiary-highlight);
+  --button-color-text: var(--button-color-hovered);
+}
+
+.button.is-style-primary:hover,
+.button.is-style-primary:active {
+  --button-color-text: var(--color-elem-primary-alt);
+  --button-bg: var(--button-color-hovered);
+}
+
+.button.is-style-accent:hover,
+.button.is-style-accent:active {
+  --button-color-text: var(--color-elem-primary-alt);
+  --button-bg: var(--gradient-accent) var(--color-bg-accent);
+}
+
+.button.is-style-accent::after {
+  content: "";
+  position: absolute;
+  left: -50%;
+  width: 48px;
+  height: 100px;
+  transform: rotate(15deg);
+  background: linear-gradient(to right, #fff0, #fff9, #fff0);
+  filter: blur(12px);
+}
+.button.is-style-accent:hover::after,
+.button.is-style-accent:active::after {
+  left: 125%;
+  transition: var(--transition-l);
+}
+
+.button.is-style-transparent:hover,
+.button.is-style-transparent:active {
+  --button-bg: transparent;
+  --button-color-text: var(--button-color-hovered);
+  text-decoration: underline dotted;
+}
+
+.button.is-style-bordered:hover,
+.button.is-style-bordered:active {
+  --button-bg: var(--button-color-preset-primary);
+  --button-color-text: var(--color-elem-primary-alt);
+}
+
+.button:hover .icon,
+.button:active .icon,
+.button.is-style-secondary:hover .icon,
+.button.is-style-secondary:active .icon,
+.button.is-style-primary:hover .icon,
+.button.is-style-primary:active .icon,
+.button.is-style-transparent:hover .icon,
+.button.is-style-transparent:active .icon {
+  filter: var(--icon-filter-blue);
+}
+
+.button.is-hilight:hover .icon,
+.button.is-hilight:active .icon,
+.button.is-hilight.is-style-secondary:hover .icon,
+.button.is-hilight.is-style-secondary:active .icon,
+.button.is-hilight.is-style-transparent:hover .icon,
+.button.is-hilight.is-style-transparent:active .icon {
+  filter: var(--icon-filter-hilight);
+}
+
+.button.is-style-bordered:hover .icon,
+.button.is-style-bordered:active .icon {
+  filter: var(--icon-filter-white);
+}
+
+.button.is-style-accent:hover .icon,
+.button.is-style-accent:active .icon,
+.button.is-style-primary:hover .icon,
+.button.is-style-primary:active .icon {
+  filter: var(--icon-filter-white);
+}
+
+.button:not(.is-style-transparent):hover {
+  box-shadow: var(--shadow-button);
+}
+
+.button:hover:active {
+  box-shadow: none;
+}
+
+.button.is-style-primary:active,
+.button.is-style-accent:active,
+.button.is-style-bordered:active {
+  box-shadow: var(--shadow-button-inset);
+}
