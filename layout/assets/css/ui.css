@@ -1,5 +1,5 @@
 .content-wrapper {
   max-width: var(--max-width-content-area);
-  padding: var(--padding-content-area);
+  padding: 0 var(--padding-content-area);
   margin: 0 auto;
 }

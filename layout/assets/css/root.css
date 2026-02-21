@@ -1,7 +1,8 @@
 :root {
-  --font-name: "Ubuntu", sans-serif;
-  --font-name-heading: "Raleway", sans-serif;
+  --font-name: "Raleway", sans-serif;
+  --font-name-heading: "Ubuntu", sans-serif;
   --font-letter-spacing: -0.0025em;
+  --font-size-span-xxs: 13px;
   --font-size-span-xs: 14px;
   --font-size-span-s: 15px;
   --font-size-span-m: 16px;

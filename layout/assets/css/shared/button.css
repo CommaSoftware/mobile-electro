@@ -10,17 +10,21 @@
   --button-border-radius: var(--border-radius-s);
 
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
   height: var(--button-height);
   padding: 0 calc(var(--button-padding-side) + 4px);
-  gap: 4px;
+  border: 2px solid var(--button-color-border);
+  border-radius: var(--button-border-radius);
   color: var(--button-color-text);
   background: var(--button-bg);
-  border-radius: var(--button-border-radius);
   font-size: var(--button-font-size);
+  font-weight: 500;
+  white-space: nowrap;
+  letter-spacing: var(--font-letter-spacing);
   text-decoration: none;
-  align-items: center;
-  box-sizing: border-box;
-  border: 2px solid var(--button-color-border);
   transition: var(--transition-m);
 }
 
@@ -62,6 +66,11 @@
 
 .button.is-rounded {
   --button-border-radius: var(--border-radius-e);
+}
+
+.button.is-aspect-ratio-1b1 {
+  width: var(--button-height);
+  --button-padding-side: 0 !important;
 }
 
 .button.is-size-l {
