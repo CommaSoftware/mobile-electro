@@ -84,6 +84,9 @@
 .icon[data-type="grid"] {
   background-image: url("../../images/icons/grid.svg");
 }
+.icon[data-type="hamburger"] {
+  background-image: url("../../images/icons/hamburger.svg");
+}
 .icon[data-type="help"] {
   background-image: url("../../images/icons/help.svg");
 }

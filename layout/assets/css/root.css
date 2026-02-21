@@ -78,7 +78,10 @@
   --column-count: 12;
 
   --space-column-plus-gap: calc(
-    (var(--max-width-content-area) + var(--space-column-gap)) /
+    (
+        var(--max-width-content-area) - var(--padding-content-area) * 2 +
+          var(--space-column-gap)
+      ) /
       var(--column-count)
   );
   --space-column: calc(var(--space-column-plus-gap) - var(--space-column-gap));

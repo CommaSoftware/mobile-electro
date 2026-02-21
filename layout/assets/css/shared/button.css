@@ -25,6 +25,7 @@
   white-space: nowrap;
   letter-spacing: var(--font-letter-spacing);
   text-decoration: none;
+  cursor: pointer;
   transition: var(--transition-m);
 }
 
@@ -69,6 +70,7 @@
 }
 
 .button.is-aspect-ratio-1b1 {
+  min-width: var(--button-height);
   width: var(--button-height);
   --button-padding-side: 0 !important;
 }
