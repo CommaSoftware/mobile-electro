@@ -141,7 +141,7 @@
     width: 100%;
     height: calc(100vh - 100%);
     background: var(--color-bg-secondary-highlight);
-    transition: var(--transition-l);
+    transition: var(--transition-m);
     opacity: 0;
     transform: translateX(-100vw);
     z-index: -1;
