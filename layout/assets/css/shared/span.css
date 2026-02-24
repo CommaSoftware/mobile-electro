@@ -3,7 +3,7 @@
   letter-spacing: var(--font-letter-spacing);
   font-family: var(--font-name);
   font-size: var(--font-size-span-m);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .span.is-hilight {
@@ -12,20 +12,16 @@
 
 .span.is-size-xs {
   font-size: var(--font-size-span-xs);
-  font-weight: 500;
 }
 
 .span.is-size-s {
   font-size: var(--font-size-span-s);
-  font-weight: 600;
 }
 
 .span.is-size-m {
   font-size: var(--font-size-span-m);
-  font-weight: 600;
 }
 
 .span.is-size-ml {
   font-size: var(--font-size-span-ml);
-  font-weight: 600;
 }

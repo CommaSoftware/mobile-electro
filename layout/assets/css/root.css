@@ -74,6 +74,8 @@
   --max-width-content-area: 1432px;
   --padding-content-area: 16px;
   --space-column-gap: 12px;
+  --gap-sections: 64px;
+  --gap-blocks: 32px;
 
   --column-count: 12;
 
