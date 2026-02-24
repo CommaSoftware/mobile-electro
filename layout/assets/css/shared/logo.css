@@ -41,3 +41,15 @@
   font-weight: 600;
   letter-spacing: var(--font-letter-spacing);
 }
+
+/* ---------- Adaptation ---------- */
+
+@media screen and (max-width: 480px) {
+  .logo-full__name {
+    font-size: var(--font-size-h4);
+  }
+
+  .logo-full__description {
+    font-size: calc(var(--font-size-span-xxs) - 2px);
+  }
+}

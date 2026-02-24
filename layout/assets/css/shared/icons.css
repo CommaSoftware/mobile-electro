@@ -54,6 +54,9 @@
 .icon[data-type="chervon-up"] {
   background-image: url("../../images/icons/chervon-up.svg");
 }
+.icon[data-type="close"] {
+  background-image: url("../../images/icons/close.svg");
+}
 .icon[data-type="cog"] {
   background-image: url("../../images/icons/cog.svg");
 }
@@ -173,5 +176,5 @@
 }
 
 .icon.is-color-white {
-  filter: grayscale(1) brightness(14);
+  filter: var(--icon-filter-white);
 }
