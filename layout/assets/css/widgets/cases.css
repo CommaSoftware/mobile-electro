@@ -1,5 +1,30 @@
 .cases-block {
+  position: relative;
   padding: var(--gap-blocks) 0;
+}
+
+.cases-block::before,
+.cases-block__cover {
+  position: absolute;
+  z-index: 1;
+  right: calc(var(--space-column) + var(--space-column-plus-gap));
+  top: 84px;
+  width: var(--space-column);
+  height: var(--space-column);
+  border-radius: var(--border-radius-m);
+  pointer-events: none;
+}
+
+.cases-block::before {
+  content: "";
+  background-color: var(--color-bg-accent);
+  transform: rotate(-4deg) translate(-4px, -4px);
+}
+
+.cases-block__cover {
+  transform: rotate(-9deg);
+  background-color: var(--color-bg-secondary-highlight);
+  border: 1px solid var(--color-bg-primary);
 }
 
 .cases-block__item {
@@ -32,16 +57,17 @@
   width: 120px;
 }
 
-.cases-block__item:not(:first-of-type):not(:hover) .button {
+.cases-block__item:not(:first-of-type):not(:hover, :active) .button {
   width: var(--button-height);
   --button-color-text: var(--color-bg-primary);
 }
 
-.cases-block__item:not(:first-of-type):hover .button {
+.cases-block__item:not(:first-of-type):hover .button,
+.cases-block__item:not(:first-of-type):active .button {
   padding-right: 8px;
 }
 
-.cases-block__item:not(:first-of-type):not(:hover) .button .icon {
+.cases-block__item:not(:first-of-type):not(:hover, :active) .button .icon {
   position: absolute;
 }
 
