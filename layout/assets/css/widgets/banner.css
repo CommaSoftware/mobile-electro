@@ -116,6 +116,18 @@
   filter: var(--icon-filter-clear);
 }
 
+.banner-description__actions .button.is-style-primary:hover,
+.banner-description__actions .button.is-style-primary:active {
+  --button-bg: var(--color-elem-primary);
+  --button-color-text: var(--color-bg-primary);
+  --button-color-hovered: var(--color-bg-primary);
+}
+
+.banner-description__actions .button.is-style-primary:hover .icon,
+.banner-description__actions .button.is-style-primary:active .icon {
+  filter: var(--icon-filter-white);
+}
+
 .banner-description__actions .button.is-style-transparent {
   --button-color-preset-primary: var(--color-bg-primary);
   --button-color-hovered: var(--color-bg-primary);
