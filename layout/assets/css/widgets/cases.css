@@ -1,0 +1,56 @@
+.cases-block {
+  padding: var(--gap-blocks) 0;
+}
+
+.cases-block__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-column-gap);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border-primary);
+  text-decoration: none;
+}
+
+.cases-block-item__heading {
+  display: inline-block;
+  width: var(--space-column-3);
+}
+
+.cases-block-item__description {
+  display: inline-block;
+  width: var(--space-column-6);
+}
+
+.cases-block-item__action {
+  display: flex;
+  justify-content: flex-end;
+  width: var(--space-column-3);
+}
+
+.cases-block-item__action .button {
+  overflow: hidden;
+  width: 120px;
+}
+
+.cases-block__item:not(:first-of-type):not(:hover) .button {
+  width: var(--button-height);
+  --button-color-text: var(--color-bg-primary);
+}
+
+.cases-block__item:not(:first-of-type):hover .button {
+  padding-right: 8px;
+}
+
+.cases-block__item:not(:first-of-type):not(:hover) .button .icon {
+  position: absolute;
+}
+
+.cases-block__item:hover .button,
+.cases-block__item:active .button {
+  --button-bg: var(--button-color-preset-primary);
+  --button-color-text: var(--color-elem-primary-alt);
+}
+.cases-block__item:hover .button .icon,
+.cases-block__item:active .button .icon {
+  filter: var(--icon-filter-white);
+}

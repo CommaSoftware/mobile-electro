@@ -1,0 +1,7 @@
+.heading-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding-top: var(--gap-sections);
+}

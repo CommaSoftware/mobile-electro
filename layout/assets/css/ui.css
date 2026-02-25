@@ -1,6 +1,0 @@
-.content-wrapper {
-  box-sizing: border-box;
-  max-width: var(--max-width-content-area);
-  padding: 0 var(--padding-content-area);
-  margin: 0 auto;
-}
