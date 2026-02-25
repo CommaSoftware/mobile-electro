@@ -102,4 +102,7 @@
   --space-column-8: calc(
     (var(--space-column-plus-gap)) * 8 - var(--space-column-gap)
   );
+  --space-column-8: calc(
+    (var(--space-column-plus-gap)) * 9 - var(--space-column-gap)
+  );
 }

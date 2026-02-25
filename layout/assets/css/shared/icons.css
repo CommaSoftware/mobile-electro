@@ -178,3 +178,7 @@
 .icon.is-color-white {
   filter: var(--icon-filter-white);
 }
+
+.icon.is-color-hilight {
+  filter: var(--icon-filter-hilight);
+}
