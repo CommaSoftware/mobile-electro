@@ -103,3 +103,19 @@
     right: 0;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .cases-block__item {
+    padding-right: 0;
+  }
+
+  .cases-block-item__heading,
+  .cases-block-item__description,
+  .cases-block-item__action {
+    grid-column: auto;
+  }
+  .cases-block-item__action {
+    position: static;
+    grid-row: 3;
+  }
+}
