@@ -104,9 +104,10 @@
 
       tooltip.innerHTML = `
         <span class="button is-size-l is-no-hover map-tooltip__label">${title}</span>
-        <span class="button is-size-l is-style-accent">
-          <span class="icon" data-type="truck"></span> Заказать
-        </span>
+        <div class="button is-size-l is-style-accent">
+          <span class="icon" data-type="truck"></span>
+					<span class="label">Заказать</span>
+        </div>
       `;
 
       // Добавляем обработчики для самого тултипа

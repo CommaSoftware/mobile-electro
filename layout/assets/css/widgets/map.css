@@ -1,3 +1,20 @@
+.map-block__heading-mark {
+  position: relative;
+  color: var(--color-elem-accent-secondary);
+  background-color: transparent;
+  font-weight: 700;
+  animation: heading-mark-color-breath 1500ms infinite;
+}
+
+.map-block__heading-mark::before {
+  content: "⦿";
+  display: inline-block;
+  margin-right: 0.2em;
+  font-size: var(--font-size-span-ml);
+  font-weight: 500;
+  animation: heading-mark-breath 1500ms infinite;
+}
+
 .map:not(:hover) .map__abled.path_is-active-default {
   fill: var(--color-elem-accent-secondary);
 }
@@ -21,8 +38,8 @@
   border-radius: 40px;
   margin-bottom: 8px;
   opacity: 0;
-  transition: opacity 0.2s ease;
-  animation: tooltip-appear 0.2s ease;
+  transition: var(--transition-ml);
+  animation: tooltip-appear var(--transition-ml);
   box-shadow: var(--shadow-tooltip);
   pointer-events: auto;
 }
@@ -36,13 +53,6 @@
   white-space: nowrap;
 }
 
-.map__tooltip .icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 4px;
-}
-
 @keyframes tooltip-appear {
   from {
     opacity: 0;
@@ -51,5 +61,60 @@
   to {
     opacity: 1;
     transform: translate(0%, -100%);
+  }
+}
+
+@keyframes heading-mark-breath {
+  0% {
+    transform: translateY(0.1em) scale(100%);
+  }
+  20% {
+    transform: translateY(0.1em) scale(120%);
+  }
+  100% {
+    transform: translateY(0.1em) scale(100%);
+  }
+}
+
+@keyframes heading-mark-color-breath {
+  0% {
+    color: var(--color-elem-accent-secondary);
+  }
+  20% {
+    color: var(--color-elem-accent-primary);
+  }
+  100% {
+    color: var(--color-elem-accent-secondary);
+  }
+}
+
+/* ---------- Adaptation ---------- */
+
+@media screen and (max-width: 480px) {
+  .map-block {
+    overflow: hidden;
+  }
+
+  .map {
+    width: 200%;
+  }
+
+  .map__tooltip {
+    transform: translate(-32%, -100%);
+    animation: none;
+  }
+
+  .map__tooltip .button.is-style-accent {
+    min-width: var(--button-height);
+    width: var(--button-height);
+    --button-padding-side: 0 !important;
+  }
+
+  .map__tooltip .button:not(.is-no-hover).is-style-accent::after {
+    left: -150%;
+  }
+
+  .map__tooltip .button.is-style-accent .label {
+    display: none;
   }
 }
