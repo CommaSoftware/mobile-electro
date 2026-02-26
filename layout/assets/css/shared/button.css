@@ -137,27 +137,27 @@
 
 /* Effects for buttons */
 
-.button:hover,
-.button:active,
-.button.is-style-secondary:hover,
-.button.is-style-secondary:active {
+.butto:not(.is-no-hover):hover,
+.butto:not(.is-no-hover):active,
+.butto:not(.is-no-hover).is-style-secondary:hover,
+.butto:not(.is-no-hover).is-style-secondary:active {
   --button-bg: var(--color-bg-tertiary-highlight);
   --button-color-text: var(--button-color-hovered);
 }
 
-.button.is-style-primary:hover,
-.button.is-style-primary:active {
+.button:not(.is-no-hover).is-style-primary:hover,
+.button:not(.is-no-hover).is-style-primary:active {
   --button-color-text: var(--color-elem-primary-alt);
   --button-bg: var(--button-color-hovered);
 }
 
-.button.is-style-accent:hover,
-.button.is-style-accent:active {
+.button:not(.is-no-hover).is-style-accent:hover,
+.button:not(.is-no-hover).is-style-accent:active {
   --button-color-text: var(--color-elem-primary-alt);
   --button-bg: var(--gradient-accent) var(--color-bg-accent);
 }
 
-.button.is-style-accent::after {
+.button:not(.is-no-hover).is-style-accent::after {
   content: "";
   position: absolute;
   left: -50%;
@@ -167,67 +167,67 @@
   background: linear-gradient(to right, #fff0, #fff9, #fff0);
   filter: blur(12px);
 }
-.button.is-style-accent:hover::after,
-.button.is-style-accent:active::after {
+.button:not(.is-no-hover).is-style-accent:hover::after,
+.button:not(.is-no-hover).is-style-accent:active::after {
   left: 125%;
   transition: var(--transition-l);
 }
 
-.button.is-style-transparent:hover,
-.button.is-style-transparent:active {
+.button:not(.is-no-hover).is-style-transparent:hover,
+.button:not(.is-no-hover).is-style-transparent:active {
   --button-bg: transparent;
   --button-color-text: var(--button-color-hovered);
   text-decoration: underline dotted;
 }
 
-.button.is-style-bordered:hover,
-.button.is-style-bordered:active {
+.button:not(.is-no-hover).is-style-bordered:hover,
+.button:not(.is-no-hover).is-style-bordered:active {
   --button-bg: var(--button-color-preset-primary);
   --button-color-text: var(--color-elem-primary-alt);
 }
 
-.button:hover .icon,
-.button:active .icon,
-.button.is-style-secondary:hover .icon,
-.button.is-style-secondary:active .icon,
-.button.is-style-primary:hover .icon,
-.button.is-style-primary:active .icon,
-.button.is-style-transparent:hover .icon,
-.button.is-style-transparent:active .icon {
+.button:not(.is-no-hover):hover .icon,
+.button:not(.is-no-hover):active .icon,
+.button:not(.is-no-hover).is-style-secondary:hover .icon,
+.button:not(.is-no-hover).is-style-secondary:active .icon,
+.button:not(.is-no-hover).is-style-primary:hover .icon,
+.button:not(.is-no-hover).is-style-primary:active .icon,
+.button:not(.is-no-hover).is-style-transparent:hover .icon,
+.button:not(.is-no-hover).is-style-transparent:active .icon {
   filter: var(--icon-filter-blue);
 }
 
-.button.is-hilight:hover .icon,
-.button.is-hilight:active .icon,
-.button.is-hilight.is-style-secondary:hover .icon,
-.button.is-hilight.is-style-secondary:active .icon,
-.button.is-hilight.is-style-transparent:hover .icon,
-.button.is-hilight.is-style-transparent:active .icon {
+.button:not(.is-no-hover).is-hilight:hover .icon,
+.button:not(.is-no-hover).is-hilight:active .icon,
+.button:not(.is-no-hover).is-hilight.is-style-secondary:hover .icon,
+.button:not(.is-no-hover).is-hilight.is-style-secondary:active .icon,
+.button:not(.is-no-hover).is-hilight.is-style-transparent:hover .icon,
+.button:not(.is-no-hover).is-hilight.is-style-transparent:active .icon {
   filter: var(--icon-filter-hilight);
 }
 
-.button.is-style-bordered:hover .icon,
-.button.is-style-bordered:active .icon {
+.button:not(.is-no-hover).is-style-bordered:hover .icon,
+.button:not(.is-no-hover).is-style-bordered:active .icon {
   filter: var(--icon-filter-white);
 }
 
-.button.is-style-accent:hover .icon,
-.button.is-style-accent:active .icon,
-.button.is-style-primary:hover .icon,
-.button.is-style-primary:active .icon {
+.button:not(.is-no-hover).is-style-accent:hover .icon,
+.button:not(.is-no-hover).is-style-accent:active .icon,
+.button:not(.is-no-hover).is-style-primary:hover .icon,
+.button:not(.is-no-hover).is-style-primary:active .icon {
   filter: var(--icon-filter-white);
 }
 
-.button:not(.is-style-transparent):hover {
+.button:not(.is-no-hover):not(.is-style-transparent):hover {
   box-shadow: var(--shadow-button);
 }
 
-.button:hover:active {
+.button:not(.is-no-hover):hover:active {
   box-shadow: none;
 }
 
-.button.is-style-primary:active,
-.button.is-style-accent:active,
-.button.is-style-bordered:active {
+.button:not(.is-no-hover).is-style-primary:active,
+.button:not(.is-no-hover).is-style-accent:active,
+.button:not(.is-no-hover).is-style-bordered:active {
   box-shadow: var(--shadow-button-inset);
 }

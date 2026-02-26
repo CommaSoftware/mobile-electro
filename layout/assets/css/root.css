@@ -61,9 +61,10 @@
   );
 
   /* Shadows */
-  --shadow-button: 0px 1px 2px -1px rgb(0, 39, 41, 50);
-  --shadow-button-inset: inset 0px 1px 2px -1px rgb(0, 39, 41, 24);
-  --shadow-card-s: 0px 2px 4px -2px rgb(0, 39, 41, 24);
+  --shadow-button: 0px 1px 2px -1px var(--color-elem-primary);
+  --shadow-button-inset: inset 0px 1px 2px -1px var(--color-elem-primary);
+  --shadow-card-s: 0px 2px 4px -2px rgba(0, 39, 41, 24%);
+  --shadow-tooltip: 0 4px 8px -2px rgba(0, 39, 41, 24%);
 
   /* Transition times */
   --transition-m: 150ms cubic-bezier(0, 0.55, 0.45, 1);
