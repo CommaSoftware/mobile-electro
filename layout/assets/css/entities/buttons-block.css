@@ -5,3 +5,16 @@
   gap: 12px;
   padding-top: var(--gap-blocks);
 }
+
+/* ---------- Adaptation ---------- */
+@media screen and (max-width: 780px) {
+  .buttons-block {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .buttons-block .button {
+    width: 100%;
+  }
+}
