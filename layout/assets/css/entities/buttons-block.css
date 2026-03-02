@@ -1,0 +1,7 @@
+.buttons-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: var(--gap-blocks);
+}

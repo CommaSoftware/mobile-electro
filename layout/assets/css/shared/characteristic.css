@@ -1,0 +1,28 @@
+.characteristic {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px;
+  width: fit-content;
+  background-color: var(--color-border-primary);
+  border-radius: var(--border-radius-e);
+  font-size: var(--font-size-span-xxs);
+  letter-spacing: var(--font-letter-spacing);
+  font-weight: 600;
+}
+
+.characteristic__label {
+  color: var(--color-elem-secondary-highlight);
+  margin: 0 8px;
+}
+
+.characteristic__value {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  height: 24px;
+  padding: 4px 8px;
+  color: var(--color-elem-primary);
+  background-color: var(--color-bg-primary);
+  border-radius: var(--border-radius-e);
+}

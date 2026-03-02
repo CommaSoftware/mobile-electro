@@ -1,0 +1,111 @@
+.product-card {
+  position: relative;
+  display: flex;
+  gap: var(--space-column-gap);
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: var(--border-radius-m);
+  background-color: var(--color-bg-secondary-highlight);
+  border: 2px solid transparent;
+  transition: var(--transition-l);
+}
+
+.product-card.is-vertical {
+  background-color: transparent;
+  flex-direction: column-reverse;
+}
+
+.product-card:hover,
+.product-card:active {
+  background-color: var(--color-bg-primary);
+  border-color: var(--color-border-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.product-card__cover {
+  min-height: 282px;
+  aspect-ratio: 1/1;
+  background-color: var(--color-bg-primary);
+}
+
+.product-card.is-vertical .product-card__cover {
+  aspect-ratio: 16/9;
+  min-height: auto;
+  width: 100%;
+}
+
+.product-card__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.product-card-description__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-card .heading {
+  transition: var(--transition-m);
+}
+
+.product-card:hover .heading,
+.product-card:active .heading {
+  color: var(--color-elem-accent-primary-alt);
+}
+
+.product-card-description__characteristics {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-card-description__actions {
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.product-card .product-card-description-actions__more:hover,
+.product-card .product-card-description-actions__more:active,
+.product-card-description-actions__more:hover,
+.product-card-description-actions__more:active {
+  background-color: transparent;
+  border-color: var(--button-color-hovered);
+}
+
+.product-card .product-card-description-actions__more:hover .icon,
+.product-card .product-card-description-actions__more:active .icon,
+.product-card-description-actions__more:hover .icon,
+.product-card-description-actions__more:active .icon {
+  filter: var(--icon-filter-blue) !important;
+}
+
+.product-card-description-actions__more::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.product-card-description-actions__target {
+  position: relative;
+  z-index: 1;
+}
+
+.product-card.is-vertical .product-card-description-actions__target {
+  width: 100%;
+}
+
+.product-card-description-actions__target:hover,
+.product-card-description-actions__target:active {
+  --button-color-hovered: var(--color-elem-accent-primary);
+}
