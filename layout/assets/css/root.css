@@ -111,3 +111,60 @@
     (var(--space-column-plus-gap)) * 9 - var(--space-column-gap)
   );
 }
+
+@keyframes thunder {
+  0% {
+    filter: none;
+    transform: rotate(180deg);
+  }
+  5% {
+    filter: brightness(200%);
+  }
+  15% {
+    filter: brightness(150%);
+  }
+  30% {
+    filter: none;
+  }
+  100% {
+    filter: contrast(150%);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes thunder-double {
+  0% {
+    filter: none;
+    transform: rotate(180deg);
+  }
+  3.5% {
+    filter: brightness(200%);
+  }
+  10% {
+    filter: brightness(150%);
+  }
+  20% {
+    filter: none;
+  }
+  66.4999% {
+    filter: contrast(150%);
+    transform: rotate(180deg);
+  }
+  66.5% {
+    filter: contrast(150%);
+    transform: rotate(0deg);
+  }
+  68% {
+    filter: brightness(200%);
+  }
+  70% {
+    filter: brightness(150%);
+  }
+  75% {
+    filter: none;
+  }
+  100% {
+    filter: contrast(150%);
+    transform: rotate(0deg);
+  }
+}

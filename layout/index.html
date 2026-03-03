@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/fonts.css" />
 
     <link rel="stylesheet" href="assets/css/shared/button.css" />
+    <link rel="stylesheet" href="assets/css/shared/input.css" />
     <link rel="stylesheet" href="assets/css/shared/icons.css" />
     <link rel="stylesheet" href="assets/css/shared/logo.css" />
     <link rel="stylesheet" href="assets/css/shared/span.css" />
@@ -23,11 +24,12 @@
 
     <link rel="stylesheet" href="assets/css/widgets/header.css" />
     <link rel="stylesheet" href="assets/css/widgets/footer.css" />
-    <link rel="stylesheet" href="assets/css/widgets/banner.css" />
+    <link rel="stylesheet" href="assets/css/widgets/hello-banner.css" />
     <link rel="stylesheet" href="assets/css/widgets/advantages.css" />
     <link rel="stylesheet" href="assets/css/widgets/cases.css" />
     <link rel="stylesheet" href="assets/css/widgets/map.css" />
     <link rel="stylesheet" href="assets/css/widgets/catalog-preview.css" />
+    <link rel="stylesheet" href="assets/css/widgets/target-banner.css" />
 
     <title>Мобильное электрообеспечение</title>
   </head>
@@ -113,9 +115,9 @@
         </nav>
       </div>
     </header>
-    <section id="banner" class="banner">
+    <section id="hello-banner" class="hello-banner">
       <div class="content-wrapper">
-        <div class="banner__description">
+        <div class="hello-banner__description">
           <h2 class="heading is-size-h1 is-white">
             Аренда и продажа дизельных электростанций в Москве <br />и западной
             части России
@@ -123,7 +125,7 @@
           <p class="span is-size-s">
             Доставим, установим и проведём обслуживание электрогенератора
           </p>
-          <div class="banner-description__actions">
+          <div class="hello-banner-description__actions">
             <a href="#!" class="button is-style-primary is-size-l"
               ><span class="icon" data-type="truck"></span>Заказать звонок</a
             >
@@ -133,7 +135,7 @@
           </div>
         </div>
         <img
-          class="banner__cover"
+          class="hello-banner__cover"
           src="assets/images/examples/generator-1.png"
           alt="Генератор"
         />
@@ -838,6 +840,27 @@
           <a href="#!" class="button is-style-bordered"
             ><span class="icon" data-type="grid"></span>Каталог генераторов</a
           >
+        </div>
+      </div>
+    </section>
+    <section id="buy" class="target-banner has-margin-top">
+      <div class="target-banner__content-wrapper content-wrapper">
+        <div class="target-banner-content">
+          <div class="target-banner__form">
+            <div class="target-banner-form__header heading-block">
+              <h2 class="heading is-size-h2">Заказать звонок</h2>
+              <span class="span is-size-m"
+                >Оставьте контакты, и мы свяжемся <br />с Вами в течение
+                часа</span
+              >
+            </div>
+            <div class="target-banner-form__fields">
+              <input type="text" class="input" placeholder="Имя" />
+              <input type="text" class="input" placeholder="Телефон" />
+            </div>
+            <button class="button is-style-accent is-wide">Отправить</button>
+          </div>
+          <div class="target-banner__cover"></div>
         </div>
       </div>
     </section>
