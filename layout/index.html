@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="assets/css/shared/button.css" />
     <link rel="stylesheet" href="assets/css/shared/input.css" />
+    <link rel="stylesheet" href="assets/css/shared/select.css" />
+    <link rel="stylesheet" href="assets/css/shared/checkbox.css" />
+    <link rel="stylesheet" href="assets/css/shared/radio.css" />
     <link rel="stylesheet" href="assets/css/shared/icons.css" />
     <link rel="stylesheet" href="assets/css/shared/logo.css" />
     <link rel="stylesheet" href="assets/css/shared/span.css" />
@@ -857,8 +860,46 @@
             <div class="target-banner-form__fields">
               <input type="text" class="input" placeholder="Имя" />
               <input type="text" class="input" placeholder="Телефон" />
+              <select class="select" name="generators" id="generators-select">
+                <option value="">Помочь выбрать генератор</option>
+                <option value="1">Дизельный генератор DEUTZ DB-50GF</option>
+                <option value="2">Дизельный генератор DEUTZ DB-50GF</option>
+              </select>
+              <div class="radiobox is-style-switcher">
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="target_type_rent"
+                    name="target_type"
+                    value="target_type_rent"
+                    checked
+                  />
+                  <label for="target_type_rent">Хочу арендовать</label>
+                </div>
+                <div class="radio">
+                  <input
+                    type="radio"
+                    id="target_type_buy"
+                    name="target_type"
+                    value="target_type_buy"
+                    checked
+                  />
+                  <label for="target_type_buy">Хочу купить</label>
+                </div>
+              </div>
             </div>
             <button class="button is-style-accent is-wide">Отправить</button>
+            <label class="checkbox">
+              <input
+                type="checkbox"
+                id="checkbox_confirmation"
+                name="checkbox_confirmation"
+              />
+              <p class="span is-size-s is-hilight">
+                Я даю согласие на обработку персональных данных и принимаю
+                <a href="#!">условия политики обработки персональных данных</a>
+              </p>
+            </label>
           </div>
           <div class="target-banner__cover"></div>
         </div>

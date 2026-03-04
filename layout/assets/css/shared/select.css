@@ -1,0 +1,17 @@
+.select {
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-border-primary);
+  border-radius: var(--border-radius-s);
+  color: var(--color-elem-secondary-highlight);
+  font-family: var(--font-name);
+  font-size: var(--font-size-span-m);
+  font-weight: 500;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.select:focus,
+.select:focus-visible {
+  border-color: var(--color-elem-accent-primary-alt);
+  background-color: var(--color-bg-secondary-highlight);
+}

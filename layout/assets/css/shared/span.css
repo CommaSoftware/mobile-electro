@@ -25,3 +25,15 @@
 .span.is-size-ml {
   font-size: var(--font-size-span-ml);
 }
+
+.span a {
+  color: var(--color-elem-secondary-highlight);
+  text-decoration: underline dotted;
+  transition: var(--transition-m);
+}
+
+.span a:hover,
+.span a:active {
+  color: var(--color-elem-accent-primary-alt);
+  text-decoration: underline solid;
+}

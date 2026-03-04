@@ -1,0 +1,21 @@
+/* Use like: --------------------------------- */
+/* label.checkbox > input[type="checkbox"] + p */
+/* ------------------------------------------- */
+
+.checkbox {
+  position: relative;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  accent-color: var(--color-elem-accent-primary-alt);
+  width: 14px;
+  height: 14px;
+}
