@@ -120,6 +120,9 @@
 .icon[data-type="max"] {
   background-image: url("../../images/icons/max.svg");
 }
+.icon[data-type="max-filled"] {
+  background-image: url("../../images/icons/max-filled.svg");
+}
 .icon[data-type="play"] {
   background-image: url("../../images/icons/play.svg");
 }

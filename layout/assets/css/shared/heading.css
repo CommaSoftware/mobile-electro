@@ -32,3 +32,7 @@
 .heading.is-size-h6 {
   --heading-font-size: var(--font-size-h6);
 }
+
+.heading.is-white {
+  color: var(--color-bg-primary);
+}

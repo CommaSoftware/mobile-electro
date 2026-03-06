@@ -10,6 +10,10 @@
   color: var(--color-elem-secondary-highlight);
 }
 
+.span.is-white {
+  color: var(--color-bg-primary);
+}
+
 .span.is-size-xs {
   font-size: var(--font-size-span-xs);
 }
@@ -28,12 +32,12 @@
 
 .span a {
   color: var(--color-elem-secondary-highlight);
-  text-decoration: underline dotted;
+  text-decoration: 1px underline dotted;
   transition: var(--transition-m);
 }
 
 .span a:hover,
 .span a:active {
   color: var(--color-elem-accent-primary-alt);
-  text-decoration: underline solid;
+  text-decoration: 1px underline solid;
 }
