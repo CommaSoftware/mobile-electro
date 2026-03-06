@@ -2,6 +2,7 @@
   --icon-size: 16px;
   --icon-filter-white: grayscale(1) brightness(20);
   --icon-filter-blue: brightness(380%) hue-rotate(30deg) contrast(150%);
+  --icon-filter-yellow: brightness(650%) hue-rotate(202deg) contrast(450%);
   --icon-filter-hilight: brightness(370%) hue-rotate(-10deg) contrast(50%);
   --icon-filter-clear: none;
 
@@ -184,4 +185,8 @@
 
 .icon.is-color-hilight {
   filter: var(--icon-filter-hilight);
+}
+
+.icon.is-color-blue {
+  filter: var(--icon-filter-blue);
 }
