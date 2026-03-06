@@ -30,7 +30,7 @@
   --color-elem-primary-highlight: #3f8e9f;
   --color-elem-secondary: #7a8e8f;
   --color-elem-secondary-highlight: #4d7983;
-  --color-elem-accent-primary: #ff1818;
+  --color-elem-accent-primary: #d12f2f;
   --color-elem-accent-secondary: #ff5526;
   --color-elem-accent-primary-alt: #0060dd;
   --color-bg-primary: #ffffff;
@@ -114,57 +114,57 @@
 
 @keyframes thunder {
   0% {
-    filter: none;
+    opacity: 0%;
     transform: rotate(180deg);
   }
   5% {
-    filter: brightness(200%);
+    opacity: 100%;
   }
   15% {
-    filter: brightness(150%);
+    opacity: 35%;
   }
   30% {
-    filter: none;
+    opacity: 15%;
   }
   100% {
-    filter: contrast(150%);
+    opacity: 0%;
     transform: rotate(180deg);
   }
 }
 
 @keyframes thunder-double {
   0% {
-    filter: none;
+    opacity: 0%;
     transform: rotate(180deg);
   }
   3.5% {
-    filter: brightness(200%);
+    opacity: 100%;
   }
   10% {
-    filter: brightness(150%);
+    opacity: 35%;
   }
   20% {
-    filter: none;
+    opacity: 15%;
   }
   66.4999% {
-    filter: contrast(150%);
+    opacity: 0%;
     transform: rotate(180deg);
   }
   66.5% {
-    filter: contrast(150%);
+    opacity: 0%;
     transform: rotate(0deg);
   }
   68% {
-    filter: brightness(200%);
-  }
-  70% {
-    filter: brightness(150%);
+    opacity: 100%;
   }
   75% {
-    filter: none;
+    opacity: 35%;
+  }
+  80% {
+    opacity: 15%;
   }
   100% {
-    filter: contrast(150%);
+    opacity: 0%;
     transform: rotate(0deg);
   }
 }

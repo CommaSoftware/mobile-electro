@@ -10,9 +10,6 @@
   inset: 0;
   background-image: url("../../images/banner-bg.jpg");
   background-size: cover;
-  background-color: var(--color-elem-accent-primary);
-  background-blend-mode: soft-light;
-  filter: hue-rotate(0);
   animation: 3000ms thunder-double infinite;
 }
 
@@ -93,6 +90,7 @@
   }
 
   .hello-banner__cover {
+    width: 100%;
     grid-row: 1;
   }
 }

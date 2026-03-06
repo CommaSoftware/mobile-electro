@@ -15,9 +15,10 @@
 
 .target-banner__content-wrapper {
   position: relative;
+  z-index: 1;
   padding-top: var(--gap-sections);
   padding-bottom: var(--gap-sections);
-  background: var(--gradient-accent);
+  background: var(--color-elem-accent-primary);
   border-radius: var(--border-radius-l);
 }
 
@@ -71,6 +72,13 @@
   gap: 8px;
 }
 
+.target-banner-contacts {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
 .target-banner__cover {
   display: flex;
   flex-direction: column;
@@ -81,6 +89,7 @@
 }
 
 .target-banner-cover__image {
+  width: 100%;
   max-width: var(--space-column-3);
 }
 
@@ -143,5 +152,9 @@
   .target-banner-content {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .target-banner-form {
+    max-width: calc(100% - 16px);
   }
 }

@@ -4,8 +4,10 @@
 
   font-family: var(--font-name);
   -webkit-tap-highlight-color: transparent;
+  /* outline: 1px solid red; */
 }
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
