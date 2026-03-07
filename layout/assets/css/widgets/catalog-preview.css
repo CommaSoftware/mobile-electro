@@ -2,3 +2,9 @@
   padding-left: 0;
   padding-right: 0;
 }
+
+@media screen and (max-width: 400px) {
+  .catalog-preview__items-block.content-wrapper.is-grid-4.is-scrolled-adaptation {
+    gap: 0;
+  }
+}

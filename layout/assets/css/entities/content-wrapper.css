@@ -24,7 +24,7 @@
 }
 
 .content-wrapper.is-grid-4.is-scrolled-adaptation > * {
-  max-width: none;
+  max-width: var(--space-column-3);
   min-width: var(--space-column-3);
   scroll-snap-align: center;
 }
@@ -37,10 +37,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  .content-wrapper.is-grid-4.is-scrolled-adaptation {
-    gap: 0;
-  }
-
   .content-wrapper.is-grid-4.is-scrolled-adaptation > * {
     min-width: calc(100% - var(--padding-content-area) * 2);
   }
