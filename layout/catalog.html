@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="assets/css/entities/product-card.css" />
     <link rel="stylesheet" href="assets/css/entities/blog-card.css" />
     <link rel="stylesheet" href="assets/css/entities/buttons-block.css" />
+    <link rel="stylesheet" href="assets/css/entities/pagination.css" />
 
     <link rel="stylesheet" href="assets/css/widgets/header.css" />
     <link rel="stylesheet" href="assets/css/widgets/footer.css" />
@@ -185,60 +186,13 @@
           </div>
         </div>
         <div class="catalog__content">
-          <div class="catalog-content__header"></div>
-          <div class="product-card">
-            <div class="product-card__description">
-              <div class="product-card-description__heading">
-                <h3 class="heading is-size-h3">
-                  Дизельный генератор DEUTZ DB-50GF
-                </h3>
-                <!-- <span class="span is-is-size-ml is-hilight"
-                  >от 2645 ₽/сут.</span
-                > -->
-              </div>
-              <div class="product-card-description__characteristics">
-                <div class="characteristic">
-                  <div class="characteristic__label">Мощность</div>
-                  <div class="characteristic__value">
-                    <span class="icon" data-type="arrow-up-right"></span>50 кВт
-                  </div>
-                </div>
-                <div class="characteristic">
-                  <div class="characteristic__label">Расход топлива</div>
-                  <div class="characteristic__value">
-                    <span class="icon" data-type="water-drop"></span>14.4 л/ч
-                  </div>
-                </div>
-                <div class="characteristic">
-                  <div class="characteristic__label">Объём бака</div>
-                  <div class="characteristic__value">
-                    <span class="icon" data-type="cylinder"></span>120 л
-                  </div>
-                </div>
-              </div>
-              <div class="product-card-description__actions">
-                <div
-                  class="product-card-description-actions__target button is-style-primary is-wide"
-                >
-                  <span class="icon" data-type="truck"></span>Заказать
-                </div>
-                <a
-                  href="#!"
-                  class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
-                >
-                  <span class="icon" data-type="info"></span>
-                </a>
-                <div class="button is-style-transparent is-hilight">
-                  от 2645 ₽/сут.
-                </div>
-              </div>
-            </div>
-            <div class="product-card__cover">
-              <img
-                src="assets/images/examples/generator-2.png"
-                alt="Дизельный генератор DEUTZ DB-50GF"
-              />
-            </div>
+          <div class="catalog-content__header">
+            <span class="span is-size-m is-hilight">Показано 3 из 62</span>
+            <select class="select" name="sort" id="sort-select">
+              <option value="">По умолчанию</option>
+              <option value="1">Сначала дешёвые</option>
+              <option value="2">Сначала дорогие</option>
+            </select>
           </div>
           <div class="product-card">
             <div class="product-card__description">
@@ -402,7 +356,87 @@
               />
             </div>
           </div>
-          <div class="pagintaion"></div>
+          <div class="product-card">
+            <div class="product-card__description">
+              <div class="product-card-description__heading">
+                <h3 class="heading is-size-h3">
+                  Дизельный генератор DEUTZ DB-50GF
+                </h3>
+                <!-- <span class="span is-is-size-ml is-hilight"
+                  >от 2645 ₽/сут.</span
+                > -->
+              </div>
+              <div class="product-card-description__characteristics">
+                <div class="characteristic">
+                  <div class="characteristic__label">Мощность</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="arrow-up-right"></span>50 кВт
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Расход топлива</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="water-drop"></span>14.4 л/ч
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Объём бака</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="cylinder"></span>120 л
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-description__actions">
+                <div
+                  class="product-card-description-actions__target button is-style-primary is-wide"
+                >
+                  <span class="icon" data-type="truck"></span>Заказать
+                </div>
+                <a
+                  href="#!"
+                  class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
+                >
+                  <span class="icon" data-type="info"></span>
+                </a>
+                <div class="button is-style-transparent is-hilight">
+                  от 2645 ₽/сут.
+                </div>
+              </div>
+            </div>
+            <div class="product-card__cover">
+              <img
+                src="assets/images/examples/generator-2.png"
+                alt="Дизельный генератор DEUTZ DB-50GF"
+              />
+            </div>
+          </div>
+          <div class="pagination">
+            <a
+              href="#!"
+              class="button is-size-l is-style-primary is-aspect-ratio-1b1"
+              >1</a
+            ><a
+              href="#!"
+              class="button is-size-l is-style-bordered is-aspect-ratio-1b1"
+              >2</a
+            ><a
+              href="#!"
+              class="button is-size-l is-style-transparent is-aspect-ratio-1b1"
+              >...</a
+            ><a
+              href="#!"
+              class="button is-size-l is-style-bordered is-aspect-ratio-1b1"
+              >20</a
+            ><a
+              href="#!"
+              class="button is-size-l is-style-bordered is-aspect-ratio-1b1"
+              >21</a
+            ><a
+              href="#!"
+              class="button is-size-l is-style-bordered is-aspect-ratio-1b1"
+              ><span class="icon" data-type="chervon-right"></span
+            ></a>
+          </div>
         </div>
       </div>
     </section>

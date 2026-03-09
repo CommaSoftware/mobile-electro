@@ -5,6 +5,16 @@
   margin-top: var(--gap-sections);
 }
 
+.catalog-content__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-content__header .span {
+  margin: 0 16px;
+}
+
 .catalog__content {
   display: flex;
   flex-direction: column;
