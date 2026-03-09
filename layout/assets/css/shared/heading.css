@@ -36,3 +36,7 @@
 .heading.is-white {
   color: var(--color-bg-primary);
 }
+
+.heading.is-hilight {
+  color: var(--color-elem-secondary-highlight);
+}

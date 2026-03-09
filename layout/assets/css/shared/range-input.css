@@ -1,0 +1,134 @@
+/* ------------------------- EXAMPLE TO USE ------------------------- */
+/* ------------------------------------------------------------------ //
+	<div class="range">
+		<div class="range-line">
+			<div class="range-slider">
+				<span class="range-selected"></span>
+			</div>
+			<div class="range-input">
+				<input type="range" min="20" max="500" value="20" step="10" />
+				<input
+					type="range"
+					min="20"
+					max="500"
+					value="500"
+					step="10"
+				/>
+			</div>
+		</div>
+		<div class="range-price">
+			<label>
+				мин.
+				<input
+					class="input is-size-xss"
+					type="number"
+					name="min"
+					min="20"
+					max="500"
+					step="10"
+					value="20"
+				/>
+			</label>
+			<label>
+				макс.
+				<input
+					class="input is-size-xss"
+					type="number"
+					name="max"
+					min="20"
+					max="500"
+					step="10"
+					value="500"
+				/>
+			</label>
+		</div>
+	</div>
+
+// ------------------------------------------------------------------ */
+
+.range {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.range-line {
+  margin: 8px 0;
+}
+
+.range-slider {
+  height: 4px;
+  position: relative;
+  background-color: var(--color-bg-accent-alt);
+  border-radius: 2px;
+}
+.range-selected {
+  height: 100%;
+  left: 0%;
+  right: 0%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: var(--color-elem-accent-primary-alt);
+}
+
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: -4.5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.range-input input::-webkit-slider-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 3px solid var(--color-elem-accent-primary-alt);
+  background-color: var(--color-bg-primary);
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+.range-input input::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 3px solid var(--color-elem-accent-primary-alt);
+  background-color: var(--color-bg-primary);
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+
+.range-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-elem-secondary-highlight);
+  font-size: var(--font-size-span-xxs);
+  font-weight: 600;
+  letter-spacing: var(--font-letter-spacing);
+}
+
+.range-price label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.range-price label:first-child {
+  align-items: flex-start;
+}
+
+.range-price label:last-child {
+  align-items: flex-end;
+}
+
+.range-price .input {
+  color: var(--color-elem-primary);
+  background: var(--color-bg-primary);
+}

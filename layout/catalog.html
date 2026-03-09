@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/root.css" />
+    <link rel="stylesheet" href="assets/css/ui.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+
+    <link rel="stylesheet" href="assets/css/shared/button.css" />
+    <link rel="stylesheet" href="assets/css/shared/input.css" />
+    <link rel="stylesheet" href="assets/css/shared/radio.css" />
+    <link rel="stylesheet" href="assets/css/shared/select.css" />
+    <link rel="stylesheet" href="assets/css/shared/range-input.css" />
+    <link rel="stylesheet" href="assets/css/shared/checkbox.css" />
+    <link rel="stylesheet" href="assets/css/shared/icons.css" />
+    <link rel="stylesheet" href="assets/css/shared/logo.css" />
+    <link rel="stylesheet" href="assets/css/shared/span.css" />
+    <link rel="stylesheet" href="assets/css/shared/heading.css" />
+    <link rel="stylesheet" href="assets/css/shared/characteristic.css" />
+
+    <link rel="stylesheet" href="assets/css/entities/content-wrapper.css" />
+    <link rel="stylesheet" href="assets/css/entities/heading-block.css" />
+    <link rel="stylesheet" href="assets/css/entities/product-card.css" />
+    <link rel="stylesheet" href="assets/css/entities/blog-card.css" />
+    <link rel="stylesheet" href="assets/css/entities/buttons-block.css" />
+
+    <link rel="stylesheet" href="assets/css/widgets/header.css" />
+    <link rel="stylesheet" href="assets/css/widgets/footer.css" />
+    <link rel="stylesheet" href="assets/css/widgets/target-banner.css" />
+    <link rel="stylesheet" href="assets/css/widgets/catalog.css" />
+
+    <title>Мобильное электрообеспечение</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="content-wrapper header__content-block">
+        <div class="header__contacts">
+          <div class="header-contacts__line">
+            <a
+              href="tel:+7 (495) 784-02-70"
+              class="button is-style-transparent is-size-m"
+              >+7 (495) 784-02-70</a
+            >
+            <a
+              href="tel:+7 (968) 728-74-64"
+              class="button is-style-transparent is-size-m"
+              >+7 (968) 728-74-64</a
+            >
+          </div>
+          <span class="span is-size-xs is-hilight">8:00-19:00 МСК</span>
+        </div>
+        <div class="header__logo">
+          <a href="#!" class="logo-full">
+            <span class="logo-full__name"
+              >Мобильное эн<mark>е</mark>ргообеспечение</span
+            >
+            <span class="logo-full__description"
+              >Аренда · продажа · обслуживание генераторов</span
+            >
+          </a>
+        </div>
+        <div class="header__actions">
+          <div
+            class="header__menu-button button is-aspect-ratio-1b1 is-style-bordered"
+          >
+            <span class="icon" data-type="hamburger"></span>
+          </div>
+          <a href="#!" class="button is-style-bordered header__catalog-button">
+            <span class="icon" data-type="list-unordered"></span>
+            Каталог
+          </a>
+          <a
+            href="#!"
+            class="button is-style-accent is-wide header__target-button"
+          >
+            <span class="icon" data-type="truck"></span>
+            Заказать звонок
+          </a>
+        </div>
+        <div class="header__social">
+          <a
+            href="#!"
+            target="_blank"
+            class="button is-style-secondary is-size-m is-aspect-ratio-1b1"
+            ><span class="icon" data-type="telegramm"></span
+          ></a>
+          <a
+            href="#!"
+            target="_blank"
+            class="button is-style-secondary is-size-m is-aspect-ratio-1b1"
+            ><span class="icon" data-type="max"></span
+          ></a>
+          <a
+            href="mailto:snab.meo@mail.ru"
+            class="button is-style-transparent is-size-m"
+            >snab.meo@mail.ru</a
+          >
+        </div>
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="#!">Услуги</a>
+              <ul>
+                <li><a href="#!">Аренда электрогенераторов</a></li>
+                <li><a href="#!">Покупка электрогенераторов</a></li>
+                <li><a href="#!">Обслуживание и ремонт</a></li>
+              </ul>
+            </li>
+            <li><a href="#!">Калькуляторы</a></li>
+            <li><a href="#!">Блог</a></li>
+            <li><a href="#!">О компании</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="catalog" class="catalog">
+      <div class="content-wrapper">
+        <div class="catalog__sidebar">
+          <div class="catalog-sidebar__block">
+            <div class="catalog-sidebar-block__header">
+              <span class="heading is-size-h5 is-hilight">Мощность</span>
+            </div>
+            <div class="range" data-min-range="100">
+              <div class="range-line">
+                <div class="range-slider">
+                  <span class="range-selected"></span>
+                </div>
+                <div class="range-input">
+                  <input
+                    type="range"
+                    class="min"
+                    min="20"
+                    max="500"
+                    value="20"
+                    step="10"
+                  />
+                  <input
+                    type="range"
+                    class="max"
+                    min="20"
+                    max="500"
+                    value="500"
+                    step="10"
+                  />
+                </div>
+              </div>
+              <div class="range-price">
+                <label>
+                  мин.
+                  <input
+                    class="input is-size-xss"
+                    type="number"
+                    name="min"
+                    min="20"
+                    max="500"
+                    step="10"
+                    value="20"
+                  />
+                </label>
+                <label>
+                  макс.
+                  <input
+                    class="input is-size-xss"
+                    type="number"
+                    name="max"
+                    min="20"
+                    max="500"
+                    step="10"
+                    value="500"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-sidebar__actions">
+            <div class="button is-size-m is-style-bordered is-aspect-ratio-1b1">
+              <span class="icon" data-type="filter-off"></span>
+            </div>
+            <div class="button is-size-m is-style-primary is-wide-full">
+              Применить<span class="icon" data-type="filter"></span>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__content">
+          <div class="catalog-content__header"></div>
+          <div class="product-card">
+            <div class="product-card__description">
+              <div class="product-card-description__heading">
+                <h3 class="heading is-size-h3">
+                  Дизельный генератор DEUTZ DB-50GF
+                </h3>
+                <!-- <span class="span is-is-size-ml is-hilight"
+                  >от 2645 ₽/сут.</span
+                > -->
+              </div>
+              <div class="product-card-description__characteristics">
+                <div class="characteristic">
+                  <div class="characteristic__label">Мощность</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="arrow-up-right"></span>50 кВт
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Расход топлива</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="water-drop"></span>14.4 л/ч
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Объём бака</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="cylinder"></span>120 л
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-description__actions">
+                <div
+                  class="product-card-description-actions__target button is-style-primary is-wide"
+                >
+                  <span class="icon" data-type="truck"></span>Заказать
+                </div>
+                <a
+                  href="#!"
+                  class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
+                >
+                  <span class="icon" data-type="info"></span>
+                </a>
+                <div class="button is-style-transparent is-hilight">
+                  от 2645 ₽/сут.
+                </div>
+              </div>
+            </div>
+            <div class="product-card__cover">
+              <img
+                src="assets/images/examples/generator-2.png"
+                alt="Дизельный генератор DEUTZ DB-50GF"
+              />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__description">
+              <div class="product-card-description__heading">
+                <h3 class="heading is-size-h3">
+                  Дизельный генератор DEUTZ DB-50GF
+                </h3>
+                <!-- <span class="span is-is-size-ml is-hilight"
+                  >от 2645 ₽/сут.</span
+                > -->
+              </div>
+              <div class="product-card-description__characteristics">
+                <div class="characteristic">
+                  <div class="characteristic__label">Мощность</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="arrow-up-right"></span>50 кВт
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Расход топлива</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="water-drop"></span>14.4 л/ч
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Объём бака</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="cylinder"></span>120 л
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-description__actions">
+                <div
+                  class="product-card-description-actions__target button is-style-primary is-wide"
+                >
+                  <span class="icon" data-type="truck"></span>Заказать
+                </div>
+                <a
+                  href="#!"
+                  class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
+                >
+                  <span class="icon" data-type="info"></span>
+                </a>
+                <div class="button is-style-transparent is-hilight">
+                  от 2645 ₽/сут.
+                </div>
+              </div>
+            </div>
+            <div class="product-card__cover">
+              <img
+                src="assets/images/examples/generator-2.png"
+                alt="Дизельный генератор DEUTZ DB-50GF"
+              />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__description">
+              <div class="product-card-description__heading">
+                <h3 class="heading is-size-h3">
+                  Дизельный генератор DEUTZ DB-50GF
+                </h3>
+                <!-- <span class="span is-is-size-ml is-hilight"
+                  >от 2645 ₽/сут.</span
+                > -->
+              </div>
+              <div class="product-card-description__characteristics">
+                <div class="characteristic">
+                  <div class="characteristic__label">Мощность</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="arrow-up-right"></span>50 кВт
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Расход топлива</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="water-drop"></span>14.4 л/ч
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Объём бака</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="cylinder"></span>120 л
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-description__actions">
+                <div
+                  class="product-card-description-actions__target button is-style-primary is-wide"
+                >
+                  <span class="icon" data-type="truck"></span>Заказать
+                </div>
+                <a
+                  href="#!"
+                  class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
+                >
+                  <span class="icon" data-type="info"></span>
+                </a>
+                <div class="button is-style-transparent is-hilight">
+                  от 2645 ₽/сут.
+                </div>
+              </div>
+            </div>
+            <div class="product-card__cover">
+              <img
+                src="assets/images/examples/generator-2.png"
+                alt="Дизельный генератор DEUTZ DB-50GF"
+              />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__description">
+              <div class="product-card-description__heading">
+                <h3 class="heading is-size-h3">
+                  Дизельный генератор DEUTZ DB-50GF
+                </h3>
+                <!-- <span class="span is-is-size-ml is-hilight"
+                  >от 2645 ₽/сут.</span
+                > -->
+              </div>
+              <div class="product-card-description__characteristics">
+                <div class="characteristic">
+                  <div class="characteristic__label">Мощность</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="arrow-up-right"></span>50 кВт
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Расход топлива</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="water-drop"></span>14.4 л/ч
+                  </div>
+                </div>
+                <div class="characteristic">
+                  <div class="characteristic__label">Объём бака</div>
+                  <div class="characteristic__value">
+                    <span class="icon" data-type="cylinder"></span>120 л
+                  </div>
+                </div>
+              </div>
+              <div class="product-card-description__actions">
+                <div
+                  class="product-card-description-actions__target button is-style-primary is-wide"
+                >
+                  <span class="icon" data-type="truck"></span>Заказать
+                </div>
+                <a
+                  href="#!"
+                  class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
+                >
+                  <span class="icon" data-type="info"></span>
+                </a>
+                <div class="button is-style-transparent is-hilight">
+                  от 2645 ₽/сут.
+                </div>
+              </div>
+            </div>
+            <div class="product-card__cover">
+              <img
+                src="assets/images/examples/generator-2.png"
+                alt="Дизельный генератор DEUTZ DB-50GF"
+              />
+            </div>
+          </div>
+          <div class="pagintaion"></div>
+        </div>
+      </div>
+    </section>
+    <section id="buy" class="target-banner has-margin-top">
+      <div class="target-banner__content-wrapper content-wrapper">
+        <div class="target-banner-content">
+          <div class="target-banner__form-block">
+            <div class="target-banner-form">
+              <div class="target-banner-form__header heading-block">
+                <h2 class="heading is-size-h2">Заказать звонок</h2>
+                <span class="span is-size-m"
+                  >Оставьте контакты, и мы свяжемся <br />с Вами в течение
+                  часа</span
+                >
+              </div>
+              <div class="target-banner-form__fields">
+                <input type="text" class="input" placeholder="Имя" />
+                <input type="text" class="input" placeholder="Телефон" />
+                <select class="select" name="generators" id="generators-select">
+                  <option value="">Помочь выбрать генератор</option>
+                  <option value="1">Дизельный генератор DEUTZ DB-50GF</option>
+                  <option value="2">Дизельный генератор DEUTZ DB-50GF</option>
+                </select>
+                <div class="radiobox is-style-switcher">
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="target_type_rent"
+                      name="target_type"
+                      value="target_type_rent"
+                      checked
+                    />
+                    <label for="target_type_rent">Хочу арендовать</label>
+                  </div>
+                  <div class="radio">
+                    <input
+                      type="radio"
+                      id="target_type_buy"
+                      name="target_type"
+                      value="target_type_buy"
+                    />
+                    <label for="target_type_buy">Хочу купить</label>
+                  </div>
+                </div>
+              </div>
+              <button class="button is-style-accent is-wide">Отправить</button>
+              <label class="checkbox">
+                <input
+                  type="checkbox"
+                  id="checkbox_confirmation"
+                  name="checkbox_confirmation"
+                />
+                <p class="span is-size-s is-hilight">
+                  Я даю согласие на обработку персональных данных и принимаю
+                  <a href="#!"
+                    >условия политики обработки персональных данных</a
+                  >
+                </p>
+              </label>
+            </div>
+            <span class="span is-size-xs is-white">или</span>
+            <div class="target-banner-contacts">
+              <a
+                href="#!"
+                target="_blank"
+                class="button is-style-primary is-rounded"
+                >Написать нам в TG<span
+                  class="icon"
+                  data-type="telegramm-filled"
+                ></span
+              ></a>
+              <a
+                href="#!"
+                target="_blank"
+                class="button is-style-primary is-rounded"
+                >MAX<span class="icon" data-type="max-filled"></span
+              ></a>
+            </div>
+          </div>
+          <div class="target-banner__cover">
+            <img
+              src="assets/images/examples/generator-1.png"
+              class="target-banner-cover__image"
+              alt=""
+            />
+            <div id="target_banner_slider" class="target-banner-cover__slider">
+              <div class="target-banner-cover-slider__item">
+                <h4 class="heading is-size-h4 is-white">
+                  Широкий выбор генераторов
+                </h4>
+                <p class="span is-size-s is-white">
+                  Генераторы от 20 кВт до 500 кВт подходят для любых задач — от
+                  частных домов до крупных предприятий
+                </p>
+              </div>
+              <div class="target-banner-cover-slider__item">
+                <h4 class="heading is-size-h4 is-white">
+                  Надежность и безопасность
+                </h4>
+                <p class="span is-size-s is-white">
+                  Все генераторы проходят регулярное техническое обслуживание,
+                  что гарантирует их надежность и безопасность
+                </p>
+              </div>
+              <div class="target-banner-cover-slider__item">
+                <h4 class="heading is-size-h4 is-white">
+                  Доставка и установка
+                </h4>
+                <p class="span is-size-s is-white">
+                  Организуем доставку генератора в удобное для вас место и
+                  время, а также обеспечим его подключение
+                </p>
+              </div>
+              <div class="target-banner-cover-slider__item">
+                <h4 class="heading is-size-h4 is-white">
+                  Гибкие условия аренды
+                </h4>
+                <p class="span is-size-s is-white">
+                  Предлагаем гибкие условия аренды, включая краткосрочную и
+                  долгосрочную аренду, с возможностью продления
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog_preview">
+      <div class="content-wrapper">
+        <div class="heading-block">
+          <h2 class="heading is-size-h2">Полезно знать</h2>
+        </div>
+      </div>
+      <div class="content-wrapper is-grid-4 is-scrolled-adaptation">
+        <div class="blog-card">
+          <div class="blog-card__cover">
+            <img
+              src="assets/images/examples/example-blog-1.png"
+              alt=""
+              class="blog-card-cover__image"
+            />
+          </div>
+          <div class="blog-card__content">
+            <h4 class="heading is-size-h4">
+              Как выбрать генератор для частного дома?
+            </h4>
+            <span class="span"></span>
+          </div>
+          <div class="blog-card__footer">
+            <a href="#!" class="blog-card-footer__button">Подробнее</a>
+            <span
+              class="icon is-color-hilight blog-card-footer__icon"
+              data-type="arrow-up-right"
+            ></span>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card__cover"></div>
+          <div class="blog-card__content">
+            <h4 class="heading is-size-h4">Аренда vs Покупка: что выгоднее?</h4>
+            <span class="span"></span>
+          </div>
+          <div class="blog-card__footer">
+            <a href="#!" class="blog-card-footer__button">Подробнее</a>
+            <span
+              class="icon is-color-hilight blog-card-footer__icon"
+              data-type="arrow-up-right"
+            ></span>
+          </div>
+        </div>
+        <div class="blog-card">
+          <div class="blog-card__cover">
+            <img
+              src="assets/images/examples/example-blog-2.png"
+              alt=""
+              class="blog-card-cover__image"
+            />
+          </div>
+          <div class="blog-card__content">
+            <h4 class="heading is-size-h4">
+              ТО дизельного генератора: чек-лист на год
+            </h4>
+            <span class="span"></span>
+          </div>
+          <div class="blog-card__footer">
+            <a href="#!" class="blog-card-footer__button">Подробнее</a>
+            <span
+              class="icon is-color-hilight blog-card-footer__icon"
+              data-type="arrow-up-right"
+            ></span>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="blog-card__cover">
+            <img
+              src="assets/images/examples/example-blog-3.png"
+              alt=""
+              class="blog-card-cover__image"
+            />
+          </div>
+          <div class="blog-card__content">
+            <h4 class="heading is-size-h4">
+              Расчет мощности: почему 5 кВт может не хватить?
+            </h4>
+            <span class="span"></span>
+          </div>
+          <div class="blog-card__footer">
+            <a href="#!" class="blog-card-footer__button">Подробнее</a>
+            <span
+              class="icon is-color-hilight blog-card-footer__icon"
+              data-type="arrow-up-right"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="buttons-block">
+          <a href="#!" class="button is-style-bordered is-wide is-hilight"
+            >Смотреть всё</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="content-wrapper">
+          <div class="footer-content__logo">
+            <a href="#!" class="logo-full">
+              <span class="logo-full__name"
+                >Мобильное эн<mark>е</mark>ргообеспечение</span
+              >
+            </a>
+          </div>
+          <div class="footer-content__info">
+            <div class="footer-content-info__location">
+              <span class="span is-size-xs is-hilight">Юридический адрес</span>
+              <span class="span is-size-s"
+                >Московская область, город Чехов, Симферопольское шоссе, дом
+                3А</span
+              >
+            </div>
+            <div class="footer-content-info__contacts">
+              <div class="footer-contacts-line">
+                <div
+                  class="footer-contacts-line__icon button is-size-s is-style-transparent is-hilight is-aspect-ratio-1b1"
+                >
+                  <span class="icon" data-type="phone"></span>
+                </div>
+                <a
+                  href="tel:+7 (968) 728-74-64"
+                  class="button is-size-s is-style-transparent"
+                  target="_blank"
+                  >+7 (968) 728-74-64
+                </a>
+                <a
+                  href="tel:+7 (495) 784-02-70"
+                  class="button is-size-s is-style-transparent"
+                  target="_blank"
+                  >+7 (495) 784-02-70
+                </a>
+              </div>
+              <div class="footer-contacts-line">
+                <div
+                  class="footer-contacts-line__icon button is-size-s is-style-transparent is-hilight is-aspect-ratio-1b1"
+                >
+                  <span class="icon" data-type="email"></span>
+                </div>
+                <a
+                  href="mailto:snab.meo@mail.ru"
+                  target="_blank"
+                  class="button is-size-s is-style-transparent"
+                  >snab.meo@mail.ru
+                </a>
+              </div>
+            </div>
+            <div class="footer-content-info__socials">
+              <a
+                href="#!"
+                target="_blank"
+                class="button is-size-m is-style-bordered is-aspect-ratio-1b1"
+                ><span class="icon" data-type="telegramm"></span></a
+              ><a
+                href="#!"
+                target="_blank"
+                class="button is-size-m is-style-bordered is-aspect-ratio-1b1"
+                ><span class="icon" data-type="max"></span
+              ></a>
+            </div>
+          </div>
+          <div class="footer-content__nav">
+            <ul>
+              <li>
+                <a href="#!">Услуги</a>
+                <ul>
+                  <li><a href="#!">Аренда электрогенераторов</a></li>
+                  <li><a href="#!">Покупка электрогенераторов</a></li>
+                  <li><a href="#!">Обслуживание и ремонт</a></li>
+                  <li><a href="#!">Калькуляторы</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">Портфолио</a>
+                <ul>
+                  <li><a href="#!">Блог</a></li>
+                  <li><a href="#!">Словарь терминов</a></li>
+                  <li><a href="#!">Реализованные проекты</a></li>
+                  <li><a href="#!">Отзывы</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">Компания</a>
+                <ul>
+                  <li><a href="#!">О нас</a></li>
+                  <li><a href="#!">Карточка организации</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="content-wrapper">
+          <span class="footer-copyright__label span is-size-xs"
+            >© 2026 «ООО Мобильное энерго-обеспечение»</span
+          >
+          <div class="footer-copyright__actions">
+            <a
+              href="#!"
+              class="button is-size-s is-style-transparent is-hilight"
+              >Пользовательское соглашение</a
+            ><a
+              href="#!"
+              class="button is-size-s is-style-transparent is-hilight"
+              >Информация на сайте не является публичной офертой</a
+            ><a
+              href="#!"
+              class="button is-size-s is-style-transparent is-hilight"
+              >Licenses</a
+            ><a
+              href="https://commasoft.ru"
+              target="_blank"
+              class="button is-size-s is-style-transparent is-hilight"
+              >Created by CommaSoftware</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/range-input.js"></script>
+  </body>
+</html>

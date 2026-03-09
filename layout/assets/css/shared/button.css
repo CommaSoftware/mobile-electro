@@ -104,6 +104,10 @@
   --button-padding-side: 12px;
 }
 
+.button.is-wide-full {
+  width: 100%;
+}
+
 /* Icons for buttons */
 
 .button .icon {

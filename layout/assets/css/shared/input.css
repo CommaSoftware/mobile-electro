@@ -23,3 +23,9 @@
   border-color: var(--color-elem-accent-primary-alt);
   background-color: var(--color-bg-secondary-highlight);
 }
+
+.input.is-size-xss {
+  font-size: var(--font-size-span-xss);
+  padding: 2px;
+  width: fit-content;
+}
