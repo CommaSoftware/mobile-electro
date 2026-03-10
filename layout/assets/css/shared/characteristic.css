@@ -1,3 +1,9 @@
+.characteristics-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .characteristic {
   display: inline-flex;
   align-items: center;
@@ -25,4 +31,30 @@
   color: var(--color-elem-primary);
   background-color: var(--color-bg-primary);
   border-radius: var(--border-radius-e);
+}
+
+.characteristic.is-style-row {
+  width: auto;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 2px 0;
+}
+
+.characteristic.is-style-row::before {
+  content: "";
+  display: block;
+  order: -1;
+  width: 100%;
+  height: var(--font-size-span-xxs);
+  border-bottom: 2px dotted var(--color-border-tertiary);
+}
+
+.characteristic.is-style-row .characteristic__label {
+  order: -2;
+  margin: 0;
+}
+
+.characteristic.is-style-row .characteristic__label,
+.characteristic.is-style-row .characteristic__value {
+  white-space: nowrap;
 }

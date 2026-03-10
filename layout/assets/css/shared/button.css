@@ -29,6 +29,10 @@
   transition: var(--transition-m);
 }
 
+.button.is-no-hover {
+  cursor: default;
+}
+
 /* Colors n styles for buttons */
 
 .button.is-style-primary {
@@ -104,6 +108,16 @@
   --button-padding-side: 12px;
 }
 
+.button.is-size-xs {
+  --button-padding-side: 4px;
+  --button-height: 24px;
+  --button-font-size: var(--font-size-span-xxs);
+  font-weight: 600;
+}
+.button.is-size-xs.is-wide {
+  --button-padding-side: 12px;
+}
+
 .button.is-wide-full {
   width: 100%;
 }
@@ -121,6 +135,10 @@
 
 .button.is-size-s .icon {
   --icon-size: 14px;
+}
+
+.button.is-size-xs .icon {
+  --icon-size: 13px;
 }
 
 .button.button.is-style-secondary .icon,
@@ -234,4 +252,29 @@
 .button:not(.is-no-hover).is-style-accent:active,
 .button:not(.is-no-hover).is-style-bordered:active {
   box-shadow: var(--shadow-button-inset);
+}
+
+/* Exclusive style */
+
+.button.is-style-readmore {
+  --button-color-preset-primary: var(--color-elem-secondary-highlight);
+  --button-color-hovered: var(--color-elem-primary-highlight);
+  --button-bg: transparent;
+  justify-content: flex-start;
+  padding: 0;
+  height: auto;
+  text-decoration: 1px underline dotted;
+  font-weight: 600;
+}
+
+.button.is-style-readmore .icon,
+.button.is-style-readmore:hover .icon,
+.button.is-style-readmore:active .icon {
+  filter: var(--icon-filter-hilight);
+}
+
+.button.is-style-readmore:hover,
+.button.is-style-readmore:active {
+  text-decoration: 1px underline solid;
+  box-shadow: none !important;
 }
