@@ -8,11 +8,11 @@
   display: block;
 }
 
-.view-block.is-acccent {
+.view-block.is-accent {
   background-color: var(--color-bg-accent);
 }
 
-.view-block.is-acccent .view-block__heading {
+.view-block.is-accent .view-block__heading {
   color: var(--color-elem-accent-secondary);
 }
 
