@@ -1,0 +1,34 @@
+.view-block {
+  padding: 24px;
+  border-radius: var(--border-radius-l);
+  background-color: var(--color-bg-secondary);
+}
+
+.view-block__heading {
+  display: block;
+}
+
+.view-block__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.view-block__content .button {
+  justify-content: flex-start;
+  white-space: wrap;
+  --button-padding-side: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  gap: 8px;
+}
+
+/* ---------- Adaptation ---------- */
+@media screen and (max-width: 1024px) {
+  .view-block {
+    padding: 24px var(--padding-content-area);
+    margin: 0 calc(0px - var(--padding-content-area));
+    border-radius: var(--border-radius-m);
+  }
+}

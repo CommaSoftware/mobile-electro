@@ -1,5 +1,6 @@
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   padding: var(--gap-blocks) 0;
 }
@@ -24,4 +25,11 @@
 .breadcrumbs__item a:hover,
 .breadcrumbs__item a:active {
   text-decoration: 1px underline solid;
+}
+
+/* ---------- Adaptation ---------- */
+@media screen and (max-width: 480px) {
+  .breadcrumbs__item:last-child:not(:has(a)) {
+    display: none;
+  }
 }

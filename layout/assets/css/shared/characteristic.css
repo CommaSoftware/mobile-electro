@@ -17,8 +17,13 @@
 }
 
 .characteristic__label {
-  color: var(--color-elem-secondary-highlight);
+  color: var(--color-elem-secondary);
   margin: 0 8px;
+}
+
+.characteristic__label mark {
+  color: var(--color-elem-accent-secondary);
+  background: transparent;
 }
 
 .characteristic__value {
@@ -34,9 +39,10 @@
 }
 
 .characteristic.is-style-row {
-  width: auto;
   justify-content: space-between;
   background-color: transparent;
+  gap: 4px;
+  width: auto;
   padding: 2px 0;
 }
 

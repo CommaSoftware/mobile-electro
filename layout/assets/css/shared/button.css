@@ -14,7 +14,7 @@
   align-items: center;
   gap: 4px;
   box-sizing: border-box;
-  height: var(--button-height);
+  min-height: var(--button-height);
   padding: 0 calc(var(--button-padding-side) + 4px);
   border: 2px solid var(--button-color-border);
   border-radius: var(--button-border-radius);
@@ -159,10 +159,10 @@
 
 /* Effects for buttons */
 
-.butto:not(.is-no-hover):hover,
-.butto:not(.is-no-hover):active,
-.butto:not(.is-no-hover).is-style-secondary:hover,
-.butto:not(.is-no-hover).is-style-secondary:active {
+.button:not(.is-no-hover):hover,
+.button:not(.is-no-hover):active,
+.button:not(.is-no-hover).is-style-secondary:hover,
+.button:not(.is-no-hover).is-style-secondary:active {
   --button-bg: var(--color-bg-tertiary-highlight);
   --button-color-text: var(--button-color-hovered);
 }

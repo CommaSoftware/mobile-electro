@@ -41,6 +41,9 @@
 .icon[data-type="checkbox-checked"] {
   background-image: url("../../images/icons/checkbox-checked.svg");
 }
+.icon[data-type="checkbox-checked-filled"] {
+  background-image: url("../../images/icons/checkbox-checked-filled.svg");
+}
 .icon[data-type="chervon-down"] {
   background-image: url("../../images/icons/chervon-down.svg");
 }
