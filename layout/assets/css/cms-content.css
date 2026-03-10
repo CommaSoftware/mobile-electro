@@ -1,4 +1,6 @@
 .cms-content {
+  --cms-content-color-primary: var(--color-elem-primary);
+  --cms-content-font-size: var(--font-size-span-m);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -15,7 +17,7 @@
 .cms-content h5,
 .cms-content h6 {
   --heading-font-size: var(--font-size-h2);
-  --heading-color: var(--color-elem-primary);
+  --heading-color: var(--cms-content-color-primary);
   --heading-font-weight: 600;
 
   font-family: var(--font-name-heading);
@@ -50,8 +52,8 @@
 
 .cms-content p,
 .cms-content li {
-  color: var(--color-elem-primary);
-  font-size: var(--font-size-span-m);
+  color: var(--cms-content-color-primary);
+  font-size: var(--cms-content-font-size);
   font-weight: 500;
   letter-spacing: var(--font-letter-spacing);
   line-height: 145%;

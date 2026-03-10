@@ -8,6 +8,14 @@
   display: block;
 }
 
+.view-block.is-acccent {
+  background-color: var(--color-bg-accent);
+}
+
+.view-block.is-acccent .view-block__heading {
+  color: var(--color-elem-accent-secondary);
+}
+
 .view-block__content {
   display: flex;
   flex-direction: column;
