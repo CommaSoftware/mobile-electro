@@ -12,6 +12,8 @@
     const svg = document.querySelector("svg.map-svg");
     const regions = document.querySelectorAll("path[data-title]");
 
+    if (!map || !svg || !regions) return false;
+
     // Функция для показа тултипа для конкретного path
     function showTooltipForPath(region) {
       if (!region) return;
