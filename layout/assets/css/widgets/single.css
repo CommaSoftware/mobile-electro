@@ -1,0 +1,16 @@
+.single-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: var(--gap-sections) 0;
+  background-color: var(--color-bg-secondary-highlight);
+}
+
+.single-header .breadcrumbs {
+  padding: 0;
+}
+
+.single-header .content-wrapper {
+  max-width: var(--space-column-6);
+  width: 100%;
+}

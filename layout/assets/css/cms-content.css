@@ -24,6 +24,7 @@
   color: var(--heading-color);
   font-size: var(--heading-font-size);
   font-weight: var(--heading-font-weight);
+  letter-spacing: var(--font-letter-spacing);
 }
 
 .cms-content h1 {
