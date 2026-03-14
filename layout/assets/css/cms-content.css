@@ -1,5 +1,7 @@
 .cms-content {
   --cms-content-color-primary: var(--color-elem-primary);
+  --cms-content-color-secondary: var(--color-elem-secondary);
+  --cms-content-color-accent: var(--color-elem-primary-highlight);
   --cms-content-font-size: var(--font-size-span-m);
   display: flex;
   flex-direction: column;
@@ -37,6 +39,7 @@
 
 .cms-content h3 {
   --heading-font-size: var(--font-size-h3);
+  color: var(--cms-content-color-accent);
 }
 
 .cms-content h4 {
@@ -45,10 +48,12 @@
 
 .cms-content h5 {
   --heading-font-size: var(--font-size-h5);
+  color: var(--cms-content-color-accent);
 }
 
 .cms-content h6 {
   --heading-font-size: var(--font-size-h6);
+  color: var(--cms-content-color-accent);
 }
 
 .cms-content p,
@@ -91,4 +96,32 @@
 
 .cms-content hr {
   border: 1px solid var(--color-border-tertiary);
+}
+
+.cms-content img {
+  width: 100%;
+  border-radius: var(--border-radius-s);
+}
+
+.cms-content blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  padding: 20px 24px;
+  border-left: 2px solid var(--cms-content-color-accent);
+  background-color: var(--color-bg-secondary-highlight);
+}
+
+.cms-content cite {
+  color: var(--cms-content-color-secondary);
+  font-size: var(--font-size-span-xs);
+  letter-spacing: var(--font-letter-spacing);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cms-content blockquote cite {
+  color: var(--cms-content-color-accent);
+  font-weight: 600;
 }

@@ -101,6 +101,9 @@
   --space-column-4: calc(
     (var(--space-column-plus-gap)) * 4 - var(--space-column-gap)
   );
+  --space-column-5: calc(
+    (var(--space-column-plus-gap)) * 5 - var(--space-column-gap)
+  );
   --space-column-6: calc(
     (var(--space-column-plus-gap)) * 6 - var(--space-column-gap)
   );
