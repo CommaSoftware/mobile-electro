@@ -173,6 +173,7 @@
   .header__contacts {
     position: fixed;
     top: 128px;
+    z-index: 1;
   }
 }
 
