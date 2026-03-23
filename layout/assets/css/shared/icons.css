@@ -20,6 +20,9 @@
 .icon[data-type="arrow-right-md"] {
   background-image: url("../../images/icons/arrow-right-md.svg");
 }
+.icon[data-type="arrow-undo"] {
+  background-image: url("../../images/icons/arrow-undo.svg");
+}
 .icon[data-type="arrow-up-md"] {
   background-image: url("../../images/icons/arrow-up-md.svg");
 }
