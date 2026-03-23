@@ -41,3 +41,7 @@
   color: var(--color-elem-accent-primary-alt);
   text-decoration: 1px underline solid;
 }
+
+.span.is-white a {
+  color: var(--color-bg-primary);
+}
