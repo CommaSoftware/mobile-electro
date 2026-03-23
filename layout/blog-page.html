@@ -29,8 +29,10 @@
     <link rel="stylesheet" href="assets/css/entities/breadcrumbs.css" />
     <link rel="stylesheet" href="assets/css/entities/view-block.css" />
     <link rel="stylesheet" href="assets/css/entities/popup.css" />
+    <link rel="stylesheet" href="assets/css/entities/section-header.css" />
     <link rel="stylesheet" href="assets/css/entities/cookie-overlay.css" />
     <link rel="stylesheet" href="assets/css/entities/float-img.css" />
+    <link rel="stylesheet" href="assets/css/entities/pagination.css" />
 
     <link rel="stylesheet" href="assets/css/widgets/header.css" />
     <link rel="stylesheet" href="assets/css/widgets/footer.css" />
@@ -43,6 +45,8 @@
     <link rel="stylesheet" href="assets/css/widgets/reviews.css" />
     <link rel="stylesheet" href="assets/css/widgets/product.css" />
     <link rel="stylesheet" href="assets/css/widgets/single.css" />
+    <link rel="stylesheet" href="assets/css/widgets/not-found.css" />
+    <link rel="stylesheet" href="assets/css/widgets/blog.css" />
 
     <title>Мобильное электрообеспечение</title>
   </head>
@@ -128,161 +132,72 @@
         </nav>
       </div>
     </header>
-    <article id="content">
-      <div class="single-header">
+
+    <section id="blog" class="blog">
+      <div class="section-header">
         <div class="content-wrapper">
           <div class="breadcrumbs">
             <span class="breadcrumbs__item"><a href="#!">Главная</a></span>
-            <span class="breadcrumbs__item"><a href="#!">Блог</a></span>
+            <span class="breadcrumbs__item">Блог</span>
           </div>
-        </div>
-        <div class="content-wrapper cms-content">
-          <h1>ТО дизельного генератора: чек-лист на год</h1>
-          <p>
-            Эта статья поможет понять структуру обслуживания, а для
-            профессионального выполнения работ лучше обратиться к специалистам,
-            таким как «ООО Мобильное Энерго Обеспечение».
-          </p>
+          <div class="section-header__headings">
+            <h1 class="heading">Блог</h1>
+          </div>
+          <div class="section-header__actions">
+            <a href="#!" class="button is-size-m is-rounded is-hilight"
+              >Новости</a
+            ><a href="#!" class="button is-size-m is-rounded is-hilight"
+              >Проекты</a
+            ><a href="#!" class="button is-size-m is-rounded is-hilight"
+              >Обслуживание и ремонт</a
+            ><a href="#!" class="button is-size-m is-rounded is-hilight"
+              >Вопросы и ответы</a
+            ><a href="#!" class="button is-size-m is-rounded is-hilight"
+              >Технические советы</a
+            >
+          </div>
         </div>
       </div>
-      <div class="single-content">
-        <div class="content-wrapper">
-          <div class="single-content-sidebar">
-            <div class="single-content-sidebar__content">
-              <div class="single-content-sidebar__header">
-                <span class="heading is-size-h3">Нужен электрогенератор?</span
-                ><span class="is-size-m">Это к нам!</span>
-              </div>
-              <div class="single-content-sidebar__actions">
-                <a
-                  href="#!"
-                  class="button is-size-l is-wide-full is-style-bordered"
-                  >Задать вопрос</a
-                ><a
-                  href="#!"
-                  class="button is-size-l is-wide-full is-style-primary"
-                  >Каталог генераторов</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="single-content-sharing">
-            <div class="single-content-sharing__content">
-              <div class="button is-aspect-ratio-1b1">
-                <span class="icon" data-type="link-horizontal"></span>
-              </div>
-              <div class="button is-aspect-ratio-1b1">
-                <span class="icon" data-type="telegramm"></span>
-              </div>
-              <div class="button is-aspect-ratio-1b1">
-                <span class="icon" data-type="vk"></span>
-              </div>
-              <div class="button is-aspect-ratio-1b1">
-                <span class="icon" data-type="ok"></span>
-              </div>
-              <div class="button is-aspect-ratio-1b1">
-                <span class="icon" data-type="max"></span>
-              </div>
-            </div>
-          </div>
-          <div class="cms-content">
-            <img src="assets/images/examples/example-blog-1.png" alt="" />
-            <cite
-              >Ключевые узлы дизель-генераторной установки (ДГУ), требующие
-              регулярного контроля.</cite
+      <div class="content-wrapper blog__grid">
+        <div class="blog-sidebar" style="grid-row: 1 / calc(4 / 2 + 2)">
+          <!-- Свойство "grid-row" необходимо рассчитывать вручную, исходя из числа элементов по формуле: (length / 2) + 2, с округлением в большую сторону -->
+          <div class="blog-author">
+            <span class="blog-author__subheading span is-size-xs is-hilight"
+              >Автор</span
             >
-            <p>
-              Регулярное техническое обслуживание (ТО) дизельного генератора —
-              это не просто рекомендация производителя, а гарантия его
-              надежности в критический момент. Будь то резервный источник для
-              больницы или основной для удаленной стройплощадки, отказ техники
-              ведет к серьезным убыткам и рискам. Чтобы вам не пришлось изучать
-              толстые мануалы, мы подготовили наглядный годовой чек-лист
-              ключевых операций. Эта статья поможет понять структуру
-              обслуживания, а для профессионального выполнения работ лучше
-              обратиться к специалистам, таким как «ООО Мобильное Энерго
-              Обеспечение».
-            </p>
-            <h2>Почему нельзя пропускать плановое ТО?</h2>
-            <p>
-              Пренебрежение графиком обслуживания — это игра в русскую рулетку с
-              вашим энергоснабжением. Внутри агрегата непрерывно работают
-              механические узлы под высокой нагрузкой, подвергаются воздействию
-              температуры и вибрации.
-            </p>
-            <blockquote>
+            <div class="blog-author__header">
+              <img
+                src="assets/images/avatar.jpg"
+                class="blog-author-header__avatar"
+                alt=""
+              />
+              <div class="blog-author-header__name">
+                <h3 class="heading is-size-h5">Мобильное энергообеспечение</h3>
+                <span class="span is-size-xs is-hilight">Блог компании</span>
+              </div>
+            </div>
+            <div class="cms-content">
               <p>
-                Экономия на обслуживании генератора всегда многократно превышает
-                стоимость внепланового ремонта и, что важнее, ущерб от простоя
-                объекта.
+                Добро пожаловать в блог, где мы мы делимся опытом, накопленнным
+                за более 10 лет работы с ДГУ. Разбираем ошибки, сравниваем
+                модели, публикуем чек-листы и пошаговые инструкции – всё для
+                того, чтобы вы получили надёжное энергоснабжение без переплат и
+                сюрпризов.
               </p>
-              <cite>Главный инженер сервисной службы.</cite>
-            </blockquote>
-            <h2>Ежедневные и еженедельные проверки</h2>
-            <p>
-              Эти операции выполняет персонал на объекте. Они не требуют
-              глубоких знаний, но критически важны.
-            </p>
-            <h5>Что проверить визуально:</h5>
-            <ul>
-              <li>Моторное масло (щупом).</li>
-              <li>Охлаждающая жидкость (по меткам в расширительном бачке).</li>
-              <li>Топливо в основном баке.</li>
-              <li>
-                Осмотр под агрегатом и вокруг него на наличие пятен масла,
-                тосола или дизельного топлива.
-              </li>
-              <li>Отсутствие окислов и надежность контактов.</li>
-              <li>
-                Отсутствие мусора, грязи и посторонних предметов вблизи
-                генератора, обеспечение свободного притока воздуха.
-              </li>
-            </ul>
-            <h2>Ежемесячное и квартальное обслуживание</h2>
-            <p>
-              Более глубокий контроль, который часто совмещают с плановыми
-              пусками под нагрузкой.
-            </p>
-            <h5>Примерный список ежеквартальных работ:</h5>
-            <ol>
-              <li>
-                Запуск под нагрузкой: Не менее 1-2 часов для прогрева и выхода
-                на рабочие параметры.
-              </li>
-              <li>
-                Проверка системы воздухозабора: Очистка или замена воздушного
-                фильтра (при необходимости).
-              </li>
-              <li>
-                Контроль уровня электролита в обслуживаемых АКБ и подзарядка.
-              </li>
-              <li>
-                Визуальный осмотр ремней привода вентилятора и натяжителей.
-              </li>
-              <li>
-                Проверка и удаление отстоя из топливного фильтра-сепаратора.
-              </li>
-            </ol>
-          </div>
-          <div class="single-content-button_scroll_top">
-            <a
-              href="#content"
-              id="button_scroll_top"
-              class="button is-size-l is-style-bordered is-aspect-ratio-1b1"
-            >
-              <span class="icon" data-type="chervon-up"></span>
-            </a>
+            </div>
+            <div class="blog-author__actions">
+              <a
+                href="#!"
+                class="button is-size-s is-style-bordered is-aspect-ratio-1b1"
+                ><span class="icon" data-type="telegramm"></span></a
+              ><a
+                href="#!"
+                class="button is-size-s is-style-bordered is-aspect-ratio-1b1"
+                ><span class="icon" data-type="max"></span
+              ></a>
+            </div>
           </div>
         </div>
-      </div>
-    </article>
-    <section id="blog_preview">
-      <div class="content-wrapper">
-        <div class="heading-block">
-          <h2 class="heading is-size-h2">Полезно знать</h2>
-        </div>
-      </div>
-      <div class="content-wrapper is-grid-4 is-scrolled-adaptation">
         <div class="blog-card">
           <div class="blog-card__cover">
             <img
@@ -341,7 +256,6 @@
             ></span>
           </div>
         </div>
-
         <div class="blog-card">
           <div class="blog-card__cover">
             <img
@@ -364,11 +278,274 @@
             ></span>
           </div>
         </div>
+        <div class="pagination">
+          <a
+            href="#!"
+            class="button is-size-l is-style-primary is-aspect-ratio-1b1"
+            >1</a
+          ><a
+            href="#!"
+            class="button is-size-l is-style-bordered is-aspect-ratio-1b1"
+            >2</a
+          ><a
+            href="#!"
+            class="button is-size-l is-style-transparent is-aspect-ratio-1b1"
+            >...</a
+          ><a
+            href="#!"
+            class="button is-size-l is-style-bordered is-aspect-ratio-1b1"
+            >20</a
+          ><a
+            href="#!"
+            class="button is-size-l is-style-bordered is-aspect-ratio-1b1"
+            >21</a
+          ><a
+            href="#!"
+            class="button is-size-l is-style-bordered is-aspect-ratio-1b1"
+            ><span class="icon" data-type="chervon-right"></span
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog_preview" class="catalog-preview">
+      <div class="content-wrapper">
+        <div class="heading-block">
+          <h2 class="heading is-size-h2">Популярные модели</h2>
+        </div>
+      </div>
+      <div
+        class="content-wrapper is-grid-4 is-scrolled-adaptation catalog-preview__items-block"
+      >
+        <div class="product-card is-vertical">
+          <div class="product-card__description">
+            <div class="product-card-description__heading">
+              <h3 class="heading is-size-h3">
+                Дизельный генератор DEUTZ DB-50GF
+              </h3>
+              <span class="product-card-price span is-is-size-ml is-hilight"
+                >от 2645 ₽/сут.</span
+              >
+            </div>
+            <div class="product-card-description__characteristics">
+              <div class="characteristic">
+                <div class="characteristic__label">Мощность</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="arrow-up-right"></span>50 кВт
+                </div>
+              </div>
+              <div class="characteristic">
+                <div class="characteristic__label">Расход топлива</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="water-drop"></span>14.4 л/ч
+                </div>
+              </div>
+              <div class="characteristic">
+                <div class="characteristic__label">Объём бака</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="cylinder"></span>120 л
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description__actions">
+              <div
+                class="product-card-description-actions__target button is-style-primary is-wide"
+              >
+                <span class="icon" data-type="truck"></span>Заказать
+              </div>
+              <a
+                href="#!"
+                class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
+              >
+                <span class="icon" data-type="info"></span>
+              </a>
+              <div
+                class="product-card-price button is-style-transparent is-hilight"
+              >
+                от 2645 ₽/сут.
+              </div>
+            </div>
+          </div>
+          <div class="product-card__cover">
+            <img
+              src="assets/images/examples/generator-2.png"
+              alt="Дизельный генератор DEUTZ DB-50GF"
+            />
+          </div>
+        </div>
+        <div class="product-card is-vertical">
+          <div class="product-card__description">
+            <div class="product-card-description__heading">
+              <h3 class="heading is-size-h3">
+                Дизельный генератор DEUTZ DB-50GF
+              </h3>
+              <span class="product-card-price span is-is-size-ml is-hilight"
+                >от 2645 ₽/сут.</span
+              >
+            </div>
+            <div class="product-card-description__characteristics">
+              <div class="characteristic">
+                <div class="characteristic__label">Мощность</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="arrow-up-right"></span>50 кВт
+                </div>
+              </div>
+              <div class="characteristic">
+                <div class="characteristic__label">Расход топлива</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="water-drop"></span>14.4 л/ч
+                </div>
+              </div>
+              <div class="characteristic">
+                <div class="characteristic__label">Объём бака</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="cylinder"></span>120 л
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description__actions">
+              <div
+                class="product-card-description-actions__target button is-style-primary is-wide"
+              >
+                <span class="icon" data-type="truck"></span>Заказать
+              </div>
+              <a
+                href="#!"
+                class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
+              >
+                <span class="icon" data-type="info"></span>
+              </a>
+              <div
+                class="product-card-price button is-style-transparent is-hilight"
+              >
+                от 2645 ₽/сут.
+              </div>
+            </div>
+          </div>
+          <div class="product-card__cover">
+            <img
+              src="assets/images/examples/generator-2.png"
+              alt="Дизельный генератор DEUTZ DB-50GF"
+            />
+          </div>
+        </div>
+        <div class="product-card is-vertical">
+          <div class="product-card__description">
+            <div class="product-card-description__heading">
+              <h3 class="heading is-size-h3">
+                Дизельный генератор DEUTZ DB-50GF
+              </h3>
+              <span class="product-card-price span is-is-size-ml is-hilight"
+                >от 2645 ₽/сут.</span
+              >
+            </div>
+            <div class="product-card-description__characteristics">
+              <div class="characteristic">
+                <div class="characteristic__label">Мощность</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="arrow-up-right"></span>50 кВт
+                </div>
+              </div>
+              <div class="characteristic">
+                <div class="characteristic__label">Расход топлива</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="water-drop"></span>14.4 л/ч
+                </div>
+              </div>
+              <div class="characteristic">
+                <div class="characteristic__label">Объём бака</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="cylinder"></span>120 л
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description__actions">
+              <div
+                class="product-card-description-actions__target button is-style-primary is-wide"
+              >
+                <span class="icon" data-type="truck"></span>Заказать
+              </div>
+              <a
+                href="#!"
+                class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
+              >
+                <span class="icon" data-type="info"></span>
+              </a>
+              <div
+                class="product-card-price button is-style-transparent is-hilight"
+              >
+                от 2645 ₽/сут.
+              </div>
+            </div>
+          </div>
+          <div class="product-card__cover">
+            <img
+              src="assets/images/examples/generator-2.png"
+              alt="Дизельный генератор DEUTZ DB-50GF"
+            />
+          </div>
+        </div>
+        <div class="product-card is-vertical">
+          <div class="product-card__description">
+            <div class="product-card-description__heading">
+              <h3 class="heading is-size-h3">
+                Дизельный генератор DEUTZ DB-50GF
+              </h3>
+              <span class="product-card-price span is-is-size-ml is-hilight"
+                >от 2645 ₽/сут.</span
+              >
+            </div>
+            <div class="product-card-description__characteristics">
+              <div class="characteristic">
+                <div class="characteristic__label">Мощность</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="arrow-up-right"></span>50 кВт
+                </div>
+              </div>
+              <div class="characteristic">
+                <div class="characteristic__label">Расход топлива</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="water-drop"></span>14.4 л/ч
+                </div>
+              </div>
+              <div class="characteristic">
+                <div class="characteristic__label">Объём бака</div>
+                <div class="characteristic__value">
+                  <span class="icon" data-type="cylinder"></span>120 л
+                </div>
+              </div>
+            </div>
+            <div class="product-card-description__actions">
+              <div
+                class="product-card-description-actions__target button is-style-primary is-wide"
+              >
+                <span class="icon" data-type="truck"></span>Заказать
+              </div>
+              <a
+                href="#!"
+                class="product-card-description-actions__more button is-style-bordered is-aspect-ratio-1b1"
+              >
+                <span class="icon" data-type="info"></span>
+              </a>
+              <div
+                class="product-card-price button is-style-transparent is-hilight"
+              >
+                от 2645 ₽/сут.
+              </div>
+            </div>
+          </div>
+          <div class="product-card__cover">
+            <img
+              src="assets/images/examples/generator-2.png"
+              alt="Дизельный генератор DEUTZ DB-50GF"
+            />
+          </div>
+        </div>
       </div>
       <div class="content-wrapper">
         <div class="buttons-block">
-          <a href="#!" class="button is-style-bordered is-wide is-hilight"
-            >Смотреть всё</a
+          <a href="#!" class="button is-style-bordered"
+            ><span class="icon" data-type="grid"></span>Каталог генераторов</a
           >
         </div>
       </div>

@@ -27,6 +27,9 @@
 }
 
 .blog-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 16px 8px;
   min-height: calc(var(--font-size-h4) * 3);
 }
