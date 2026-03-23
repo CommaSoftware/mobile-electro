@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="assets/css/widgets/single.css" />
     <link rel="stylesheet" href="assets/css/widgets/not-found.css" />
     <link rel="stylesheet" href="assets/css/widgets/blog.css" />
+    <link rel="stylesheet" href="assets/css/widgets/reviews.css" />
 
     <title>Мобильное электрообеспечение</title>
   </head>
@@ -133,229 +134,288 @@
       </div>
     </header>
 
-    <section id="blog" class="blog">
+    <section id="reviews" class="reviews">
       <div class="section-header">
         <div class="content-wrapper">
           <div class="breadcrumbs">
             <span class="breadcrumbs__item"><a href="#!">Главная</a></span>
-            <span class="breadcrumbs__item"><a href="#!">Блог</a></span>
+            <span class="breadcrumbs__item">Отзывы о нас</span>
           </div>
           <div class="section-header__headings">
-            <h1 class="heading">Блог / Проекты</h1>
+            <h1 class="heading">Отзывы о нас</h1>
+            <span class="span">Реальные видеоотклики наших клентов</span>
           </div>
           <div class="section-header__actions">
-            <a href="#!" class="button is-size-m is-rounded is-hilight"
-              >Новости</a
+            <a
+              href="#!"
+              class="button reviews__button-add-review is-size-l is-style-primary is-wide"
+            >
+              <span class="icon" data-type="star"></span>
+              Оставить отзыв
+            </a>
+            <span
+              class="button reviews__button-label is-size-l is-style-transparent is-no-hover"
+              >Открыть в...</span
             >
             <a
               href="#!"
-              class="button is-size-m is-rounded is-hilight is-style-primary"
+              class="button reviews__button-service is-size-l is-style-bordered"
             >
-              Проекты
-              <span class="icon" data-type="filter-off"></span>
+              <span class="icon" data-type="google"></span>
+              Google
             </a>
-            <a href="#!" class="button is-size-m is-rounded is-hilight"
-              >Обслуживание и ремонт</a
+            <a
+              href="#!"
+              class="button reviews__button-service is-size-l is-style-bordered"
             >
-            <a href="#!" class="button is-size-m is-rounded is-hilight"
-              >Вопросы и ответы</a
-            >
-            <a href="#!" class="button is-size-m is-rounded is-hilight"
-              >Технические советы</a
-            >
+              <span class="icon" data-type="yandex"></span>
+              Яндекс
+            </a>
           </div>
         </div>
       </div>
-      <div class="content-wrapper blog__grid">
-        <div class="blog-sidebar" style="grid-row: 1 / calc(6 / 2 + 2)">
-          <!-- Свойство "grid-row" необходимо рассчитывать вручную, исходя из числа элементов по формуле: (length / 2) + 2, с округлением в большую сторону -->
-          <div class="blog-author">
-            <span class="blog-author__subheading span is-size-xs is-hilight"
-              >Автор</span
-            >
-            <div class="blog-author__header">
-              <img
-                src="assets/images/avatar.jpg"
-                class="blog-author-header__avatar"
-                alt=""
-              />
-              <div class="blog-author-header__name">
-                <h3 class="heading is-size-h5">Мобильное энергообеспечение</h3>
-                <span class="span is-size-xs is-hilight">Блог компании</span>
-              </div>
+      <div class="content-wrapper reviews__grid">
+        <div class="review">
+          <div class="review__content">
+            <div class="review-content__stars">
+              <span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span>
             </div>
-            <div class="cms-content">
-              <p>
-                Добро пожаловать в блог, где мы мы делимся опытом, накопленнным
-                за более 10 лет работы с ДГУ. Разбираем ошибки, сравниваем
-                модели, публикуем чек-листы и пошаговые инструкции – всё для
-                того, чтобы вы получили надёжное энергоснабжение без переплат и
-                сюрпризов.
-              </p>
+            <div class="review-content__video">
+              <video
+                class="review-content-video__player"
+                controls
+                src="assets/videos/example-1.mp4"
+              ></video>
             </div>
-            <div class="blog-author__actions">
-              <a
-                href="#!"
-                class="button is-size-s is-style-bordered is-aspect-ratio-1b1"
-                ><span class="icon" data-type="telegramm"></span></a
-              ><a
-                href="#!"
-                class="button is-size-s is-style-bordered is-aspect-ratio-1b1"
-                ><span class="icon" data-type="max"></span
-              ></a>
+            <div class="review-content__name">
+              <h4 class="heading is-size-h4">Алексей Дмитриевич</h4>
+              <span class="span is-size-xs">директор</span>
+            </div>
+          </div>
+          <div class="review__footer">
+            <div class="review-footer__company">
+              <span class="icon is-color-blue" data-type="building"></span>
+              <span class="span is-size-xs is-blue"
+                >Строительная компания «Перспектива»</span
+              >
             </div>
           </div>
         </div>
-        <div class="blog-card">
-          <div class="blog-card__cover">
-            <img
-              src="assets/images/examples/example-blog-4.jpg"
-              alt=""
-              class="blog-card-cover__image"
-            />
+        <div class="review">
+          <div class="review__content">
+            <div class="review-content__stars">
+              <span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span>
+            </div>
+            <div class="review-content__video">
+              <video
+                class="review-content-video__player"
+                controls
+                src="assets/videos/example-1.mp4"
+              ></video>
+            </div>
+            <div class="review-content__name">
+              <h4 class="heading is-size-h4">Алексей Дмитриевич</h4>
+              <span class="span is-size-xs">директор</span>
+            </div>
           </div>
-          <div class="blog-card__content">
-            <h4 class="heading is-size-h4">
-              Международный фестиваль «Сибирские ночи»
-            </h4>
-            <span class="span"
-              >Обеспечили резервное и основное питание звукового, светового и
-              видеооборудования на 3 дня.</span
-            >
-          </div>
-          <div class="blog-card__footer">
-            <a href="#!" class="blog-card-footer__button">Подробнее</a>
-            <span
-              class="icon is-color-hilight blog-card-footer__icon"
-              data-type="arrow-up-right"
-            ></span>
-          </div>
-        </div>
-        <div class="blog-card">
-          <div class="blog-card__cover">
-            <img
-              src="assets/images/examples/example-blog-5.jpg"
-              alt=""
-              class="blog-card-cover__image"
-            />
-          </div>
-          <div class="blog-card__content">
-            <h4 class="heading is-size-h4">
-              Резервное питание молочного завода
-            </h4>
-            <span class="span"
-              >При отключении городской сети генератор автоматически берет
-              нагрузку – ни одного часа простоя оборудования.</span
-            >
-          </div>
-          <div class="blog-card__footer">
-            <a href="#!" class="blog-card-footer__button">Подробнее</a>
-            <span
-              class="icon is-color-hilight blog-card-footer__icon"
-              data-type="arrow-up-right"
-            ></span>
+          <div class="review__footer">
+            <div class="review-footer__company">
+              <span class="icon is-color-blue" data-type="building"></span>
+              <span class="span is-size-xs is-blue"
+                >Строительная компания «Перспектива»</span
+              >
+            </div>
           </div>
         </div>
-        <div class="blog-card">
-          <div class="blog-card__cover">
-            <img
-              src="assets/images/examples/example-blog-6.jpg"
-              alt=""
-              class="blog-card-cover__image"
-            />
+        <div class="review">
+          <div class="review__content">
+            <div class="review-content__stars">
+              <span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span>
+            </div>
+            <div class="review-content__video">
+              <video
+                class="review-content-video__player"
+                controls
+                src="assets/videos/example-1.mp4"
+              ></video>
+            </div>
+            <div class="review-content__name">
+              <h4 class="heading is-size-h4">Алексей Дмитриевич</h4>
+              <span class="span is-size-xs">директор</span>
+            </div>
           </div>
-          <div class="blog-card__content">
-            <h4 class="heading is-size-h4">
-              Аварийное электроснабжение котельной в 30-градусный мороз
-            </h4>
-            <span class="span"
-              >Экстренный выезд, доставка и подключение генератора за 3 часа.
-              Отопление в 12 многоквартирных домах сохранено.</span
-            >
-          </div>
-          <div class="blog-card__footer">
-            <a href="#!" class="blog-card-footer__button">Подробнее</a>
-            <span
-              class="icon is-color-hilight blog-card-footer__icon"
-              data-type="arrow-up-right"
-            ></span>
-          </div>
-        </div>
-        <div class="blog-card">
-          <div class="blog-card__cover">
-            <img
-              src="assets/images/examples/example-blog-7.jpg"
-              alt=""
-              class="blog-card-cover__image"
-            />
-          </div>
-          <div class="blog-card__content">
-            <h4 class="heading is-size-h4">
-              Бесперебойная работа ТРЦ «Меркурий» при авариях в сети
-            </h4>
-            <span class="span"
-              >Долгосрочный контракт на аренду ДГУ для резервирования
-              эскалаторов, освещения и холодильного оборудования.</span
-            >
-          </div>
-          <div class="blog-card__footer">
-            <a href="#!" class="blog-card-footer__button">Подробнее</a>
-            <span
-              class="icon is-color-hilight blog-card-footer__icon"
-              data-type="arrow-up-right"
-            ></span>
+          <div class="review__footer">
+            <div class="review-footer__company">
+              <span class="icon is-color-blue" data-type="building"></span>
+              <span class="span is-size-xs is-blue"
+                >Строительная компания «Перспектива»</span
+              >
+            </div>
           </div>
         </div>
-        <div class="blog-card">
-          <div class="blog-card__cover">
-            <img
-              src="assets/images/examples/example-blog-8.jpg"
-              alt=""
-              class="blog-card-cover__image"
-            />
+        <div class="review">
+          <div class="review__content">
+            <div class="review-content__stars">
+              <span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span>
+            </div>
+            <div class="review-content__video">
+              <video
+                class="review-content-video__player"
+                controls
+                src="assets/videos/example-1.mp4"
+              ></video>
+            </div>
+            <div class="review-content__name">
+              <h4 class="heading is-size-h4">Алексей Дмитриевич</h4>
+              <span class="span is-size-xs">директор</span>
+            </div>
           </div>
-          <div class="blog-card__content">
-            <h4 class="heading is-size-h4">
-              Оснащение логистического центра резервным питанием
-            </h4>
-            <span class="span"
-              >Подбор, поставка и шеф-монтаж ДГУ для склада класса А с
-              круглосуточным режимом работы.</span
-            >
-          </div>
-          <div class="blog-card__footer">
-            <a href="#!" class="blog-card-footer__button">Подробнее</a>
-            <span
-              class="icon is-color-hilight blog-card-footer__icon"
-              data-type="arrow-up-right"
-            ></span>
-          </div>
-        </div>
-        <div class="blog-card">
-          <div class="blog-card__cover">
-            <img
-              src="assets/images/examples/example-blog-9.jpg"
-              alt=""
-              class="blog-card-cover__image"
-            />
-          </div>
-          <div class="blog-card__content">
-            <h4 class="heading is-size-h4">
-              Энергоснабжение строительства ЖК «Высотный»
-            </h4>
-            <span class="span"
-              >Обеспечили электроэнергией башенный кран, бытовой городок и
-              освещение стройплощадки на 8 месяцев.</span
-            >
-          </div>
-          <div class="blog-card__footer">
-            <a href="#!" class="blog-card-footer__button">Подробнее</a>
-            <span
-              class="icon is-color-hilight blog-card-footer__icon"
-              data-type="arrow-up-right"
-            ></span>
+          <div class="review__footer">
+            <div class="review-footer__company">
+              <span class="icon is-color-blue" data-type="building"></span>
+              <span class="span is-size-xs is-blue"
+                >Строительная компания «Перспектива»</span
+              >
+            </div>
           </div>
         </div>
+        <div class="review">
+          <div class="review__content">
+            <div class="review-content__stars">
+              <span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span>
+            </div>
+            <div class="review-content__video">
+              <video
+                class="review-content-video__player"
+                controls
+                src="assets/videos/example-1.mp4"
+              ></video>
+            </div>
+            <div class="review-content__name">
+              <h4 class="heading is-size-h4">Алексей Дмитриевич</h4>
+              <span class="span is-size-xs">директор</span>
+            </div>
+          </div>
+          <div class="review__footer">
+            <div class="review-footer__company">
+              <span class="icon is-color-blue" data-type="building"></span>
+              <span class="span is-size-xs is-blue"
+                >Строительная компания «Перспектива»</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__content">
+            <div class="review-content__stars">
+              <span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span>
+            </div>
+            <div class="review-content__video">
+              <video
+                class="review-content-video__player"
+                controls
+                src="assets/videos/example-1.mp4"
+              ></video>
+            </div>
+            <div class="review-content__name">
+              <h4 class="heading is-size-h4">Алексей Дмитриевич</h4>
+              <span class="span is-size-xs">директор</span>
+            </div>
+          </div>
+          <div class="review__footer">
+            <div class="review-footer__company">
+              <span class="icon is-color-blue" data-type="building"></span>
+              <span class="span is-size-xs is-blue"
+                >Строительная компания «Перспектива»</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__content">
+            <div class="review-content__stars">
+              <span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span>
+            </div>
+            <div class="review-content__video">
+              <video
+                class="review-content-video__player"
+                controls
+                src="assets/videos/example-1.mp4"
+              ></video>
+            </div>
+            <div class="review-content__name">
+              <h4 class="heading is-size-h4">Алексей Дмитриевич</h4>
+              <span class="span is-size-xs">директор</span>
+            </div>
+          </div>
+          <div class="review__footer">
+            <div class="review-footer__company">
+              <span class="icon is-color-blue" data-type="building"></span>
+              <span class="span is-size-xs is-blue"
+                >Строительная компания «Перспектива»</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__content">
+            <div class="review-content__stars">
+              <span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span
+              ><span class="icon" data-type="star-filled"></span>
+            </div>
+            <div class="review-content__video">
+              <video
+                class="review-content-video__player"
+                controls
+                src="assets/videos/example-1.mp4"
+              ></video>
+            </div>
+            <div class="review-content__name">
+              <h4 class="heading is-size-h4">Алексей Дмитриевич</h4>
+              <span class="span is-size-xs">директор</span>
+            </div>
+          </div>
+          <div class="review__footer">
+            <div class="review-footer__company">
+              <span class="icon is-color-blue" data-type="building"></span>
+              <span class="span is-size-xs is-blue"
+                >Строительная компания «Перспектива»</span
+              >
+            </div>
+          </div>
+        </div>
+
         <div class="pagination">
           <a
             href="#!"

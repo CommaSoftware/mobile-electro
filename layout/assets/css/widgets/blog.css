@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: var(--space-column-3) var(--space-column-3) 1fr;
   padding-top: var(--gap-blocks);
+  padding-bottom: var(--gap-sections);
   gap: var(--gap-blocks) var(--space-column-gap);
 }
 
