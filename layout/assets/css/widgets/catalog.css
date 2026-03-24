@@ -1,8 +1,7 @@
-.catalog .content-wrapper {
+.catalog .catalog__content-grid {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
   gap: var(--gap-blocks) var(--space-column-gap);
-  margin-top: var(--gap-sections);
 }
 
 .catalog-content__header {

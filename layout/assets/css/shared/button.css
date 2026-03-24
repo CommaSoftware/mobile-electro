@@ -277,4 +277,6 @@
 .button.is-style-readmore:active {
   text-decoration: 1px underline solid;
   box-shadow: none !important;
+  background: transparent;
+  border-color: transparent;
 }

@@ -99,6 +99,8 @@
 
     // Функция для создания HTML блока
     function createTooltipElement(region) {
+      if (!!region.querySelector(".map__tooltip")) return false;
+
       const title = region.getAttribute("data-title");
 
       const tooltip = document.createElement("div");
@@ -106,10 +108,10 @@
 
       tooltip.innerHTML = `
         <span class="button is-size-l is-no-hover map-tooltip__label">${title}</span>
-        <div class="button is-size-l is-style-accent">
+        <a href="#buy" class="button is-size-l is-style-accent">
           <span class="icon" data-type="truck"></span>
 					<span class="label">Заказать</span>
-        </div>
+        </a>
       `;
 
       // Добавляем обработчики для самого тултипа

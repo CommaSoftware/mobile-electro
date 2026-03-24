@@ -32,6 +32,15 @@
   gap: 8px;
 }
 
+.view-block__content.cms-content h1,
+.view-block__content.cms-content h2,
+.view-block__content.cms-content h3,
+.view-block__content.cms-content h4,
+.view-block__content.cms-content h5,
+.view-block__content.cms-content h6 {
+  color: var(--cms-content-color-primary);
+}
+
 /* ---------- Adaptation ---------- */
 @media screen and (max-width: 1024px) {
   .view-block {
