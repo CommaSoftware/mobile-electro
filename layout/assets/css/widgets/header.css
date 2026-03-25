@@ -242,6 +242,7 @@
   }
 
   .header__contacts {
+    top: auto;
     bottom: 16px;
   }
 
