@@ -9,10 +9,10 @@ function getCookie(cookieName) {
 //--------------- Cookie-confirm Overlay (start) ---------------//
 function showCookieOverlay() {
   if (!Number(getCookie("agreeToCookie"))) {
-    document.querySelector("#cookie_overlay").classList.add("is-shown");
+    document.querySelector("#cookie_overlay")?.classList.add("is-shown");
     document
       .querySelector("#cookie_overlay .button")
-      .addEventListener("click", closeCookieOverlay);
+      ?.addEventListener("click", closeCookieOverlay);
   }
 }
 
