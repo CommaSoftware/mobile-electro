@@ -25,9 +25,7 @@ add_action('customize_register', function($wp_customize) {
 
 	// Accent Button
 	$wp_customize->add_setting('header__button1_icon', [
-		'default'           => Theme_Defaults::HEADER_BUTTON1_ICON,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'default'           => Theme_Defaults::HEADER_BUTTON1_ICON
 	]);
 
 	$wp_customize->add_control('header__button1_icon', [
@@ -38,9 +36,7 @@ add_action('customize_register', function($wp_customize) {
 	]);
 
 	$wp_customize->add_setting('header__button1_name', [
-		'default'           => Theme_Defaults::HEADER_BUTTON1_NAME,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'default'           => Theme_Defaults::HEADER_BUTTON1_NAME
 	]);
 
 	$wp_customize->add_control('header__button1_name', [
@@ -50,9 +46,7 @@ add_action('customize_register', function($wp_customize) {
 	]);
 
 	$wp_customize->add_setting('header__button1_link', [
-		'default'           => Theme_Defaults::HEADER_BUTTON1_LINK,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'default'           => Theme_Defaults::HEADER_BUTTON1_LINK
 	]);
 
 	$wp_customize->add_control('header__button1_link', [
@@ -63,9 +57,7 @@ add_action('customize_register', function($wp_customize) {
 
 	// Secondary Button
 	$wp_customize->add_setting('header__button2_icon', [
-		'default'           => Theme_Defaults::HEADER_BUTTON2_ICON,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'default'           => Theme_Defaults::HEADER_BUTTON2_ICON
 	]);
 
 	$wp_customize->add_control('header__button2_icon', [
@@ -76,9 +68,7 @@ add_action('customize_register', function($wp_customize) {
 	]);
 
 	$wp_customize->add_setting('header__button2_name', [
-		'default'           => Theme_Defaults::HEADER_BUTTON2_NAME,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'default'           => Theme_Defaults::HEADER_BUTTON2_NAME
 	]);
 
 	$wp_customize->add_control('header__button2_name', [
@@ -88,9 +78,7 @@ add_action('customize_register', function($wp_customize) {
 	]);
 
 	$wp_customize->add_setting('header__button2_link', [
-		'default'           => Theme_Defaults::HEADER_BUTTON2_LINK,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'default'           => Theme_Defaults::HEADER_BUTTON2_LINK
 	]);
 
 	$wp_customize->add_control('header__button2_link', [

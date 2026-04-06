@@ -9,8 +9,7 @@ add_action('customize_register', function($wp_customize) {
 	// Schedule
 	$wp_customize->add_setting('contacts_schedule', [
 		'default'           => Theme_Defaults::CONTACTS_SCHEDULE,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_text_field'
 	]);
 	$wp_customize->add_control('contacts_schedule', [
 		'type'    => 'text',
@@ -21,8 +20,7 @@ add_action('customize_register', function($wp_customize) {
 	// Address
 	$wp_customize->add_setting('contacts_address', [
 		'default'           => Theme_Defaults::CONTACTS_ADDRESS,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_text_field'
 	]);
 	$wp_customize->add_control('contacts_address', [
 		'type'    => 'textarea',
@@ -33,8 +31,7 @@ add_action('customize_register', function($wp_customize) {
 	// Phones
 	$wp_customize->add_setting('contacts_phone1', [
 		'default'           => Theme_Defaults::CONTACTS_PHONE1,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_text_field'
 	]);
 	$wp_customize->add_control('contacts_phone1', [
 		'type'    => 'text',
@@ -44,8 +41,7 @@ add_action('customize_register', function($wp_customize) {
 
 	$wp_customize->add_setting('contacts_phone2', [
 		'default'           => Theme_Defaults::CONTACTS_PHONE2,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_text_field'
 	]);
 	$wp_customize->add_control('contacts_phone2', [
 		'type'    => 'text',
@@ -55,9 +51,7 @@ add_action('customize_register', function($wp_customize) {
 
 	// Email
 	$wp_customize->add_setting('contacts_email', [
-		'default'           => Theme_Defaults::CONTACTS_EMAIL,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'default'           => Theme_Defaults::CONTACTS_EMAIL
 	]);
 	$wp_customize->add_control('contacts_email', [
 		'type'    => 'text',
@@ -67,9 +61,7 @@ add_action('customize_register', function($wp_customize) {
 	
 	// TG Link
 	$wp_customize->add_setting('contacts_tg_link', [
-		'default'           => Theme_Defaults::CONTACTS_TG_LINK,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'default'           => Theme_Defaults::CONTACTS_TG_LINK
 	]);
 	$wp_customize->add_control('contacts_tg_link', [
 		'type'    => 'text',
@@ -81,8 +73,7 @@ add_action('customize_register', function($wp_customize) {
 	// MAX Link
 	$wp_customize->add_setting('contacts_max_link', [
 		'default'           => Theme_Defaults::CONTACTS_MAX_LINK,
-		'sanitize_callback' => 'sanitize_text_field',
-		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_text_field'
 	]);
 	$wp_customize->add_control('contacts_max_link', [
 		'type'    => 'text',
@@ -90,3 +81,17 @@ add_action('customize_register', function($wp_customize) {
 		'label'   => __('Ссылка на MAX', THEME_PREFIX),
 	]);
 });
+
+
+// Временно добавьте в functions.php
+function mobilelectro_reset_corrupted_setting() {
+    // Удаляем испорченное значение
+    remove_theme_mod('contacts_tg_link');
+    
+    // Устанавливаем корректное значение по умолчанию
+    set_theme_mod('contacts_tg_link', '#');
+    
+    // Выводим уведомление
+    echo '<div class="notice notice-warning"><p>Настройка button1_url была сброшена</p></div>';
+}
+add_action('admin_notices', 'mobilelectro_reset_corrupted_setting');

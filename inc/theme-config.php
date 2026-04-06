@@ -27,6 +27,8 @@ class Theme_Defaults {
 		const HEADER_BUTTON2_ICON = 'list-unordered'; 
 		const HEADER_BUTTON2_NAME = 'Каталог';
 		const HEADER_BUTTON2_LINK = '/catalog';
+
+		const FOOTER_LOGO = false; 
 		
 		/**
 		 * Get all default values as an array
