@@ -3,12 +3,12 @@ add_action('customize_register', function($wp_customize) {
 
 	$wp_customize->add_section('footer', [
 		'title'    => 'Подвал',
-		'priority' => 10,
+		'priority' => 11,
 		'panel' => 'sections_panel'
 	]);
 
 	// Filter Logo
-	$wp_customize->add_setting('footer_logo', [
+	$wp_customize->add_setting('footer__logo', [
 		'default'           => Theme_Defaults::FOOTER_LOGO,
 		'sanitize_callback' => 'esc_url_raw',
 		'transport'         => 'postMessage'
