@@ -22,23 +22,23 @@
 		<div class="content-wrapper header__content-block">
 			<div class="header__contacts">
 				<div class="header-contacts__line">
-					<?php if (get_theme_mod('contacts_phone1', Theme_Defaults::CONTACTS_PHONE1) != ""): ?>
+					<?php if (get_theme_mod('contacts__phone1', Theme_Defaults::CONTACTS_PHONE1) != ""): ?>
 						<a
-							href="tel:<?php echo get_theme_mod('contacts_phone1', Theme_Defaults::CONTACTS_PHONE1); ?>"
+							href="tel:<?php echo get_theme_mod('contacts__phone1', Theme_Defaults::CONTACTS_PHONE1); ?>"
 							class="button is-style-transparent is-size-m"
-							><?php echo get_theme_mod('contacts_phone1', Theme_Defaults::CONTACTS_PHONE1); ?></a
+							><?php echo get_theme_mod('contacts__phone1', Theme_Defaults::CONTACTS_PHONE1); ?></a
 						>
 					<?php endif; ?>
-					<?php if (get_theme_mod('contacts_phone2', Theme_Defaults::CONTACTS_PHONE2) != ""): ?>
+					<?php if (get_theme_mod('contacts__phone2', Theme_Defaults::CONTACTS_PHONE2) != ""): ?>
 						<a
-							href="tel:<?php echo get_theme_mod('contacts_phone2', Theme_Defaults::CONTACTS_PHONE2); ?>"
+							href="tel:<?php echo get_theme_mod('contacts__phone2', Theme_Defaults::CONTACTS_PHONE2); ?>"
 							class="button is-style-transparent is-size-m"
-							><?php echo get_theme_mod('contacts_phone2', Theme_Defaults::CONTACTS_PHONE2); ?></a
+							><?php echo get_theme_mod('contacts__phone2', Theme_Defaults::CONTACTS_PHONE2); ?></a
 						>
 					<?php endif; ?>
 				</div>
-				<?php if (get_theme_mod('contacts_schedule', Theme_Defaults::CONTACTS_SCHEDULE) != ""): ?>
-					<span class="span is-size-xs is-hilight"><?php echo get_theme_mod('contacts_schedule', Theme_Defaults::CONTACTS_SCHEDULE); ?></span>
+				<?php if (get_theme_mod('contacts__schedule', Theme_Defaults::CONTACTS_SCHEDULE) != ""): ?>
+					<span class="span is-size-xs is-hilight"><?php echo get_theme_mod('contacts__schedule', Theme_Defaults::CONTACTS_SCHEDULE); ?></span>
 				<?php endif; ?>
 			</div>
 			<div class="header__logo">
@@ -85,29 +85,29 @@
 				<?php endif; ?>
 			</div>
 			<div class="header__social">
-				<?php if (get_theme_mod('contacts_tg_link', Theme_Defaults::CONTACTS_TG_LINK) != ""): ?>
+				<?php if (get_theme_mod('contacts__tg_link', Theme_Defaults::CONTACTS_TG_LINK) != ""): ?>
 				<a
-					href="<?php echo get_theme_mod('contacts_tg_link', Theme_Defaults::CONTACTS_TG_LINK); ?>"
+					href="<?php echo get_theme_mod('contacts__tg_link', Theme_Defaults::CONTACTS_TG_LINK); ?>"
 					title="Telegram"
 					target="_blank"
 					class="button is-style-secondary is-size-m is-aspect-ratio-1b1"
 					><span class="icon" data-type="telegramm"></span
 				></a>
 				<?php endif; ?>
-				<?php if (get_theme_mod('contacts_max_link', Theme_Defaults::CONTACTS_MAX_LINK) != ""): ?>
+				<?php if (get_theme_mod('contacts__max_link', Theme_Defaults::CONTACTS_MAX_LINK) != ""): ?>
 				<a
-					href="<?php echo get_theme_mod('contacts_max_link', Theme_Defaults::CONTACTS_MAX_LINK); ?>"
+					href="<?php echo get_theme_mod('contacts__max_link', Theme_Defaults::CONTACTS_MAX_LINK); ?>"
 					title="MAX"
 					target="_blank"
 					class="button is-style-secondary is-size-m is-aspect-ratio-1b1"
 					><span class="icon" data-type="max"></span
 				></a>
 				<?php endif; ?>
-				<?php if (get_theme_mod('contacts_email', Theme_Defaults::CONTACTS_EMAIL) != ""): ?>
+				<?php if (get_theme_mod('contacts__email', Theme_Defaults::CONTACTS_EMAIL) != ""): ?>
 				<a
-					href="mailto:<?php echo get_theme_mod('contacts_email', Theme_Defaults::CONTACTS_EMAIL); ?>"
+					href="mailto:<?php echo get_theme_mod('contacts__email', Theme_Defaults::CONTACTS_EMAIL); ?>"
 					class="button is-style-transparent is-size-m"
-					><?php echo get_theme_mod('contacts_email', Theme_Defaults::CONTACTS_EMAIL); ?></a
+					><?php echo get_theme_mod('contacts__email', Theme_Defaults::CONTACTS_EMAIL); ?></a
 				>
 				<?php endif; ?>
 			</div>

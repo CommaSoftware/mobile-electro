@@ -2,10 +2,14 @@
 		<div class="footer__content">
 			<div class="content-wrapper">
 				<div class="footer-content__logo">
-					<a href="index.html" class="logo-full">
-						<span class="logo-full__name"
-							>Мобильное эн<mark>е</mark>ргообеспечение</span
-						>
+					<a href="<?php echo get_home_url();?>" class="logo-full">
+						<?php if (get_theme_mod('footer_logo', Theme_Defaults::HEADER_LOGO) != ""): ?>
+							<img src="<?php echo get_theme_mod('footer_logo', Theme_Defaults::HEADER_LOGO); ?>" alt="Логотип <?php bloginfo('name'); ?>">
+						<?php else: ?>
+							<span class="logo-full__name"
+								>Мобильное эн<mark>е</mark>ргообеспечение</span
+							>
+						<?php endif; ?>
 					</a>
 				</div>
 				<div class="footer-content__info">

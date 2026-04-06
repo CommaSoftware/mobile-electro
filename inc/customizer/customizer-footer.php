@@ -7,8 +7,8 @@ add_action('customize_register', function($wp_customize) {
 		'panel' => 'sections_panel'
 	]);
 
-	// Fiiter Logo
-	$wp_customize->add_setting('footer__logo', [
+	// Filter Logo
+	$wp_customize->add_setting('footer_logo', [
 		'default'           => Theme_Defaults::FOOTER_LOGO,
 		'sanitize_callback' => 'esc_url_raw',
 		'transport'         => 'postMessage'
