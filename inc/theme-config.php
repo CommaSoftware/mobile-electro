@@ -25,6 +25,7 @@ class Theme_Defaults {
 		const HEADER_BUTTON2_LINK = '/catalog';
 
 		const FOOTER_LOGO = false;
+		const FOOTER_COPYRIGHT_NAME = 'ООО Мобильное Энергообеспечение';
 		const FOOTER_PRIVACY_LINK = 'privacy-policy';
 		const FOOTER_OFFER_NAME = 'Не является публичной офертой';
 		const FOOTER_OFFER_LINK = '/offer-info';
