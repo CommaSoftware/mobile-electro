@@ -45,6 +45,15 @@ function extractContactFromLink(href) {
   return null;
 }
 
+function copyWithPopup(text) {
+  console.log(text);
+
+  res = copyToClipboard(text);
+  if (!!res) {
+    showPopup(`Скопировано: ${text}`, 1500);
+  }
+}
+
 const ContactLinks = document.querySelectorAll(
   'a[href^="tel:"], a[href^="mailto:"]',
 );
@@ -58,10 +67,7 @@ if (!!ContactLinks) {
       // Код перед переходом по ссылке
       const LINK_DATA = extractContactFromLink(HREF);
 
-      res = copyToClipboard(LINK_DATA.value);
-      if (!!res) {
-        showPopup(`Скопировано: ${LINK_DATA.value}`, 1500);
-      }
+      copyWithPopup(LINK_DATA.value);
 
       // Отложенный переход н мобильных устройствах
       if (window.innerWidth <= 780)

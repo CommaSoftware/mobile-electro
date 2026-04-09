@@ -1,0 +1,44 @@
+<?php
+/**
+ * Header of Pages Template
+ * 
+ * @param bool $show_blog_link: Необязательный, по умолчанию True
+
+ */
+
+$show_blog_link = isset($args['show_blog_link']) ? to_bool($args['show_blog_link']) : true;
+?>
+
+<?php $breadcrumb_blog = $show_blog_link ? ['name' => 'Блог', 'href' => get_home_url().'/blog'] : null; ?>
+
+<div class="single-header">
+	<div class="content-wrapper">
+		<?php get_template_part('templates/entities/breadcrumbs', null, [
+			$breadcrumb_blog
+		]); ?>
+	</div>
+
+	<?php
+		$title = get_the_title();
+	?>
+
+	<?php if (!empty($title) || has_excerpt()) : ?>
+		<div class="content-wrapper cms-content">
+			<?php if (!empty($title)) : ?>
+				<h1><?php echo $title; ?></h1>
+			<?php endif; ?>
+			<?php if( has_excerpt() ): ?>
+				<p><?php the_excerpt(); ?></p>
+			<?php endif; ?>
+			
+			<?php $tags = get_the_terms( $post->ID, 'category' ); ?>
+			<? if( $tags ): ?>
+				<ul class="single-header__tags">
+					<?php foreach( $tags as $tag ): ?>
+						<li><a href="<?php echo get_term_link($tag) ?>" class="button is-size-m is-rounded is-hilight"><?php echo $tag->name; ?></a></li>
+					<?php endforeach; ?>
+				</ul>
+			<?php endif; ?>
+		</div>
+	<?php endif; ?>
+</div>

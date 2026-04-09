@@ -4,7 +4,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 150;
-  max-width: calc(100vw - var(--padding-content-area) * 2);
+  max-width: 480px;
   padding: 12px;
   color: var(--color-bg-primary);
   background-color: var(--color-elem-accent-primary-alt);
@@ -16,7 +16,12 @@
 }
 
 .popup .span {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: inherit;
+  white-space: nowrap;
 }
 
 @keyframes popup {
