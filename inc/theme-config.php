@@ -30,6 +30,16 @@ class Theme_Defaults {
 		const FOOTER_OFFER_NAME = 'Не является публичной офертой';
 		const FOOTER_OFFER_LINK = '/offer-info';
 		const FOOTER_LICENSES_LINK = '/licenses';
+
+		const ARTICLE_SIDEBAR_SHOW = true;
+		const ARTICLE_SIDEBAR_TITLE = 'Нужен электрогенератор?';
+		const ARTICLE_SIDEBAR_DESCRIPTION = 'Это к нам!';
+		const ARTICLE_SIDEBAR_BUTTON1_ICON = '';
+		const ARTICLE_SIDEBAR_BUTTON1_NAME = 'Каталог генераторов';
+		const ARTICLE_SIDEBAR_BUTTON1_LINK = '/catalog';
+		const ARTICLE_SIDEBAR_BUTTON2_ICON = '';
+		const ARTICLE_SIDEBAR_BUTTON2_NAME = 'Задать вопрос';
+		const ARTICLE_SIDEBAR_BUTTON2_LINK = '/contact-us';
 		
 		/**
 		 * Get all default values as an array
