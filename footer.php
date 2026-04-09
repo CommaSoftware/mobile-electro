@@ -16,6 +16,8 @@ $theme_contacts_max_link = get_theme_mod('contacts__max_link', Theme_Defaults::C
 
 ?>
 
+<?php get_template_part("templates/entities/cookies") ?>
+
 <footer class="footer">
 	<div class="footer__content">
 		<div class="content-wrapper">
