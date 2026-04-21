@@ -3,12 +3,25 @@ add_action('customize_register', function($wp_customize) {
 
 	$wp_customize->add_section('advantages', [
 		'title'    => 'Блок «Преимущества»',
-		'priority' => 20,
+		'priority' => 21,
 		'panel' => 'sections_panel'
 	]);
 
 	$icons_list = custom_get_icons_options();
 	
+	$wp_customize->add_setting( 'advantages__show', array(
+		'type'              => 'theme_mod',
+		'capability'        => 'edit_theme_options',
+		'default'           => Theme_Defaults::ADVANTAGES_SHOW,
+		'sanitize_callback' => 'sanitize_checkbox',
+	) );
+	
+	$wp_customize->add_control( 'advantages__show', array(
+		'label'       => __( 'Показывать блок на главной странице', THEME_PREFIX ),
+		'section'     => 'advantages',
+		'type'        => 'checkbox',
+	) );
+
 	// Item 1
 	$wp_customize->add_setting( 'advantages__item1_heading', array(
 		'default' => Theme_Defaults::ADVANTAGES_ITEM1_HEADING,

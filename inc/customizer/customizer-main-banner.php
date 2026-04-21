@@ -2,7 +2,7 @@
 add_action('customize_register', function($wp_customize) {
 
 	$wp_customize->add_section('main_banner', [
-		'title'    => 'Главный баннер',
+		'title'    => 'Блок «Главный баннер»',
 		'priority' => 20,
 		'panel' => 'sections_panel'
 	]);

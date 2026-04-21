@@ -2,8 +2,8 @@
 add_action('customize_register', function($wp_customize) {
 
 	$wp_customize->add_section('article_sidebar', [
-		'title'    => 'Сайдбар статьи',
-		'priority' => 20,
+		'title'    => 'Статья «Сайдбар»',
+		'priority' => 51,
 		'panel' => 'sections_panel'
 	]);
 

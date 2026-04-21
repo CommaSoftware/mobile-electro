@@ -2,8 +2,8 @@
 add_action('customize_register', function($wp_customize) {
 
 	$wp_customize->add_section('article_sharing', [
-		'title'    => 'Кнопки «Поделиться» статьёй',
-		'priority' => 20,
+		'title'    => 'Статья «Кнопки Поделиться»',
+		'priority' => 52,
 		'panel' => 'sections_panel'
 	]);
 
