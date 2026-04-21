@@ -44,6 +44,16 @@ class Theme_Defaults {
 		const ARTICLE_SHARING_SHOW_LINK = true;
 		const ARTICLE_SHARING_SHOW_TG = true;
 		const ARTICLE_SHARING_SHOW_VK = true;
+
+		const MAIN_BANNER_HEADING = 'Аренда и продажа дизельных электростанций в Москве';
+		const MAIN_BANNER_DESCRIPTION = 'Доставим, установим и проведём обслуживание электрогенератора';
+		const MAIN_BANNER_THUMBNAIL = '/wp-content/themes/mobile-electro/assets/images/examples/generator-1.png';
+		const MAIN_BANNER_BUTTON1_ICON = 'truck'; 
+		const MAIN_BANNER_BUTTON1_NAME = 'Заказать звонок';
+		const MAIN_BANNER_BUTTON1_LINK = '#buy';
+		const MAIN_BANNER_BUTTON2_ICON = ''; 
+		const MAIN_BANNER_BUTTON2_NAME = 'Выбрать подходящий генератор';
+		const MAIN_BANNER_BUTTON2_LINK = '/catalog';
 		
 		/**
 		 * Get all default values as an array

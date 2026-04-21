@@ -69,6 +69,10 @@
   text-decoration: underline dotted;
 }
 
+.hello-banner-description__actions .button.is-style-transparent .icon {
+  filter: var(--icon-filter-white);
+}
+
 .hello-banner-description__actions .button.is-style-transparent:hover,
 .hello-banner-description__actions .button.is-style-transparent:active {
   --button-bg: var(--color-elem-primary);
