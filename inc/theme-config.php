@@ -40,6 +40,10 @@ class Theme_Defaults {
 		const ARTICLE_SIDEBAR_BUTTON2_ICON = '';
 		const ARTICLE_SIDEBAR_BUTTON2_NAME = 'Задать вопрос';
 		const ARTICLE_SIDEBAR_BUTTON2_LINK = '/contact-us';
+
+		const ARTICLE_SHARING_SHOW_LINK = true;
+		const ARTICLE_SHARING_SHOW_TG = true;
+		const ARTICLE_SHARING_SHOW_VK = true;
 		
 		/**
 		 * Get all default values as an array
