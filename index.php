@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
 <?php get_template_part("templates/widgets/hello-banner"); ?>
+<?php get_template_part("templates/widgets/advantages"); ?>
 
 <?php get_footer(); ?>

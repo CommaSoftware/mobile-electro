@@ -54,6 +54,19 @@ class Theme_Defaults {
 		const MAIN_BANNER_BUTTON2_ICON = ''; 
 		const MAIN_BANNER_BUTTON2_NAME = 'Выбрать подходящий генератор';
 		const MAIN_BANNER_BUTTON2_LINK = '/catalog';
+
+		const ADVANTAGES_ITEM1_HEADING = 'Поможем выбрать';
+		const ADVANTAGES_ITEM1_DESCRIPTION = 'Поможем с выбором генератора и забронируем его онлайн или по телефону.';
+		const ADVANTAGES_ITEM1_ICON = 'phone'; 
+		const ADVANTAGES_ITEM2_HEADING = 'Доставим в удобное время';
+		const ADVANTAGES_ITEM2_DESCRIPTION = ' Мы доставим генератор в удобное для вас время и место в любую точку западной России.';
+		const ADVANTAGES_ITEM2_ICON = 'truck'; 
+		const ADVANTAGES_ITEM3_HEADING = 'Установим';
+		const ADVANTAGES_ITEM3_DESCRIPTION = 'Наши специалисты установят и подключат генератор, проверив его работоспособность.';
+		const ADVANTAGES_ITEM3_ICON = 'checkbox-checked';
+		const ADVANTAGES_ITEM4_HEADING = 'ТО и гарантийный ремонт';
+		const ADVANTAGES_ITEM4_DESCRIPTION = 'Проведём техническое обслуживание и поможем, если возникнут проблемы.';
+		const ADVANTAGES_ITEM4_ICON = 'cog'; 
 		
 		/**
 		 * Get all default values as an array

@@ -8,7 +8,7 @@ add_action('customize_register', function($wp_customize) {
 	]);
 
 	$icons_list = custom_get_icons_options();
-	
+
 	// Heading
 	$wp_customize->add_setting( 'main_banner__heading', array(
 		'default'           => Theme_Defaults::MAIN_BANNER_HEADING,
@@ -22,7 +22,7 @@ add_action('customize_register', function($wp_customize) {
 
 	// Description
 	$wp_customize->add_setting( 'main_banner__description', array(
-		'default'           => Theme_Defaults::MAIN_BANNER_HEADING,
+		'default'           => Theme_Defaults::MAIN_BANNER_DESCRIPTION,
 	) );
 	
 	$wp_customize->add_control( 'main_banner__description', array(

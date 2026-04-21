@@ -29,6 +29,7 @@
 }
 
 .advantages-item__cover {
+  box-sizing: border-box;
   width: 48px;
   padding: 12px;
   margin-right: 8px;
