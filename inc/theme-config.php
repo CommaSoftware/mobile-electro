@@ -55,6 +55,7 @@ class Theme_Defaults {
 		const MAIN_BANNER_BUTTON2_NAME = 'Выбрать подходящий генератор';
 		const MAIN_BANNER_BUTTON2_LINK = '/catalog';
 
+		const ADVANTAGES_SHOW = true;
 		const ADVANTAGES_ITEM1_HEADING = 'Поможем выбрать';
 		const ADVANTAGES_ITEM1_DESCRIPTION = 'Поможем с выбором генератора и забронируем его онлайн или по телефону.';
 		const ADVANTAGES_ITEM1_ICON = 'phone'; 
@@ -67,6 +68,13 @@ class Theme_Defaults {
 		const ADVANTAGES_ITEM4_HEADING = 'ТО и гарантийный ремонт';
 		const ADVANTAGES_ITEM4_DESCRIPTION = 'Проведём техническое обслуживание и поможем, если возникнут проблемы.';
 		const ADVANTAGES_ITEM4_ICON = 'cog'; 
+
+		const MAP_SHOW = true;
+		const MAP_HEADING = 'Работаем с клиентами по всей европейской России!';
+		const MAP_DESCRIPTION = '<mark class="map-block__heading-mark">3521 объект</mark> использует нашу энергию прямо сейчас';
+		const MAP_BUTTON_ICON = 'truck'; 
+		const MAP_BUTTON_NAME = 'Заказать';
+		const MAP_BUTTON_LINK = '#buy';
 		
 		/**
 		 * Get all default values as an array

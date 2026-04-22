@@ -103,15 +103,16 @@
 
       const title = region.getAttribute("data-title");
 
+      const tooltipBtnExample = document.getElementById(
+        "button_tooltip_example",
+      ).innerHTML;
+
       const tooltip = document.createElement("div");
       tooltip.className = "map__tooltip";
 
       tooltip.innerHTML = `
         <span class="button is-size-l is-no-hover map-tooltip__label">${title}</span>
-        <a href="#buy" class="button is-size-l is-style-accent">
-          <span class="icon" data-type="truck"></span>
-					<span class="label">Заказать</span>
-        </a>
+        ${tooltipBtnExample}
       `;
 
       // Добавляем обработчики для самого тултипа

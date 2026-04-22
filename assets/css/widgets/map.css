@@ -1,3 +1,4 @@
+.map-block .heading-block .span mark,
 .map-block__heading-mark {
   position: relative;
   color: var(--color-elem-accent-secondary);
@@ -6,6 +7,7 @@
   animation: heading-mark-color-breath 1500ms infinite;
 }
 
+.map-block .heading-block .span mark::before,
 .map-block__heading-mark::before {
   content: "⦿";
   display: inline-block;
@@ -28,6 +30,10 @@
 .map__abled:hover,
 .map__abled:active {
   fill: var(--color-elem-accent-secondary);
+}
+
+#button_tooltip_example {
+  display: none;
 }
 
 .map__tooltip {
