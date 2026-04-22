@@ -75,6 +75,12 @@ class Theme_Defaults {
 		const MAP_BUTTON_ICON = 'truck'; 
 		const MAP_BUTTON_NAME = 'Заказать';
 		const MAP_BUTTON_LINK = '#buy';
+
+		const CASES_SHOW = true;
+		const CASES_HEADING = 'Аренда и продажа дизельных электростанций в Москве';
+		const CASES_DESCRIPTION = '';
+		const CASES_THUMBNAIL = '/wp-content/themes/mobile-electro/assets/images/examples/example-case.png';
+		const CASES_LINK = '/category/cases/';
 		
 		/**
 		 * Get all default values as an array

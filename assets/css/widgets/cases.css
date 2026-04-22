@@ -15,7 +15,7 @@
   pointer-events: none;
 }
 
-.cases-block::before {
+.cases-block:not(.no-cover)::before {
   content: "";
   background-color: var(--color-bg-accent);
   transform: rotate(-4deg) translate(-4px, -4px);
@@ -25,6 +25,7 @@
   transform: rotate(-9deg);
   background-color: var(--color-bg-secondary-highlight);
   border: 1px solid var(--color-bg-primary);
+  object-fit: cover;
 }
 
 .cases-block__item {
