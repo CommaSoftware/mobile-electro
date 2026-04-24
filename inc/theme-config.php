@@ -81,6 +81,17 @@ class Theme_Defaults {
 		const CASES_DESCRIPTION = '';
 		const CASES_THUMBNAIL = '/wp-content/themes/mobile-electro/assets/images/examples/example-case.png';
 		const CASES_LINK = '/category/cases/';
+
+		const BLOG_HEADING = 'Блог';
+		const BLOG_LINK = '/blog';
+		const BLOG_ANSWER_TO_EMPTY = 'Раздел пуст, загляните позже';
+		const BLOG_SHOW_SIDEBAR = true;
+		const BLOG_THUMBNAIL = '/wp-content/themes/mobile-electro/assets/images/avatar.jpg';
+		const BLOG_DESCRIPTION = 'Добро пожаловать в блог, где мы мы делимся опытом, накопленнным за более 10 лет работы с ДГУ. Разбираем ошибки, сравниваем модели, публикуем чек-листы и пошаговые инструкции – всё для того, чтобы вы получили надёжное энергоснабжение без переплат и сюрпризов. ';
+
+		const BLOG_VIEW_SHOW_ON_FRONT = true;
+		const BLOG_VIEW_HEADING = 'Полезно знать';
+		const BLOG_VIEW_DESCRIPTION = '';
 		
 		/**
 		 * Get all default values as an array

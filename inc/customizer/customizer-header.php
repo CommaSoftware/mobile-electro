@@ -3,7 +3,7 @@ add_action('customize_register', function($wp_customize) {
 
 	$wp_customize->add_section('header', [
 		'title'    => 'Шапка',
-		'priority' => 10,
+		'priority' => 1,
 		'panel' => 'sections_panel'
 	]);
 

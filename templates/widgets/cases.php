@@ -1,11 +1,10 @@
 <?php
-$terms = get_terms(array(
-	'taxonomy' => 'industries',
-	'orderby' => 'name',
-	'order' => 'ASC',
-	'hide_empty' => false, // показывать даже пустые термины
-)); ?> 
-<?php 
+	$terms = get_terms(array(
+		'taxonomy' => 'industries',
+		'orderby' => 'name',
+		'order' => 'ASC',
+		'hide_empty' => false, // показывать даже пустые термины
+	));
 	$theme_cases_show = get_theme_mod("cases__show", Theme_Defaults::CASES_SHOW);
 	$theme_cases_heading = get_theme_mod("cases__heading", Theme_Defaults::CASES_HEADING);
 	$theme_cases_description = get_theme_mod("cases__description", Theme_Defaults::CASES_DESCRIPTION);

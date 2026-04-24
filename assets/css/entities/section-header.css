@@ -16,4 +16,5 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+  list-style-type: none;
 }

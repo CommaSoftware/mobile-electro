@@ -3,7 +3,7 @@ add_action('customize_register', function($wp_customize) {
 
 	$wp_customize->add_section('footer', [
 		'title'    => 'Подвал',
-		'priority' => 11,
+		'priority' => 2,
 		'panel' => 'sections_panel'
 	]);
 
