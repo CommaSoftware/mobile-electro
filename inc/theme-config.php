@@ -92,6 +92,39 @@ class Theme_Defaults {
 		const BLOG_VIEW_SHOW_ON_FRONT = true;
 		const BLOG_VIEW_HEADING = 'Полезно знать';
 		const BLOG_VIEW_DESCRIPTION = '';
+
+		const CATALOG_LINK = '/catalog';
+
+		const PRODUCT_BUY_LINK = '#buy';
+		const PRODUCT_DELIVERY_NAME = 'Доставка по западной России';
+		const PRODUCT_DELIVERY_LINK = '/delivery';
+		const PRODUCT_RENT_INSTRUCTION = '<ol>
+	<li>Оформите заказ на сайте или позвоните на горячую линию;</li>
+	<li>Получение реквизитов, подписание документов и оплата;</li>
+	<li>
+		Самовывоз или доставка оборудования лицу, имеющему
+		доверенность и паспорт.
+	</li>
+</ol>
+<hr />
+<p>Для офорлмения услуги понадобятся:</p>
+<p>Для юридических лиц:</p>
+<ul>
+	<li>Реквизиты для оформления договора и счета</li>
+	<li>Оплата счета</li>
+	<li>
+		Печать, доверенность и документ, подтверждающий личность
+		сотрудника, указанного в доверенности для получения
+	</li>
+</ul>
+<p>Для физических лиц:</p>
+<ul>
+	<li>
+		Паспорт гражданина РФ или иной документ, удостоверяющий
+		личность
+	</li>
+	<li>Номер мобильного телефона, адрес электронной почты</li>
+</ul>';
 		
 		/**
 		 * Get all default values as an array

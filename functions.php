@@ -15,3 +15,7 @@ foreach ( glob( get_template_directory() . '/inc/utils/*.php' ) as $file ) {
     require_once $file;
 }
 
+// Include meta fields
+foreach ( glob( get_template_directory() . '/inc/meta-fields/*.php' ) as $file ) {
+    require_once $file;
+}

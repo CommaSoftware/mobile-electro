@@ -7,9 +7,11 @@
  */
 
 $show_blog_link = isset($args['show_blog_link']) ? to_bool($args['show_blog_link']) : true;
+$theme_blog_link = get_theme_mod('blog__link', Theme_Defaults::BLOG_LINK);
+
 ?>
 
-<?php $breadcrumb_blog = $show_blog_link ? ['name' => 'Блог', 'href' => get_home_url().'/blog'] : null; ?>
+<?php $breadcrumb_blog = $show_blog_link ? ['name' => 'Блог', 'href' => $theme_blog_link] : null; ?>
 
 <div class="single-header">
 	<div class="content-wrapper">

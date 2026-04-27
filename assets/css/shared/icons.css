@@ -173,6 +173,9 @@
 .icon[data-type="vk"] {
   background-image: url("../../images/icons/vk.svg");
 }
+.icon[data-type="volume"] {
+  background-image: url("../../images/icons/volume.svg");
+}
 .icon[data-type="water-drop"] {
   background-image: url("../../images/icons/water-drop.svg");
 }
