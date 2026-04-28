@@ -24,6 +24,10 @@ class Theme_Defaults {
 		const HEADER_BUTTON2_NAME = 'Каталог';
 		const HEADER_BUTTON2_LINK = '/catalog';
 
+		const HEADER_TOP_LINE_SHOW = true;
+		const HEADER_TOP_LINE_FULL_LABEL = 'Есть вопросы? Звоните!';
+		const HEADER_TOP_LINE_SHORT_LABEL = 'Звоните:';
+
 		const FOOTER_LOGO = false;
 		const FOOTER_COPYRIGHT_NAME = 'ООО Мобильное Энергообеспечение';
 		const FOOTER_PRIVACY_LINK = 'privacy-policy';

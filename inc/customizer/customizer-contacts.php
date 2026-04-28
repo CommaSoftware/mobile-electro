@@ -36,7 +36,7 @@ add_action('customize_register', function($wp_customize) {
 	$wp_customize->add_control('contacts__phone1', [
 		'type'    => 'text',
 		'section' => 'contacts',
-		'label'   => __('Основной телефон', THEME_PREFIX),
+		'label'   => __('Мобильный телефон', THEME_PREFIX),
 	]);
 
 	$wp_customize->add_setting('contacts__phone2', [
@@ -46,7 +46,7 @@ add_action('customize_register', function($wp_customize) {
 	$wp_customize->add_control('contacts__phone2', [
 		'type'    => 'text',
 		'section' => 'contacts',
-		'label'   => __('Дополнительный телефон', THEME_PREFIX),
+		'label'   => __('Стационарный телефон', THEME_PREFIX),
 	]);
 
 	// Email

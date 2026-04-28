@@ -27,6 +27,10 @@
 		$theme_contacts_tg_link = get_theme_mod('contacts__tg_link', Theme_Defaults::CONTACTS_TG_LINK);
 		$theme_contacts_max_link = get_theme_mod('contacts__max_link', Theme_Defaults::CONTACTS_MAX_LINK);
 		
+		$theme_header_top_line_show = get_theme_mod('header_top_line__show', Theme_Defaults::HEADER_TOP_LINE_SHOW);
+		$theme_header_top_line_full_label = get_theme_mod('header_top_line__full_label', Theme_Defaults::HEADER_TOP_LINE_FULL_LABEL);
+		$theme_header_top_line_short_label = get_theme_mod('header_top_line__short_label', Theme_Defaults::HEADER_TOP_LINE_SHORT_LABEL);
+
 		$theme_header_logo = get_theme_mod('header__logo', Theme_Defaults::HEADER_LOGO);
 		$theme_header_button1_link = get_theme_mod('header__button1_link', Theme_Defaults::HEADER_BUTTON1_LINK);
 		$theme_header_button1_name = get_theme_mod('header__button1_name', Theme_Defaults::HEADER_BUTTON1_NAME);
@@ -37,6 +41,22 @@
 	?>
 
 	<header class="header">
+		<?php if(!empty($theme_contacts_phone2) && $theme_header_top_line_show) : ?>
+			<a href="tel:<?php echo $theme_contacts_phone2; ?>" class="header-top-line">
+				<div class="content-wrapper">
+					<?php if (!empty($theme_header_top_line_full_label)) : ?>
+						<span class="header-top-line__full-label span is-hilight"><?php echo $theme_header_top_line_full_label; ?></span>
+					<?php endif; ?>
+					<?php if (!empty($theme_header_top_line_short_label)) : ?>
+						<span class="header-top-line__short-label span is-hilight"><?php echo $theme_header_top_line_short_label; ?></span>
+					<?php endif; ?>
+					<div class="button is-style-transparent is-size-m is-no-hover">
+						<span class="icon is-color-hilight" data-type="phone"></span>
+						<?php echo $theme_contacts_phone2; ?>
+					</div>
+				</div>
+			</a>
+		<?php endif; ?>
 		<div class="content-wrapper header__content-block">
 			<div class="header__contacts">
 				<div class="header-contacts__line">
