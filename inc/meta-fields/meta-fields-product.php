@@ -1060,10 +1060,10 @@ function is_product_in_stock($post_id = null) {
 function get_product_gallery($post_id = null, $image_idx = null) {
 	if (!$post_id) $post_id = get_the_ID();
 	$gallery = get_post_meta($post_id, '_product_gallery', true);
-	if ($image_idx == null) {
+	if ($image_idx === null) {
 		return is_array($gallery) ? array_map('absint', $gallery) : array();
 	} else {
-		return is_array($gallery) ? $gallery[$image_idx] : '';
+		return is_array($gallery) && sizeof($gallery) > 0 ? absint($gallery[$image_idx]) : '';
 	}
 }
 

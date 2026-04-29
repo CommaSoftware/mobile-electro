@@ -18,6 +18,7 @@ get_header();
 		$theme_product_rent_instruction = get_theme_mod('product__rent_instruction', Theme_Defaults::PRODUCT_RENT_INSTRUCTION);
 
 		$product_title = get_the_title();
+		$product_description = get_the_content();
 		$product_gallery = get_product_gallery();
 
 		$product_in_stock = is_product_in_stock();
@@ -166,7 +167,7 @@ get_header();
 					</h3>
 					<div class="view-block__content cms-content">
 						<h5>Общие</h5>
-						<?php if ($product_power_nominal || $product_power_base || $product_power_max || $product_fuel_nominal || $product_fuel_base || $product_fuel_max || $product_tank_volume || $product_noise || $product_execution) : ?>
+						<?php if ($product_power_nominal || $product_power_base || $product_power_max || $product_fuel_nominal || $product_fuel_base || $product_fuel_max || $product_tank_volume || $product_noise) : ?>
 							
 							<div class="characteristics-block">
 								<?php if ($product_power_nominal) : ?>
@@ -232,12 +233,12 @@ get_header();
 										</div>
 									</div>
 								<?php endif; ?>
-								<?php if ($product_tank_volume) : ?>
+								<?php if ($product_noise) : ?>
 									<div class="characteristic is-style-row">
 										<div class="characteristic__label">Шум</div>
 										<div class="characteristic__value">
 											<span class="icon" data-type="volume"></span>
-											<?php echo $product_tank_volume.' дец'; ?>
+											<?php echo $product_noise.' дец'; ?>
 										</div>
 									</div>
 								<?php endif; ?>
@@ -246,15 +247,17 @@ get_header();
 							<span class="span is-size-xs">не указаны</span>
 						<?php endif; ?>
 						<h5>Габариты</h5>
-						<?php if ( $product_length || $product_width || $product_height || $product_weight ) : ?>
+						<?php if ( $product_length || $product_width || $product_height || $product_weight || $product_execution ) : ?>
 							<div class="characteristics-block">
-								<div class="characteristic is-style-row">
-									<div class="characteristic__label">Размер Д*Ш*В</div>
-									<div class="characteristic__value">
-										<span class="icon" data-type="ruler"></span>
-										<?php echo $product_sizes.' мм' ?>
+								<?php if($product_length || $product_width || $product_height) : ?>
+									<div class="characteristic is-style-row">
+										<div class="characteristic__label">Размер Д*Ш*В</div>
+										<div class="characteristic__value">
+											<span class="icon" data-type="ruler"></span>
+											<?php echo $product_sizes.' мм' ?>
+										</div>
 									</div>
-								</div>
+								<?php endif; ?>
 								<?php if($product_weight) : ?>
 									<div class="characteristic is-style-row">
 										<div class="characteristic__label">Вес</div>
@@ -278,12 +281,14 @@ get_header();
 						<?php endif; ?>
 					</div>
 				</div>
-				<div class="view-block">
-					<h3 class="view-block__heading heading is-size-h3">Описание</h3>
-					<div class="view-block__content cms-content">
-						<?php the_content(); ?>
+				<?php if(!empty($product_description)) : ?>
+					<div class="view-block">
+						<h3 class="view-block__heading heading is-size-h3">Описание</h3>
+						<div class="view-block__content cms-content">
+							<?php echo $product_description; ?>
+						</div>
 					</div>
-				</div>
+				<?php endif; ?>
 				<div class="view-block">
 					<h3 class="view-block__heading heading is-size-h3">
 						Подходит для объектов

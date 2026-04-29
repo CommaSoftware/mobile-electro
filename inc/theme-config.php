@@ -99,6 +99,10 @@ class Theme_Defaults {
 
 		const CATALOG_LINK = '/catalog';
 
+		const PRODUCT_VIEW_SHOW_ON_FRONT = true;
+		const PRODUCT_VIEW_HEADING = 'Популярные модели';
+		const PRODUCT_VIEW_DESCRIPTION = '';
+
 		const PRODUCT_BUY_LINK = '#buy';
 		const PRODUCT_DELIVERY_NAME = 'Доставка по западной России';
 		const PRODUCT_DELIVERY_LINK = '/delivery';

@@ -63,6 +63,7 @@ function styles_n_scripts() {
 	enqueue_versioned_script( 'script-range-input',            '/assets/js/range-input.js', array(), true );
 	enqueue_versioned_script( 'script-smooth-scroll',          '/assets/js/smooth-scroll.js', array(), true );
 	enqueue_versioned_script( 'script-target-banner',          '/assets/js/target-banner.js', array(), true );
+	enqueue_versioned_script( 'script-catalog',          '/assets/js/catalog.js', array(), true );
 
 }
 add_action( 'wp_enqueue_scripts', 'styles_n_scripts' );
