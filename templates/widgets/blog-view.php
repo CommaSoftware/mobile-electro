@@ -13,7 +13,7 @@
 	$theme_blog_link = get_theme_mod('blog__link', Theme_Defaults::BLOG_LINK);
 ?>
 
-<?php if (is_front_page() && $theme_blog_view_show_on_front) : ?>
+<?php if (is_front_page() && $theme_blog_view_show_on_front || !is_front_page()) : ?>
 	<section id="blog_preview">
 		<div class="content-wrapper">
 			<?php if ($theme_blog_view_description != '' || $theme_blog_view_heading != '') : ?>

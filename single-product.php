@@ -491,4 +491,8 @@ get_header();
 	</section>
 <?php endif; ?>
 
+
+<?php get_template_part("templates/widgets/catalog-view"); ?>
+<?php get_template_part("templates/widgets/target-banner"); ?>
+
 <?php get_footer(); ?>

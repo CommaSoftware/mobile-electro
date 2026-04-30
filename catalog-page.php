@@ -205,4 +205,7 @@ $query_string = !empty($query_params) ? '?' . http_build_query($query_params) : 
 	</div>
 </section>
 
+<?php get_template_part("templates/widgets/target-banner"); ?>
+<?php get_template_part("templates/widgets/blog-view"); ?>
+
 <?php get_footer(); ?>

@@ -8,14 +8,14 @@
 	);
 	$query = new WP_Query($args);
 
-	$theme_product_view_show_on_front = get_theme_mod("product_view__show_on_front", Theme_Defaults::BLOG_VIEW_SHOW_ON_FRONT);
-	$theme_product_view_heading = get_theme_mod("product_view__heading", Theme_Defaults::BLOG_VIEW_HEADING);
-	$theme_product_view_description = get_theme_mod("product_view__description", Theme_Defaults::BLOG_VIEW_DESCRIPTION);
+	$theme_product_view_show_on_front = get_theme_mod("product_view__show_on_front", Theme_Defaults::PRODUCT_VIEW_SHOW_ON_FRONT);
+	$theme_product_view_heading = get_theme_mod("product_view__heading", Theme_Defaults::PRODUCT_VIEW_HEADING);
+	$theme_product_view_description = get_theme_mod("product_view__description", Theme_Defaults::PRODUCT_VIEW_DESCRIPTION);
 	$theme_catalog_link = get_theme_mod("catalog__link", Theme_Defaults::CATALOG_LINK);
 
 ?>
 
-<?php if (is_front_page() && $theme_product_view_show_on_front) : ?>
+<?php if (is_front_page() && $theme_product_view_show_on_front || !is_front_page()) : ?>
 	<section id="catalog_preview" class="catalog-preview">
 		<div class="content-wrapper">
 			<?php if ($theme_product_view_description != '' || $theme_product_view_heading != '') : ?>

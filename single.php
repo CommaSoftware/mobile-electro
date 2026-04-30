@@ -14,4 +14,7 @@
 	</article>
 <?php wp_reset_postdata(); endif; ?>
 
+<?php get_template_part("templates/widgets/blog-view"); ?>
+<?php get_template_part("templates/widgets/target-banner"); ?>
+
 <?php get_footer(); ?>
