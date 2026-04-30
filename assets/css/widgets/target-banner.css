@@ -62,14 +62,31 @@
   border-radius: var(--border-radius-l);
 }
 
+.target-banner-form .wpcf7-spinner {
+  display: none;
+}
+
 .target-banner-form__header {
   padding: 16px 0;
 }
 
-.target-banner-form__fields {
+.target-banner-form__fields,
+.target-banner-form__fields form {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.target-banner-form__fields .wpcf7-textarea {
+  resize: vertical;
+  height: 6em;
+}
+
+.wpcf7-form .wpcf7-not-valid-tip {
+  color: var(--color-elem-accent-primary);
+  padding-top: 2px;
+  font-size: var(--font-size-span-xxs);
+  font-weight: 500;
 }
 
 .target-banner-contacts {

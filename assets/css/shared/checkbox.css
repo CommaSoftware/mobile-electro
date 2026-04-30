@@ -19,3 +19,11 @@
   width: 14px;
   height: 14px;
 }
+
+.checkbox .wpcf7-list-item {
+  margin: 0;
+}
+
+.checkbox .wpcf7-form-control-wrap input[type="checkbox"] {
+  left: -30px;
+}

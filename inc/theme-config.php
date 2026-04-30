@@ -59,6 +59,36 @@ class Theme_Defaults {
 		const MAIN_BANNER_BUTTON2_NAME = 'Выбрать подходящий генератор';
 		const MAIN_BANNER_BUTTON2_LINK = '/catalog';
 
+		const TARGET_BANNER_HEADING = 'Заказать звонок';
+		const TARGET_BANNER_DESCRIPTION = 'Оставьте контакты, и мы свяжемся </br>с Вами в течение часа';
+		const TARGET_BANNER_THUMBNAIL = '/wp-content/themes/mobile-electro/assets/images/examples/generator-1.png';
+		const TARGET_FORM_SHORTCODE = '';
+		const TARGET_BANNER_MAX_SLIDER_ITEMS = 10;
+		const TARGET_BANNER_FORM_HTML = '<div class="input-wrapper">
+        [text* your-name class:input placeholder "Имя"]
+    </div>
+    
+    <div class="input-wrapper">
+        [tel* your-phone class:input placeholder "Телефон"]
+    </div>
+    
+    <div class="radiobox is-style-switcher">
+        [radio target-type use_label_element default:1 "Хочу арендовать"]
+        [radio target-type use_label_element "Хочу купить"]
+    </div>
+    
+    <div class="textarea-wrapper">
+        [textarea your-message class:input placeholder "Комментарий"]
+    </div>
+
+<div class="button-wrapper">
+    [submit class:button class:is-style-accent class:is-wide-full "Отправить"]
+</div>
+
+<label class="checkbox">
+[acceptance acceptance-427 class:checkbox_confirmation] <span class="span is-size-s is-hilight">Я даю согласие на обработку персональных данных и принимаю <a href="/privacy-policy/">условия политики обработки персональных данных</a></span>[/acceptance]
+</label>';
+
 		const ADVANTAGES_SHOW = true;
 		const ADVANTAGES_ITEM1_HEADING = 'Поможем выбрать';
 		const ADVANTAGES_ITEM1_DESCRIPTION = 'Поможем с выбором генератора и забронируем его онлайн или по телефону.';
