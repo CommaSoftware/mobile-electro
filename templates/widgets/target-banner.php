@@ -1,6 +1,7 @@
 <?php
-		$theme_contacts_tg_link = get_theme_mod('contacts__tg_link', Theme_Defaults::CONTACTS_TG_LINK);
-		$theme_contacts_max_link = get_theme_mod('contacts__max_link', Theme_Defaults::CONTACTS_MAX_LINK);
+	$theme_contacts_tg_link = get_theme_mod('contacts__tg_link', Theme_Defaults::CONTACTS_TG_LINK);
+	$theme_contacts_vk_link = get_theme_mod('contacts__vk_link', Theme_Defaults::CONTACTS_VK_LINK);
+	$theme_contacts_max_link = get_theme_mod('contacts__max_link', Theme_Defaults::CONTACTS_MAX_LINK);
 
 	$theme_target_banner_shortcode = get_theme_mod("target_banner__shortcode", Theme_Defaults::TARGET_FORM_SHORTCODE);
 	$theme_target_banner_heading = get_theme_mod("target_banner__heading", Theme_Defaults::TARGET_BANNER_HEADING);
@@ -42,15 +43,24 @@
 				</div>
 				<span class="span is-size-xs is-white">или</span>
 				<div class="target-banner-contacts">
+					<?php $label_contact_us = "Написать нам в "; ?>
+
 					<?php if ($theme_contacts_tg_link != ""): ?>
 						<a
 							href="<?php echo $theme_contacts_tg_link; ?>"
 							target="_blank"
 							class="button is-style-primary is-rounded"
-							>Написать нам в TG<span
-								class="icon"
-								data-type="telegramm-filled"
-							></span
+							>
+							<?php echo $label_contact_us.'TG'; $label_contact_us = ''; ?>
+							<span class="icon" data-type="telegramm-filled"></span>
+						</a>
+					<?php endif; ?>
+					<?php if ($theme_contacts_vk_link != ""): ?>
+						<a
+							href="<?php echo $theme_contacts_vk_link; ?>"
+							target="_blank"
+							class="button is-style-primary is-rounded"
+							><?php echo $label_contact_us.'VK'; $label_contact_us = ''; ?><span class="icon" data-type="vk"></span
 						></a>
 					<?php endif; ?>
 					<?php if ($theme_contacts_max_link != ""): ?>
@@ -58,7 +68,7 @@
 							href="<?php echo $theme_contacts_max_link; ?>"
 							target="_blank"
 							class="button is-style-primary is-rounded"
-							>MAX<span class="icon" data-type="max-filled"></span
+							><?php echo $label_contact_us.'MAX'; $label_contact_us = ''; ?><span class="icon" data-type="max-filled"></span
 						></a>
 					<?php endif; ?>
 				</div>

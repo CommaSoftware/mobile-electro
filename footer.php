@@ -12,6 +12,7 @@ $theme_contacts_phone2 = get_theme_mod('contacts__phone2', Theme_Defaults::CONTA
 $theme_contacts_address = get_theme_mod('contacts__address', Theme_Defaults::CONTACTS_ADDRESS);
 $theme_contacts_email = get_theme_mod('contacts__email', Theme_Defaults::CONTACTS_EMAIL);
 $theme_contacts_tg_link = get_theme_mod('contacts__tg_link', Theme_Defaults::CONTACTS_TG_LINK);
+$theme_contacts_vk_link = get_theme_mod('contacts__vk_link', Theme_Defaults::CONTACTS_VK_LINK);
 $theme_contacts_max_link = get_theme_mod('contacts__max_link', Theme_Defaults::CONTACTS_MAX_LINK);
 
 ?>
@@ -85,7 +86,7 @@ $theme_contacts_max_link = get_theme_mod('contacts__max_link', Theme_Defaults::C
 						<?php endif; ?>
 					</div>
 				<?php endif; ?>
-				<?php if($theme_contacts_tg_link != '' || $theme_contacts_max_link != ''): ?>
+				<?php if($theme_contacts_tg_link != '' || $theme_contacts_max_link != '' || $theme_contacts_vk_link != ''): ?>
 					<div class="footer-content-info__socials">
 						<?php if ($theme_contacts_tg_link != ""): ?>
 							<a
@@ -94,6 +95,15 @@ $theme_contacts_max_link = get_theme_mod('contacts__max_link', Theme_Defaults::C
 								target="_blank"
 								class="button is-size-m is-style-bordered is-aspect-ratio-1b1"
 								><span class="icon" data-type="telegramm"></span
+							></a>
+						<?php endif; ?>
+						<?php if ($theme_contacts_vk_link != ""): ?>
+							<a
+								href="<?php echo $theme_contacts_vk_link; ?>"
+								title="VK"
+								target="_blank"
+								class="button is-size-m is-style-bordered is-aspect-ratio-1b1"
+								><span class="icon" data-type="vk"></span
 							></a>
 						<?php endif; ?>
 						<?php if ($theme_contacts_max_link != ""): ?>

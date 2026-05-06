@@ -15,6 +15,7 @@ class Theme_Defaults {
 		const CONTACTS_ADDRESS = 'Московская область, город Чехов, Симферопольское шоссе, дом 3А';
 		const CONTACTS_TG_LINK = '#!';
 		const CONTACTS_MAX_LINK = '#!';
+		const CONTACTS_VK_LINK = '#!';
 		
 		const HEADER_LOGO = false; 
 		const HEADER_BUTTON1_ICON = 'truck'; 
@@ -30,7 +31,7 @@ class Theme_Defaults {
 
 		const FOOTER_LOGO = false;
 		const FOOTER_COPYRIGHT_NAME = 'ООО Мобильное Энергообеспечение';
-		const FOOTER_PRIVACY_LINK = 'privacy-policy';
+		const FOOTER_PRIVACY_LINK = '/privacy-policy';
 		const FOOTER_OFFER_NAME = 'Не является публичной офертой';
 		const FOOTER_OFFER_LINK = '/offer-info';
 		const FOOTER_LICENSES_LINK = '/licenses';
@@ -163,6 +164,75 @@ class Theme_Defaults {
 	</li>
 	<li>Номер мобильного телефона, адрес электронной почты</li>
 </ul>';
+		const PRODUCT_RATE_LIST = '<div class="product__rate-list">
+<details class="product-rate-list-item">
+	<summary>
+		<div
+			class="button is-no-hover is-style-secondary is-size-l"
+		>
+			<span
+				class="icon is-color-accent"
+				data-type="leaf"
+			></span>
+			Контроль качества топлива
+		</div>
+	</summary>
+	<div class="product-rate-list-item__content">
+		<p>
+			Контроль качества и уровня топлива, для обеспечения
+			стабильности работы
+		</p>
+	</div>
+</details>
+<details class="product-rate-list-item">
+	<summary>
+		<div
+			class="button is-no-hover is-style-secondary is-size-l"
+		>
+			<span
+				class="icon is-color-accent"
+				data-type="arrow-reload"
+			></span>
+			Подменный ДГУ
+		</div>
+	</summary>
+	<div class="product-rate-list-item__content">
+		<p>
+			Оперативная замена генератора, без простоя при
+			неисправности
+		</p>
+	</div>
+</details>
+<details class="product-rate-list-item">
+	<summary>
+		<div
+			class="button is-no-hover is-style-secondary is-size-l"
+		>
+			<span
+				class="icon is-color-accent"
+				data-type="chat-conversation"
+			></span>
+			Техподдержка
+		</div>
+	</summary>
+	<div class="product-rate-list-item__content">
+		<p>Круглосуточная консультация и помощь специалистов</p>
+	</div>
+</details>
+<details class="product-rate-list-item">
+	<summary>
+		<div
+			class="button is-no-hover is-style-secondary is-size-l"
+		>
+			<span class="icon is-color-accent" data-type="cog"></span>
+			Сервис ТО
+		</div>
+	</summary>
+	<div class="product-rate-list-item__content">
+		<p>Регулярное обслуживание оборужования</p>
+	</div>
+</details>
+</div>';
 		
 		/**
 		 * Get all default values as an array

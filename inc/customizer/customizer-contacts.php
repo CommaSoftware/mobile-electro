@@ -80,4 +80,15 @@ add_action('customize_register', function($wp_customize) {
 		'section' => 'contacts',
 		'label'   => __('Ссылка на MAX', THEME_PREFIX),
 	]);
+
+	// VK Link
+	$wp_customize->add_setting('contacts__vk_link', [
+		'default'           => Theme_Defaults::CONTACTS_VK_LINK,
+		'sanitize_callback' => 'sanitize_text_field'
+	]);
+	$wp_customize->add_control('contacts__vk_link', [
+		'type'    => 'text',
+		'section' => 'contacts',
+		'label'   => __('Ссылка на MAX', THEME_PREFIX),
+	]);
 });

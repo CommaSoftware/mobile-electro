@@ -4,7 +4,7 @@
 			<p class="span is-size-xss">
 				Мы используем файлы cookie. Продолжая, пользоваться сайтом, вы
 				соглашаетесь с условиями
-				<a href="<?php get_theme_mod('footer__privacy_link', Theme_Defaults::FOOTER_PRIVACY_LINK); ?>">политики конфиденциальности</a>
+				<a href="<?php echo get_theme_mod('footer__privacy_link', Theme_Defaults::FOOTER_PRIVACY_LINK); ?>">политики конфиденциальности</a>
 			</p>
 			<div class="button cookie-overlay__btn is-hilight">
 				Согласен

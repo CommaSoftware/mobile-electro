@@ -41,6 +41,18 @@ add_action('customize_register', function($wp_customize) {
 		'label'       => __('Ссылка на страницу об условиях доставки', THEME_PREFIX),
 	]);
 
+	// Rate list
+	$wp_customize->add_setting('product__rate_list', [
+		'default'           => Theme_Defaults::PRODUCT_RATE_LIST
+	]);
+
+	$wp_customize->add_control('product__rate_list', [
+		'type'        => 'textarea',
+		'section'     => 'product',
+		'label'       => __('Текст блока «Тарифы аренды»', THEME_PREFIX),
+		'description' => __('Введите текст. Для использования форматирования используйте HTML разметку', THEME_PREFIX),
+	]);
+
 	// Rent instruction
 	$wp_customize->add_setting('product__rent_instruction', [
 		'default'           => Theme_Defaults::PRODUCT_RENT_INSTRUCTION

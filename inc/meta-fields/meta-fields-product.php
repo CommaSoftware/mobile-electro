@@ -247,23 +247,23 @@ function render_product_meta_box($post) {
 					<h3>Мощность (кВт)</h3>
 					<div class="field-group__items">
 						<div class="field-row">
-							<label for="product_power_nominal">Мощность номинальная:</label>
+							<label for="product_power_nominal">Мощность базовая:</label>
 							<input 
 								type="number" 
 								id="product_power_nominal" 
 								name="_product_power_nominal" 
 								value="<?php echo esc_attr($power_nominal); ?>" 
-								step="1" 
+								step="0.1" 
 								min="0" />
 						</div>
 						<div class="field-row">
-							<label for="product_power_base">Мощность базовая (нагр. 70%):</label>
+							<label for="product_power_base">Мощность номинальная (нагр. 70%):</label>
 							<input 
 								type="number" 
 								id="product_power_base" 
 								name="_product_power_base" 
 								value="<?php echo esc_attr($power_base); ?>" 
-								step="1" 
+								step="0.1" 
 								min="0" />
 						</div>
 						<div class="field-row">
@@ -273,7 +273,7 @@ function render_product_meta_box($post) {
 								id="product_power_max" 
 								name="_product_power_max" 
 								value="<?php echo esc_attr($power_max); ?>" 
-								step="1" 
+								step="0.1" 
 								min="0" />
 						</div>
 				</div>
@@ -284,7 +284,7 @@ function render_product_meta_box($post) {
 				<h3>Расход топлива (л/ч)</h3>
 				<div class="field-group__items">
 					<div class="field-row">
-						<label for="product_fuel_nominal">Расход топлива номинальный:</label>
+						<label for="product_fuel_nominal">Расход топлива базовый:</label>
 						<input 
 							type="number" 
 							id="product_fuel_nominal" 
@@ -294,7 +294,7 @@ function render_product_meta_box($post) {
 							min="0" />
 					</div>
 					<div class="field-row">
-						<label for="product_fuel_base">Расход топлива базовый (нагр. 70%):</label>
+						<label for="product_fuel_base">Расход топлива номинальный (нагр. 70%):</label>
 						<input 
 							type="number" 
 							id="product_fuel_base" 

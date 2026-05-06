@@ -22,7 +22,7 @@
 			<h3 class="heading is-size-h3">
 				<?php echo $product_title; ?>
 			</h3>
-				<span class="product-card-price span is-is-size-ml is-hilight"><?php if ($product_rent_price > 0) { echo 'от '.$product_rent_price.' ₽/сут.'; } ?></span>
+				<span class="product-card-price span is-is-size-ml is-hilight"><?php if ($product_rent_price > 0 && $is_vertical) { echo 'от '.$product_rent_price.' ₽/сут.'; } ?></span>
 		</div>
 		<div class="product-card-description__characteristics">
 			<?php if ($product_power_nominal) : ?>
@@ -66,11 +66,11 @@
 			>
 				<span class="icon" data-type="info"></span>
 			</a>
-			<div
-				class="product-card-price button is-style-transparent is-hilight"
-			>
-				от 2645 ₽/сут.
-			</div>
+			<?php if (!$is_vertical) : ?>
+				<div class="product-card-price button is-style-transparent is-hilight">
+					<?php if ($product_rent_price > 0) { echo 'от '.$product_rent_price.' ₽/сут.'; } ?>
+				</div>
+			<?php endif; ?>
 		</div>
 	</div>
 	<div class="product-card__cover">

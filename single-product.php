@@ -15,6 +15,7 @@ get_header();
 		$theme_product_buy_link = get_theme_mod('product__buy_link', Theme_Defaults::PRODUCT_BUY_LINK);
 		$theme_product_delivery_name = get_theme_mod('product__delivery_name', Theme_Defaults::PRODUCT_DELIVERY_NAME);
 		$theme_product_delivery_link = get_theme_mod('product__delivery_link', Theme_Defaults::PRODUCT_DELIVERY_LINK);
+		$theme_product_product_rate_list = get_theme_mod('product__rate_list', Theme_Defaults::PRODUCT_RATE_LIST);
 		$theme_product_rent_instruction = get_theme_mod('product__rent_instruction', Theme_Defaults::PRODUCT_RENT_INSTRUCTION);
 
 		$product_title = get_the_title();
@@ -85,82 +86,16 @@ get_header();
 					</div>
 				<?php endif; ?>
 
-				<!-- <div class="view-block is-accent">
-					<span class="view-block__heading span is-size-s">
-						В стоимость аренды входят:
-					</span>
-					<div class="view-block__content cms-content">
-						<div class="product__rate-list">
-							<details class="product-rate-list-item">
-								<summary>
-									<div
-										class="button is-no-hover is-style-secondary is-size-l"
-									>
-										<span
-											class="icon is-color-accent"
-											data-type="leaf"
-										></span>
-										Контроль качества топлива
-									</div>
-								</summary>
-								<div class="product-rate-list-item__content">
-									<p>
-										Контроль качества и уровня топлива, для обеспечения
-										стабильности работы
-									</p>
-								</div>
-							</details>
-							<details class="product-rate-list-item">
-								<summary>
-									<div
-										class="button is-no-hover is-style-secondary is-size-l"
-									>
-										<span
-											class="icon is-color-accent"
-											data-type="arrow-reload"
-										></span>
-										Подменный ДГУ
-									</div>
-								</summary>
-								<div class="product-rate-list-item__content">
-									<p>
-										Оперативная замена генератора, без простоя при
-										неисправности
-									</p>
-								</div>
-							</details>
-							<details class="product-rate-list-item">
-								<summary>
-									<div
-										class="button is-no-hover is-style-secondary is-size-l"
-									>
-										<span
-											class="icon is-color-accent"
-											data-type="chat-conversation"
-										></span>
-										Техподдержка
-									</div>
-								</summary>
-								<div class="product-rate-list-item__content">
-									<p>Круглосуточная консультация и помощь специалистов</p>
-								</div>
-							</details>
-							<details class="product-rate-list-item">
-								<summary>
-									<div
-										class="button is-no-hover is-style-secondary is-size-l"
-									>
-										<span class="icon is-color-accent" data-type="cog"></span>
-										Сервис ТО
-									</div>
-								</summary>
-								<div class="product-rate-list-item__content">
-									<p>Регулярное обслуживание оборужования</p>
-								</div>
-							</details>
+				<?php if (!empty($theme_product_product_rate_list)) : ?>
+					<div class="view-block is-accent">
+						<span class="view-block__heading span is-size-s">
+							Условия аренды:
+						</span>
+						<div class="view-block__content cms-content">
+							<?php echo $theme_product_product_rate_list; ?>
 						</div>
 					</div>
-				</div> -->
+				<?php endif; ?>
 				<div class="view-block" id="characteristics">
 					<h3 class="view-block__heading heading is-size-h3">
 						Характеристики
@@ -172,7 +107,7 @@ get_header();
 							<div class="characteristics-block">
 								<?php if ($product_power_nominal) : ?>
 									<div class="characteristic is-style-row">
-										<div class="characteristic__label">Мощность (ном.)</div>
+										<div class="characteristic__label">Мощность (баз.)</div>
 										<div class="characteristic__value">
 											<span class="icon" data-type="arrow-up-right"></span>
 											<?php echo $product_power_nominal.' кВт'; ?>
@@ -199,7 +134,7 @@ get_header();
 								<?php endif; ?>
 								<?php if ($product_fuel_nominal) : ?>
 										<div class="characteristic is-style-row">
-											<div class="characteristic__label">Расход топлива (ном.)</div>
+											<div class="characteristic__label">Расход топлива (баз.)</div>
 											<div class="characteristic__value">
 												<span class="icon" data-type="water-drop"></span>
 												<?php echo $product_fuel_nominal.' л/ч'; ?>

@@ -12,6 +12,16 @@
   word-wrap: break-word;
 }
 
+.cms-content a:not(.button) {
+  color: var(--color-elem-accent-primary-alt);
+  text-decoration: none;
+}
+
+.cms-content a:not(.button):hover,
+.cms-content a:not(.button):active {
+  text-decoration: 1px dotted underline;
+}
+
 .cms-content h1,
 .cms-content h2,
 .cms-content h3,
@@ -124,4 +134,49 @@
 .cms-content blockquote cite {
   color: var(--cms-content-color-accent);
   font-weight: 600;
+}
+
+.wp-block-file__button,
+.wp-block-button__link {
+  --button-color-preset-primary: var(--color-elem-primary);
+  --button-padding-side: 8px;
+  --button-height: 40px;
+  --button-color-text: var(--color-elem-primary-alt);
+  --button-color-hovered: var(--color-elem-accent-primary-alt);
+  --button-bg: var(--button-color-preset-primary);
+  --button-color-border: var(--button-bg);
+  --button-font-size: var(--font-size-span-ml);
+  --button-border-radius: var(--border-radius-s);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  min-height: var(--button-height);
+  padding: 0 calc(var(--button-padding-side) + 4px) !important;
+  border: 2px solid var(--button-color-border);
+  border-radius: var(--button-border-radius);
+  color: var(--button-color-text) !important;
+  background: var(--button-bg);
+  font-size: var(--button-font-size);
+  font-weight: 500;
+  white-space: nowrap;
+  letter-spacing: var(--font-letter-spacing);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-m);
+}
+
+.wp-block-file__button {
+  --button-padding-side: 4px;
+  --button-height: 24px;
+  --button-font-size: var(--font-size-span-xxs);
+  font-weight: 600;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+  --button-bg: transparent;
+  --button-color-border: var(--button-color-preset-primary);
+  --button-color-text: var(--button-color-preset-primary);
 }

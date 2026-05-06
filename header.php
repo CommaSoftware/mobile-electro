@@ -13,6 +13,10 @@
 		<meta name="description" content="<?php echo get_post()->post_excerpt; ?>">
 	<?php } ?>
 
+	<!-- Meta for social network -->
+	<meta property="og:title" content="<?php wp_title('–', true, 'right');?> <?php bloginfo('name'); ?>" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/screenshot-short.png" />
+
 	<?php echo get_theme_mod('title_tagline__head_code', ''); ?>
 
 	<?php wp_head(); ?>
@@ -25,6 +29,7 @@
 		$theme_contacts_schedule = get_theme_mod('contacts__schedule', Theme_Defaults::CONTACTS_SCHEDULE);
 		$theme_contacts_email = get_theme_mod('contacts__email', Theme_Defaults::CONTACTS_EMAIL);
 		$theme_contacts_tg_link = get_theme_mod('contacts__tg_link', Theme_Defaults::CONTACTS_TG_LINK);
+		$theme_contacts_vk_link = get_theme_mod('contacts__vk_link', Theme_Defaults::CONTACTS_VK_LINK);
 		$theme_contacts_max_link = get_theme_mod('contacts__max_link', Theme_Defaults::CONTACTS_MAX_LINK);
 		
 		$theme_header_top_line_show = get_theme_mod('header_top_line__show', Theme_Defaults::HEADER_TOP_LINE_SHOW);
@@ -132,14 +137,23 @@
 						><span class="icon" data-type="telegramm"></span
 					></a>
 				<?php endif; ?>
+				<?php if ($theme_contacts_vk_link != ""): ?>
+					<a
+						href="<?php echo $theme_contacts_vk_link; ?>"
+						title="VK"
+						target="_blank"
+						class="button is-style-secondary is-size-m is-aspect-ratio-1b1"
+						><span class="icon" data-type="vk"></span
+					></a>
+				<?php endif; ?>
 				<?php if ($theme_contacts_max_link != ""): ?>
-				<a
-					href="<?php echo $theme_contacts_max_link; ?>"
-					title="MAX"
-					target="_blank"
-					class="button is-style-secondary is-size-m is-aspect-ratio-1b1"
-					><span class="icon" data-type="max"></span
-				></a>
+					<a
+						href="<?php echo $theme_contacts_max_link; ?>"
+						title="MAX"
+						target="_blank"
+						class="button is-style-secondary is-size-m is-aspect-ratio-1b1"
+						><span class="icon" data-type="max"></span
+					></a>
 				<?php endif; ?>
 				<?php if ($theme_contacts_email != ""): ?>
 				<a
