@@ -83,7 +83,7 @@ $query_string = !empty($query_params) ? '?' . http_build_query($query_params) : 
 
 <section id="catalog" class="catalog">
 	<div class="content-wrapper">
-		<?php get_template_part('templates/entities/breadcrumbs', null, [['name' => 'Блог']]); ?>
+		<?php get_template_part('templates/entities/breadcrumbs', null, [['name' => 'Каталог']]); ?>
 	</div>
 	<div class="content-wrapper catalog__content-grid">
 		<div class="catalog__sidebar">

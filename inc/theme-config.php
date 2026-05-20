@@ -128,6 +128,17 @@ class Theme_Defaults {
 		const BLOG_VIEW_HEADING = 'Полезно знать';
 		const BLOG_VIEW_DESCRIPTION = '';
 
+		const REVIEWS_LINK = '/reviews';
+		const REVIEWS_SHOW_IN_FRONT = true;
+		const REVIEWS_HEADING = 'Отзывы о нас';
+		const REVIEWS_DESCRIPTION = 'Реальные видеоотклики наших клиентов';
+		const REVIEWS_EXAMPLE = 'Работаем с «Мобильным Энергообеспечением» уже на третьем объекте. Всё четко: генератор 150 кВт привезли в день обращения, установили, подключили. Никаких сбоев за 4 месяца аренды. Надежный партнер. ';
+		const REVIEWS_LINK_FORM = '#!';
+		const REVIEWS_LINK_GOOGLE = '#!';
+		const REVIEWS_LINK_YANDEX = '#!';
+		const REVIEWS_LINK_OTHER = '';
+		const REVIEWS_NAME_OTHER = '';
+
 		const CATALOG_LINK = '/catalog';
 
 		const PRODUCT_VIEW_SHOW_ON_FRONT = true;

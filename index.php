@@ -6,6 +6,7 @@
 <?php get_template_part("templates/widgets/map"); ?>
 <?php get_template_part("templates/widgets/catalog-view"); ?>
 <?php get_template_part("templates/widgets/target-banner"); ?>
+<?php get_template_part("templates/widgets/reviews-view"); ?>
 <?php get_template_part("templates/widgets/blog-view"); ?>
 
 <?php get_footer(); ?>
