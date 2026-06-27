@@ -51,6 +51,8 @@ function styles_n_scripts() {
 	enqueue_versioned_style( 'style-widgets-reviews',          '/assets/css/widgets/reviews.css' );
 	enqueue_versioned_style( 'style-widgets-single',           '/assets/css/widgets/single.css' );
 	enqueue_versioned_style( 'style-widgets-target-banner',    '/assets/css/widgets/target-banner.css' );
+	enqueue_versioned_style( 'style-widgets-delivery-calculator','/assets/css/widgets/delivery-calculator.css' );
+	enqueue_versioned_style( 'style-widgets-rent-calculator',    '/assets/css/widgets/rent-calculator.css' );
 	
 	// Scripts
 	enqueue_versioned_script( 'script-clipboard',              '/assets/js/clipboard.js', array(), true );
@@ -63,7 +65,9 @@ function styles_n_scripts() {
 	enqueue_versioned_script( 'script-range-input',            '/assets/js/range-input.js', array(), true );
 	enqueue_versioned_script( 'script-smooth-scroll',          '/assets/js/smooth-scroll.js', array(), true );
 	enqueue_versioned_script( 'script-target-banner',          '/assets/js/target-banner.js', array(), true );
-	enqueue_versioned_script( 'script-catalog',          '/assets/js/catalog.js', array(), true );
+	enqueue_versioned_script( 'script-catalog',                '/assets/js/catalog.js', array(), true );
+	enqueue_versioned_script( 'script-delivery-calc',          '/assets/js/delivery-calc.js', array(), true );
+	enqueue_versioned_script( 'script-rent-calc',              '/assets/js/rent-calc.js', array(), true );
 
 }
 add_action( 'wp_enqueue_scripts', 'styles_n_scripts' );
@@ -86,3 +90,74 @@ function enqueue_versioned_script( $handle, $src = false, $deps = array(), $in_f
 function enqueue_versioned_style( $handle, $src = false, $deps = array(), $media = 'all' ) {
 	wp_enqueue_style( $handle, get_stylesheet_directory_uri() . $src, $deps = array(), filemtime( get_stylesheet_directory() . $src ), $media );
 } 
+
+
+// Подключение админских скриптов только для нашего CPT
+add_action('admin_enqueue_scripts', 'delivery_order_admin_assets');
+function delivery_order_admin_assets($hook) {
+    global $post;
+    
+    // Загружаем только на страницах нашего CPT
+    if (!in_array($hook, ['post.php', 'post-new.php'])) {
+        return;
+    }
+    
+    if (!isset($post) || $post->post_type !== 'delivery_order') {
+        return;
+    }
+    
+    // Яндекс Карты API
+    wp_enqueue_script(
+        'yandex-maps',
+        'https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_КЛЮЧ&lang=ru_RU',
+        [],
+        null,
+        true
+    );
+    
+    // Нативный JS для карты
+    wp_enqueue_script(
+        'delivery-order-map',
+        get_template_directory_uri() . '/assets/js/order-map.js',
+        ['yandex-maps'],
+        '1.0.0',
+        true
+    );
+    
+    // Передаем данные в JS
+    wp_localize_script('delivery-order-map', 'deliveryOrderData', [
+        'mapElementId' => 'order-map',
+        'inputFieldId' => 'map_location',
+        'defaultCenter' => ['55.751574', '37.573856'], // Москва по умолчанию
+        'defaultZoom' => 10,
+    ]);
+    
+    // Админские стили
+    wp_enqueue_style(
+        'delivery-order-admin',
+        get_template_directory_uri() . '/assets/css/order-admin.css',
+        [],
+        '1.0.0'
+    );
+}
+
+// Настройка комментариев для нашего CPT
+add_filter('comments_open', 'delivery_order_comments_open', 10, 2);
+function delivery_order_comments_open($open, $post_id) {
+    $post = get_post($post_id);
+    if ($post && $post->post_type === 'delivery_order') {
+        return true; // Всегда открыты для отчётов
+    }
+    return $open;
+}
+
+// Добавляем метку для комментариев техподдержки
+add_filter('comment_form_defaults', 'delivery_order_comment_form');
+function delivery_order_comment_form($defaults) {
+    if (get_post_type() === 'delivery_order') {
+        $defaults['title_reply'] = 'Отчёт о выполнении заказа';
+        $defaults['label_submit'] = 'Опубликовать отчёт';
+        $defaults['comment_notes_before'] = '<p class="comment-notes">Оставьте отчёт о статусе выполнения заказа.</p>';
+    }
+    return $defaults;
+}

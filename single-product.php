@@ -333,7 +333,7 @@ get_header();
 						<?php if ($product_power_nominal) : ?>
 							<div class="characteristic is-style-row">
 								<div class="characteristic__label">Мощность</div>
-								<div class="characteristic__value">
+								<div id="base_power" class="characteristic__value">
 									<span class="icon" data-type="arrow-up-right"></span>
 									<?php echo $product_power_nominal.' кВт'; ?>
 								</div>
@@ -368,9 +368,18 @@ get_header();
 							<?php if ($product_rent_price) : ?>
 								<div class="product-price__item">
 									<span class="span is-hilight is-size-s">Арендовать</span>
-									<span class="product-price-item__cost is-style-accent"
-										><?php echo 'от '.$product_rent_price.' ₽/сут.'; ?></span
-									>
+									<div class="product-price__rent-container">
+										<select name="rent_period" id="rent-period" class="select">
+											<option value="" disabled selected>Срок аренды</option>
+											<option value="3">3 суток</option>
+											<option value="4-7">4-7 суток</option>
+											<option value="8-14">8-14 суток</option>
+											<option value="15-30">15-30 суток</option>
+											<option value="30+">более 30 суток</option>
+										</select>
+										<span class="product-price-item__cost is-style-accent"
+										><?php echo 'от '.$product_rent_price.' ₽/сут.'; ?></span>
+									</div>
 								</div>
 							<?php endif; ?>
 							<?php if ($product_purchase_price) : ?>

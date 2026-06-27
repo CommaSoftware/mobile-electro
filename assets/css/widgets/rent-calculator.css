@@ -1,0 +1,154 @@
+.calc-rent {
+  background-color: white;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 100%;
+
+  border: 1px solid #e4f1f2;
+  border-radius: 8px;
+}
+
+.calc-rent__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px 12px 12px;
+  gap: 10px;
+
+  width: 100%;
+}
+
+.calc-rent__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.calc-rent__selects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+
+  width: 100%;
+}
+
+.calc-rent__options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 12px;
+  gap: 8px;
+
+  width: 100%;
+
+  border-bottom: 1px solid #e4f1f2;
+}
+
+.calc-rent__option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 8px;
+
+  width: 100%;
+  cursor: pointer;
+}
+
+.calc-rent__option .button,
+.calc-rent__addon .button,
+.calc-rent__option .button:hover,
+.calc-rent__addon .button:hover, 
+.calc-rent__option .button:active,
+.calc-rent__addon .button:active  {
+  --button-bg: var(--color-bg-secondary-highlight) !important;
+  --button-color-border: var(--color-bg-secondary-highlight) !important;
+}
+
+.option-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.calc-rent .button.toggle-button.is-toggled {
+  background: var(--color-elem-accent-primary-alt) !important;
+  border-color: var(--color-elem-accent-primary-alt) !important;
+}
+
+.calc-rent .button.toggle-button.is-toggled .icon {
+  filter: var(--icon-filter-white);
+}
+
+/* .calc-rent__option button {
+    margin-right: 5px;;
+} */
+
+.calc-rent__addons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 100%;
+}
+
+.calc-rent__addon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 8px;
+
+  width: 100%;
+  cursor: pointer;
+}
+
+.calc-rent__addon button {
+  background: var(--color-bg-secondary-highlight);
+}
+
+.addon-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.calc-rent__footer {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 12px 24px;
+  gap: 10px;
+
+  width: 100%;
+
+  border-top: 1px solid #e4f1f2;
+}
+
+.calc-rent__footer h3 {
+  color: var(--color-elem-accent-primary);
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

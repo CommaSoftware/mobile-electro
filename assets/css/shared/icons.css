@@ -191,6 +191,12 @@
 .icon[data-type="yandex"] {
   background-image: url("../../images/icons/yandex.svg");
 }
+.icon[data-type="minus"] {
+  background-image: url("../../images/icons/minus.svg");
+}
+.icon[data-type="plus"] {
+  background-image: url("../../images/icons/plus.svg");
+}
 
 .icon.is-color-white {
   filter: var(--icon-filter-white) !important;
